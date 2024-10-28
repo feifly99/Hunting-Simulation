@@ -1,0 +1,605 @@
+hunter 0: x = 8.575, hunter 0: y = 16.938
+hunter 1: x = 4.762, hunter 1: y = 2.712
+hunter 2: x = 2.899, hunter 2: y = 8.066
+target: x = 21.492, target: y = 8.536
+QAQ
+hunter 0: x = 10.186, hunter 0: y = 15.931
+hunter 1: x = 6.569, hunter 1: y = 3.299
+hunter 2: x = 4.798, hunter 2: y = 8.133
+target: x = 22.883, target: y = 8.073
+QAQ
+hunter 0: x = 11.798, hunter 0: y = 14.924
+hunter 1: x = 8.395, hunter 1: y = 3.823
+hunter 2: x = 6.698, hunter 2: y = 8.133
+target: x = 24.324, target: y = 7.129
+QAQ
+hunter 0: x = 13.409, hunter 0: y = 13.917
+hunter 1: x = 10.254, hunter 1: y = 4.218
+hunter 2: x = 8.593, hunter 2: y = 8.000
+target: x = 25.802, target: y = 6.641
+QAQ
+hunter 0: x = 15.054, hunter 0: y = 12.967
+hunter 1: x = 12.135, hunter 1: y = 4.482
+hunter 2: x = 10.488, hunter 2: y = 7.868
+target: x = 27.279, target: y = 5.355
+QAQ
+hunter 0: x = 16.666, hunter 0: y = 11.960
+hunter 1: x = 14.030, hunter 1: y = 4.615
+hunter 2: x = 12.370, hunter 2: y = 7.603
+target: x = 27.279, target: y = 5.355
+QAQ
+hunter 0: x = 17.866, hunter 0: y = 11.960
+hunter 1: x = 15.821, hunter 1: y = 4.426
+hunter 2: x = 14.251, hunter 2: y = 7.339
+target: x = 28.768, target: y = 4.069
+QAQ
+hunter 0: x = 19.403, hunter 0: y = 10.843
+hunter 1: x = 17.288, hunter 1: y = 4.738
+hunter 2: x = 16.110, hunter 2: y = 6.944
+target: x = 29.670, target: y = 2.651
+QAQ
+hunter 0: x = 20.956, hunter 0: y = 10.152
+hunter 1: x = 18.189, hunter 1: y = 3.297
+hunter 2: x = 17.917, hunter 2: y = 6.357
+target: x = 29.670, target: y = 2.651
+QAQ
+hunter 0: x = 21.357, hunter 0: y = 10.598
+hunter 1: x = 18.171, hunter 1: y = 2.797
+hunter 2: x = 19.219, hunter 2: y = 7.449
+target: x = 31.041, target: y = 1.174
+QAQ
+hunter 0: x = 22.724, hunter 0: y = 9.278
+hunter 1: x = 19.550, hunter 1: y = 1.640
+hunter 2: x = 20.794, hunter 2: y = 6.387
+target: x = 31.041, target: y = 1.174
+QAQ
+hunter 0: x = 22.689, hunter 0: y = 9.081
+hunter 1: x = 19.547, hunter 1: y = 1.540
+hunter 2: x = 20.575, hunter 2: y = 5.937
+target: x = 32.459, target: y = 0.379
+QAQ
+hunter 0: x = 24.016, hunter 0: y = 8.186
+hunter 1: x = 20.959, hunter 1: y = 0.269
+hunter 2: x = 21.839, hunter 2: y = 4.800
+target: x = 32.459, target: y = 0.379
+QAQ
+hunter 0: x = 24.951, hunter 0: y = 9.089
+hunter 1: x = 20.993, hunter 1: y = 1.268
+hunter 2: x = 21.282, hunter 2: y = 3.088
+target: x = 33.893, target: y = -1.094
+QAQ
+hunter 0: x = 26.222, hunter 0: y = 7.677
+hunter 1: x = 22.449, hunter 1: y = 0.047
+hunter 2: x = 23.043, hunter 2: y = 2.714
+target: x = 35.361, target: y = -0.556
+QAQ
+hunter 0: x = 27.419, hunter 0: y = 7.761
+hunter 1: x = 23.862, hunter 1: y = -0.704
+hunter 2: x = 23.997, hunter 2: y = 1.187
+target: x = 36.604, target: y = -0.399
+QAQ
+hunter 0: x = 27.912, hunter 0: y = 7.131
+hunter 1: x = 25.123, hunter 1: y = -1.019
+hunter 2: x = 25.129, hunter 2: y = 0.364
+target: x = 38.104, target: y = -1.565
+QAQ
+hunter 0: x = 29.409, hunter 0: y = 5.961
+hunter 1: x = 26.620, hunter 1: y = -2.189
+hunter 2: x = 26.627, hunter 2: y = -0.805
+target: x = 38.104, target: y = -1.565
+QAQ
+hunter 0: x = 30.312, hunter 0: y = 6.896
+hunter 1: x = 26.620, hunter 1: y = -0.789
+hunter 2: x = 26.623, hunter 2: y = -0.905
+target: x = 39.146, target: y = -3.042
+QAQ
+hunter 0: x = 31.420, hunter 0: y = 5.478
+hunter 1: x = 27.908, hunter 1: y = -0.608
+hunter 2: x = 27.670, hunter 2: y = -2.245
+target: x = 40.483, target: y = -3.277
+QAQ
+hunter 0: x = 32.212, hunter 0: y = 4.713
+hunter 1: x = 29.375, hunter 1: y = -0.296
+hunter 2: x = 28.990, hunter 2: y = -3.612
+target: x = 41.883, target: y = -3.614
+QAQ
+hunter 0: x = 33.689, hunter 0: y = 4.453
+hunter 1: x = 30.674, hunter 1: y = -1.046
+hunter 2: x = 30.382, hunter 2: y = -3.758
+target: x = 41.883, target: y = -3.614
+QAQ
+hunter 0: x = 34.729, hunter 0: y = 5.390
+hunter 1: x = 30.795, hunter 1: y = -0.561
+hunter 2: x = 30.385, hunter 2: y = -3.858
+target: x = 43.383, target: y = -3.277
+QAQ
+hunter 0: x = 36.197, hunter 0: y = 5.702
+hunter 1: x = 32.093, hunter 1: y = -1.085
+hunter 2: x = 31.886, hunter 2: y = -3.060
+target: x = 44.881, target: y = -4.027
+QAQ
+hunter 0: x = 37.523, hunter 0: y = 4.807
+hunter 1: x = 33.919, hunter 1: y = -0.561
+hunter 2: x = 33.384, hunter 2: y = -4.230
+target: x = 46.166, target: y = -5.408
+QAQ
+hunter 0: x = 38.935, hunter 0: y = 3.536
+hunter 1: x = 35.582, hunter 1: y = -0.915
+hunter 2: x = 34.876, hunter 2: y = -3.223
+target: x = 46.166, target: y = -5.408
+QAQ
+hunter 0: x = 39.171, hunter 0: y = 3.720
+hunter 1: x = 35.786, hunter 1: y = -0.458
+hunter 2: x = 34.807, hunter 2: y = -3.617
+target: x = 46.166, target: y = -5.408
+QAQ
+hunter 0: x = 40.332, hunter 0: y = 4.503
+hunter 1: x = 36.686, hunter 1: y = 1.101
+hunter 2: x = 34.807, hunter 2: y = -3.617
+target: x = 47.639, target: y = -6.289
+QAQ
+hunter 0: x = 41.774, hunter 0: y = 3.602
+hunter 1: x = 38.557, hunter 1: y = 0.771
+hunter 2: x = 36.497, hunter 2: y = -3.439
+target: x = 48.975, target: y = -7.503
+QAQ
+hunter 0: x = 43.111, hunter 0: y = 2.398
+hunter 1: x = 39.975, hunter 1: y = -0.337
+hunter 2: x = 37.835, hunter 2: y = -4.644
+target: x = 50.457, target: y = -7.763
+QAQ
+hunter 0: x = 44.001, hunter 0: y = 1.751
+hunter 1: x = 41.675, hunter 1: y = -0.337
+hunter 2: x = 39.137, hunter 2: y = -5.736
+target: x = 50.457, target: y = -7.763
+QAQ
+hunter 0: x = 45.474, hunter 0: y = 2.601
+hunter 1: x = 42.717, hunter 1: y = 0.742
+hunter 2: x = 39.120, hunter 2: y = -5.835
+target: x = 50.457, target: y = -7.763
+QAQ
+hunter 0: x = 46.864, hunter 0: y = 3.163
+hunter 1: x = 44.057, hunter 1: y = 1.788
+hunter 2: x = 39.120, hunter 2: y = -5.835
+target: x = 50.457, target: y = -7.763
+QAQ
+hunter 0: x = 47.633, hunter 0: y = 3.384
+hunter 1: x = 45.442, hunter 1: y = 2.588
+hunter 2: x = 39.120, hunter 2: y = -5.835
+target: x = 51.949, target: y = -7.275
+QAQ
+hunter 0: x = 47.726, hunter 0: y = 3.421
+hunter 1: x = 46.510, hunter 1: y = 2.854
+hunter 2: x = 40.623, hunter 2: y = -5.288
+target: x = 51.949, target: y = -7.275
+QAQ
+hunter 0: x = 49.058, hunter 0: y = 3.854
+hunter 1: x = 48.063, hunter 1: y = 3.546
+hunter 2: x = 40.456, hunter 2: y = -6.879
+target: x = 53.114, target: y = -7.979
+QAQ
+hunter 0: x = 50.406, hunter 0: y = 3.196
+hunter 1: x = 48.954, hunter 1: y = 2.743
+hunter 2: x = 41.735, hunter 2: y = -6.310
+target: x = 54.463, target: y = -8.541
+QAQ
+hunter 0: x = 51.554, hunter 0: y = 2.586
+hunter 1: x = 50.476, hunter 1: y = 2.248
+hunter 2: x = 43.220, hunter 2: y = -6.101
+target: x = 55.833, target: y = -9.799
+QAQ
+hunter 0: x = 51.365, hunter 0: y = 0.796
+hunter 1: x = 51.377, hunter 1: y = 0.807
+hunter 2: x = 45.011, hunter 2: y = -5.913
+target: x = 57.300, target: y = -11.071
+QAQ
+hunter 0: x = 52.423, hunter 0: y = -0.660
+hunter 1: x = 52.744, hunter 1: y = -0.513
+hunter 2: x = 46.892, hunter 2: y = -6.177
+target: x = 58.544, target: y = -12.383
+QAQ
+hunter 0: x = 53.879, hunter 0: y = -1.882
+hunter 1: x = 54.199, hunter 1: y = -1.734
+hunter 2: x = 48.393, hunter 2: y = -6.975
+target: x = 59.934, target: y = -13.480
+QAQ
+hunter 0: x = 55.335, hunter 0: y = -2.940
+hunter 1: x = 55.140, hunter 1: y = -3.029
+hunter 2: x = 50.275, hunter 2: y = -7.240
+target: x = 59.934, target: y = -13.480
+QAQ
+hunter 0: x = 55.891, hunter 0: y = -2.715
+hunter 1: x = 56.925, hunter 1: y = -2.379
+hunter 2: x = 50.116, hunter 2: y = -7.494
+target: x = 59.934, target: y = -13.480
+QAQ
+hunter 0: x = 56.938, hunter 0: y = -2.375
+hunter 1: x = 58.099, hunter 1: y = -2.130
+hunter 2: x = 50.116, hunter 2: y = -7.494
+target: x = 59.934, target: y = -13.480
+QAQ
+hunter 0: x = 58.111, hunter 0: y = -2.126
+hunter 1: x = 59.392, hunter 1: y = -1.994
+hunter 2: x = 50.116, hunter 2: y = -7.494
+target: x = 59.934, target: y = -13.480
+QAQ
+hunter 0: x = 59.404, hunter 0: y = -1.990
+hunter 1: x = 61.291, hunter 1: y = -2.060
+hunter 2: x = 50.116, hunter 2: y = -7.494
+target: x = 59.934, target: y = -13.480
+QAQ
+hunter 0: x = 61.303, hunter 0: y = -2.056
+hunter 1: x = 62.571, hunter 1: y = -2.286
+hunter 2: x = 50.116, hunter 2: y = -7.494
+target: x = 61.283, target: y = -14.828
+QAQ
+hunter 0: x = 62.508, hunter 0: y = -3.394
+hunter 1: x = 63.100, hunter 1: y = -3.473
+hunter 2: x = 51.482, hunter 2: y = -8.814
+target: x = 61.283, target: y = -14.828
+QAQ
+hunter 0: x = 63.300, hunter 0: y = -3.505
+hunter 1: x = 64.273, hunter 1: y = -3.723
+hunter 2: x = 51.429, hunter 2: y = -8.899
+target: x = 62.750, target: y = -14.881
+QAQ
+hunter 0: x = 64.400, hunter 0: y = -3.505
+hunter 1: x = 65.969, hunter 1: y = -3.841
+hunter 2: x = 52.366, hunter 2: y = -9.939
+target: x = 62.750, target: y = -14.881
+QAQ
+hunter 0: x = 66.063, hunter 0: y = -3.858
+hunter 1: x = 67.379, hunter 1: y = -4.354
+hunter 2: x = 52.122, hunter 2: y = -10.487
+target: x = 64.199, target: y = -15.115
+QAQ
+hunter 0: x = 67.638, hunter 0: y = -4.136
+hunter 1: x = 69.139, hunter 1: y = -4.729
+hunter 2: x = 53.718, hunter 2: y = -10.376
+target: x = 65.625, target: y = -16.604
+QAQ
+hunter 0: x = 67.075, hunter 0: y = -5.196
+hunter 1: x = 70.411, hunter 1: y = -6.141
+hunter 2: x = 55.396, hunter 2: y = -11.268
+target: x = 65.625, target: y = -16.604
+QAQ
+hunter 0: x = 65.778, hunter 0: y = -5.105
+hunter 1: x = 71.559, hunter 1: y = -6.751
+hunter 2: x = 55.208, hunter 2: y = -11.731
+target: x = 65.625, target: y = -16.604
+QAQ
+hunter 0: x = 65.478, hunter 0: y = -5.105
+hunter 1: x = 73.096, hunter 1: y = -7.868
+hunter 2: x = 55.046, hunter 2: y = -12.097
+target: x = 65.625, target: y = -16.604
+QAQ
+hunter 0: x = 65.478, hunter 0: y = -5.105
+hunter 1: x = 74.416, hunter 1: y = -9.234
+hunter 2: x = 55.046, hunter 2: y = -12.097
+target: x = 67.006, target: y = -16.447
+QAQ
+hunter 0: x = 64.290, hunter 0: y = -5.272
+hunter 1: x = 75.603, hunter 1: y = -8.706
+hunter 2: x = 55.835, hunter 2: y = -13.714
+target: x = 67.006, target: y = -16.447
+QAQ
+hunter 0: x = 64.193, hunter 0: y = -5.296
+hunter 1: x = 75.140, hunter 1: y = -8.518
+hunter 2: x = 55.574, hunter 2: y = -15.192
+target: x = 67.006, target: y = -16.447
+QAQ
+hunter 0: x = 63.520, hunter 0: y = -5.489
+hunter 1: x = 74.136, hunter 1: y = -7.404
+hunter 2: x = 55.512, hunter 2: y = -16.089
+target: x = 67.687, target: y = -17.057
+QAQ
+hunter 0: x = 62.870, hunter 0: y = -6.615
+hunter 1: x = 73.837, hunter 1: y = -7.425
+hunter 2: x = 56.203, hunter 2: y = -17.642
+target: x = 69.035, target: y = -16.594
+QAQ
+hunter 0: x = 62.828, hunter 0: y = -6.912
+hunter 1: x = 73.594, hunter 1: y = -6.046
+hunter 2: x = 57.740, hunter 2: y = -18.759
+target: x = 69.035, target: y = -16.594
+QAQ
+hunter 0: x = 62.414, hunter 0: y = -7.192
+hunter 1: x = 73.259, hunter 1: y = -5.674
+hunter 2: x = 57.823, hunter 2: y = -19.151
+target: x = 69.896, target: y = -16.282
+QAQ
+hunter 0: x = 62.107, hunter 0: y = -7.821
+hunter 1: x = 72.809, hunter 1: y = -5.138
+hunter 2: x = 58.949, hunter 2: y = -19.801
+target: x = 71.244, target: y = -17.717
+QAQ
+hunter 0: x = 63.378, hunter 0: y = -9.233
+hunter 1: x = 74.080, hunter 1: y = -6.550
+hunter 2: x = 59.947, hunter 2: y = -19.870
+target: x = 72.286, target: y = -18.831
+QAQ
+hunter 0: x = 64.070, hunter 0: y = -10.786
+hunter 1: x = 75.536, hunter 1: y = -7.771
+hunter 2: x = 60.842, hunter 2: y = -19.964
+target: x = 73.146, target: y = -18.648
+QAQ
+hunter 0: x = 64.070, hunter 0: y = -11.586
+hunter 1: x = 77.417, hunter 1: y = -8.036
+hunter 2: x = 61.671, hunter 2: y = -19.405
+target: x = 73.146, target: y = -18.648
+QAQ
+hunter 0: x = 64.070, hunter 0: y = -11.586
+hunter 1: x = 77.917, hunter 1: y = -8.053
+hunter 2: x = 61.907, hunter 2: y = -21.089
+target: x = 74.573, target: y = -19.443
+QAQ
+hunter 0: x = 65.667, hunter 0: y = -12.167
+hunter 1: x = 78.663, hunter 1: y = -8.557
+hunter 2: x = 63.253, hunter 2: y = -21.475
+target: x = 74.573, target: y = -19.443
+QAQ
+hunter 0: x = 64.903, hunter 0: y = -13.219
+hunter 1: x = 78.831, hunter 1: y = -8.805
+hunter 2: x = 63.253, hunter 2: y = -21.475
+target: x = 74.573, target: y = -19.443
+QAQ
+hunter 0: x = 64.744, hunter 0: y = -13.473
+hunter 1: x = 78.089, hunter 1: y = -8.506
+hunter 2: x = 63.253, hunter 2: y = -21.475
+target: x = 76.015, target: y = -20.905
+QAQ
+hunter 0: x = 66.319, hunter 0: y = -14.536
+hunter 1: x = 79.361, hunter 1: y = -9.918
+hunter 2: x = 64.541, hunter 2: y = -21.655
+target: x = 76.015, target: y = -20.905
+QAQ
+hunter 0: x = 66.402, hunter 0: y = -14.592
+hunter 1: x = 80.828, hunter 1: y = -10.229
+hunter 2: x = 64.555, hunter 2: y = -21.855
+target: x = 77.433, target: y = -21.293
+QAQ
+hunter 0: x = 67.250, hunter 0: y = -15.949
+hunter 1: x = 82.381, hunter 1: y = -10.921
+hunter 2: x = 65.951, hunter 2: y = -21.953
+target: x = 77.433, target: y = -21.293
+QAQ
+hunter 0: x = 67.297, hunter 0: y = -15.860
+hunter 1: x = 82.287, hunter 1: y = -10.744
+hunter 2: x = 65.965, hunter 2: y = -22.152
+target: x = 78.888, target: y = -22.791
+QAQ
+hunter 0: x = 68.942, hunter 0: y = -16.810
+hunter 1: x = 83.457, hunter 1: y = -12.241
+hunter 2: x = 67.392, hunter 2: y = -22.616
+target: x = 78.888, target: y = -22.791
+QAQ
+hunter 0: x = 68.605, hunter 0: y = -17.645
+hunter 1: x = 85.134, hunter 1: y = -13.133
+hunter 2: x = 67.392, hunter 2: y = -22.516
+target: x = 80.344, target: y = -22.479
+QAQ
+hunter 0: x = 69.255, hunter 0: y = -19.430
+hunter 1: x = 85.663, hunter 1: y = -12.405
+hunter 2: x = 68.884, hunter 2: y = -21.509
+target: x = 81.778, target: y = -23.860
+QAQ
+hunter 0: x = 71.016, hunter 0: y = -19.805
+hunter 1: x = 87.001, hunter 1: y = -13.610
+hunter 2: x = 70.385, hunter 2: y = -22.307
+target: x = 81.778, target: y = -23.860
+QAQ
+hunter 0: x = 70.981, hunter 0: y = -19.899
+hunter 1: x = 88.670, hunter 1: y = -14.284
+hunter 2: x = 70.371, hunter 2: y = -22.406
+target: x = 81.778, target: y = -23.860
+QAQ
+hunter 0: x = 70.981, hunter 0: y = -19.899
+hunter 1: x = 88.427, hunter 1: y = -14.460
+hunter 2: x = 70.371, hunter 2: y = -22.406
+target: x = 82.801, target: y = -24.939
+QAQ
+hunter 0: x = 72.644, hunter 0: y = -19.545
+hunter 1: x = 89.794, hunter 1: y = -15.780
+hunter 2: x = 71.499, hunter 2: y = -22.817
+target: x = 82.801, target: y = -24.939
+QAQ
+hunter 0: x = 71.994, hunter 0: y = -21.007
+hunter 1: x = 89.897, hunter 1: y = -16.062
+hunter 2: x = 71.499, hunter 2: y = -22.817
+target: x = 84.138, target: y = -26.137
+QAQ
+hunter 0: x = 73.466, hunter 0: y = -21.857
+hunter 1: x = 91.394, hunter 1: y = -17.232
+hunter 2: x = 72.874, hunter 2: y = -23.816
+target: x = 85.462, target: y = -27.179
+QAQ
+hunter 0: x = 74.768, hunter 0: y = -22.950
+hunter 1: x = 92.891, hunter 1: y = -18.402
+hunter 2: x = 74.260, hunter 2: y = -24.616
+target: x = 85.462, target: y = -27.179
+QAQ
+hunter 0: x = 74.768, hunter 0: y = -22.950
+hunter 1: x = 92.891, hunter 1: y = -18.602
+hunter 2: x = 74.034, hunter 2: y = -25.896
+target: x = 85.462, target: y = -27.179
+QAQ
+hunter 0: x = 74.768, hunter 0: y = -22.950
+hunter 1: x = 91.956, hunter 1: y = -17.699
+hunter 2: x = 74.034, hunter 2: y = -25.896
+target: x = 86.924, target: y = -27.388
+QAQ
+hunter 0: x = 75.861, hunter 0: y = -24.252
+hunter 1: x = 93.433, hunter 1: y = -17.959
+hunter 2: x = 75.652, hunter 2: y = -25.107
+target: x = 86.924, target: y = -27.388
+QAQ
+hunter 0: x = 75.916, hunter 0: y = -24.060
+hunter 1: x = 94.347, hunter 1: y = -18.366
+hunter 2: x = 76.148, hunter 2: y = -23.377
+target: x = 86.924, target: y = -27.388
+QAQ
+hunter 0: x = 75.916, hunter 0: y = -24.060
+hunter 1: x = 95.504, hunter 1: y = -19.745
+hunter 2: x = 76.410, hunter 2: y = -22.728
+target: x = 86.924, target: y = -27.388
+QAQ
+hunter 0: x = 75.916, hunter 0: y = -24.060
+hunter 1: x = 95.954, hunter 1: y = -20.281
+hunter 2: x = 76.410, hunter 2: y = -22.728
+target: x = 88.196, target: y = -28.022
+QAQ
+hunter 0: x = 77.009, hunter 0: y = -25.362
+hunter 1: x = 97.278, hunter 1: y = -20.985
+hunter 2: x = 77.439, hunter 2: y = -23.953
+target: x = 89.439, target: y = -29.045
+QAQ
+hunter 0: x = 78.333, hunter 0: y = -26.066
+hunter 1: x = 98.465, hunter 1: y = -21.727
+hunter 2: x = 79.023, hunter 2: y = -24.176
+target: x = 89.439, target: y = -29.045
+QAQ
+hunter 0: x = 78.212, hunter 0: y = -26.551
+hunter 1: x = 98.500, hunter 1: y = -22.226
+hunter 2: x = 79.586, hunter 2: y = -23.117
+target: x = 89.439, target: y = -29.045
+QAQ
+hunter 0: x = 77.962, hunter 0: y = -28.334
+hunter 1: x = 99.271, hunter 1: y = -23.145
+hunter 2: x = 80.257, hunter 2: y = -22.122
+target: x = 89.439, target: y = -29.045
+QAQ
+hunter 0: x = 77.962, hunter 0: y = -29.734
+hunter 1: x = 99.871, hunter 1: y = -24.184
+hunter 2: x = 81.029, hunter 2: y = -21.202
+target: x = 89.439, target: y = -29.045
+QAQ
+hunter 0: x = 78.077, hunter 0: y = -30.828
+hunter 1: x = 100.321, hunter 1: y = -25.297
+hunter 2: x = 81.892, hunter 2: y = -20.369
+target: x = 90.588, target: y = -30.463
+QAQ
+hunter 0: x = 79.188, hunter 0: y = -31.979
+hunter 1: x = 101.491, hunter 1: y = -26.794
+hunter 2: x = 83.467, hunter 2: y = -21.431
+target: x = 92.074, target: y = -31.963
+QAQ
+hunter 0: x = 80.601, hunter 0: y = -32.730
+hunter 1: x = 102.903, hunter 1: y = -28.066
+hunter 2: x = 84.688, hunter 2: y = -22.887
+target: x = 92.074, target: y = -31.963
+QAQ
+hunter 0: x = 80.837, hunter 0: y = -34.413
+hunter 1: x = 103.692, hunter 1: y = -29.683
+hunter 2: x = 86.101, hunter 2: y = -22.136
+target: x = 92.074, target: y = -31.963
+QAQ
+hunter 0: x = 81.251, hunter 0: y = -35.855
+hunter 1: x = 103.692, hunter 1: y = -31.283
+hunter 2: x = 87.249, hunter 2: y = -21.525
+target: x = 93.492, target: y = -31.425
+QAQ
+hunter 0: x = 83.023, hunter 0: y = -36.168
+hunter 1: x = 104.989, hunter 1: y = -31.374
+hunter 2: x = 88.471, hunter 2: y = -21.081
+target: x = 93.492, target: y = -31.425
+QAQ
+hunter 0: x = 83.775, hunter 0: y = -37.580
+hunter 1: x = 105.126, hunter 1: y = -31.855
+hunter 2: x = 89.954, hunter 2: y = -20.481
+target: x = 93.492, target: y = -31.425
+QAQ
+hunter 0: x = 84.656, hunter 0: y = -38.794
+hunter 1: x = 104.849, hunter 1: y = -33.430
+hunter 2: x = 91.118, hunter 2: y = -20.191
+target: x = 94.977, target: y = -31.737
+QAQ
+hunter 0: x = 86.442, hunter 0: y = -39.444
+hunter 1: x = 106.334, hunter 1: y = -33.639
+hunter 2: x = 92.165, hunter 2: y = -20.531
+target: x = 94.977, target: y = -31.737
+QAQ
+hunter 0: x = 87.277, hunter 0: y = -40.440
+hunter 1: x = 106.039, hunter 1: y = -35.313
+hunter 2: x = 91.732, hunter 2: y = -20.781
+target: x = 94.977, target: y = -31.737
+QAQ
+hunter 0: x = 86.185, hunter 0: y = -39.137
+hunter 1: x = 106.265, hunter 1: y = -34.033
+hunter 2: x = 92.554, hunter 2: y = -20.415
+target: x = 94.977, target: y = -31.737
+QAQ
+hunter 0: x = 86.985, hunter 0: y = -40.162
+hunter 1: x = 105.853, hunter 1: y = -35.683
+hunter 2: x = 92.104, hunter 2: y = -20.634
+target: x = 94.977, target: y = -31.737
+QAQ
+hunter 0: x = 86.431, hunter 0: y = -39.453
+hunter 1: x = 106.168, hunter 1: y = -34.421
+hunter 2: x = 92.176, hunter 2: y = -20.565
+target: x = 95.880, target: y = -31.374
+QAQ
+hunter 0: x = 87.225, hunter 0: y = -39.030
+hunter 1: x = 107.067, hunter 1: y = -33.983
+hunter 2: x = 93.181, hunter 2: y = -20.117
+target: x = 96.653, target: y = -31.296
+QAQ
+hunter 0: x = 88.309, hunter 0: y = -39.221
+hunter 1: x = 107.896, hunter 1: y = -33.424
+hunter 2: x = 93.572, hunter 2: y = -20.200
+target: x = 98.114, target: y = -31.906
+QAQ
+hunter 0: x = 90.016, hunter 0: y = -40.054
+hunter 1: x = 109.487, hunter 1: y = -33.256
+hunter 2: x = 94.698, hunter 2: y = -20.850
+target: x = 98.114, target: y = -31.906
+QAQ
+hunter 0: x = 90.908, hunter 0: y = -40.857
+hunter 1: x = 109.209, hunter 1: y = -34.832
+hunter 2: x = 94.333, hunter 2: y = -21.013
+target: x = 99.296, target: y = -31.492
+QAQ
+hunter 0: x = 90.961, hunter 0: y = -39.358
+hunter 1: x = 110.621, hunter 1: y = -33.561
+hunter 2: x = 96.140, hunter 2: y = -20.426
+target: x = 100.785, target: y = -30.979
+QAQ
+hunter 0: x = 92.387, hunter 0: y = -38.894
+hunter 1: x = 112.030, hunter 1: y = -32.610
+hunter 2: x = 97.757, hunter 2: y = -19.901
+target: x = 100.785, target: y = -30.979
+QAQ
+hunter 0: x = 93.353, hunter 0: y = -39.764
+hunter 1: x = 111.999, hunter 1: y = -33.510
+hunter 2: x = 96.520, hunter 2: y = -20.302
+target: x = 100.785, target: y = -30.979
+QAQ
+hunter 0: x = 92.684, hunter 0: y = -39.162
+hunter 1: x = 112.103, hunter 1: y = -33.020
+hunter 2: x = 97.366, hunter 2: y = -19.995
+target: x = 100.785, target: y = -30.979
+QAQ
+hunter 0: x = 93.056, hunter 0: y = -39.496
+hunter 1: x = 111.916, hunter 1: y = -33.901
+hunter 2: x = 96.890, hunter 2: y = -20.149
+target: x = 100.785, target: y = -30.979
+QAQ
+hunter 0: x = 92.409, hunter 0: y = -38.871
+hunter 1: x = 112.020, hunter 1: y = -33.412
+hunter 2: x = 97.756, hunter 2: y = -19.901
+target: x = 101.646, target: y = -31.752
+QAQ
+hunter 0: x = 93.821, hunter 0: y = -40.143
+hunter 1: x = 112.971, hunter 1: y = -33.721
+hunter 2: x = 98.675, hunter 2: y = -20.672
+target: x = 102.688, target: y = -31.647
+QAQ
+hunter 0: x = 94.718, hunter 0: y = -40.080
+hunter 1: x = 114.067, hunter 1: y = -33.233
+hunter 2: x = 99.046, hunter 2: y = -20.822
+target: x = 104.187, target: y = -32.352
+QAQ
+hunter 0: x = 94.718, hunter 0: y = -40.080
+hunter 1: x = 114.067, hunter 1: y = -33.233
+hunter 2: x = 99.046, hunter 2: y = -20.822
+target: x = 104.187, target: y = -32.352
+QAQ
