@@ -55,7 +55,7 @@ do\
 
 #define targetNormalVelocity 1.5
 #define targetEscapingVelocity 3
-#define targetAlertingRadius 5
+#define targetAlertingRadius 7
 #define targetSafetyRadius 8
 #define targetMovableAngleRange 60
 
@@ -79,16 +79,19 @@ do\
 
 #define w_hidden 0
 #define w_headDirectionDiffer 0.1
-#define w_idealAngleDiffer 5
-#define w_distanceDiffer 2
+#define w_idealAngleDiffer 12
+#define w_distanceDiffer 3
+
+#define huntersRecyclingRadius 3
+#define targetHarmingRadius 2
 
 typedef struct _evaluationIndicators
 {
-	double nearAngleDiffer; //Èı¸öÏà»¥ÁÚ½ÓµÄ£¬ÒÔÄ¿±êUSVÎªÖĞĞÄµÄHUSVµÄ¼Ğ½ÇÖ®²î
-	//±¸×¢£ºnearAngleDifferÒş²ØÓÚ½á¹¹ÌåÖĞ£¬²»¶ÔÍâ±©Â¶
-	double idealDistanceDiffer; //µ±Ç°HUSVºÍÄ¿±ê°²È«È¦µÄ¾àÀë
-	double headDirectionDiffer; //µ±Ç°HUSVµÄ³¯ÏòºÍÄ¿±ê³¯Ïò½Ç¶ÈÖ®²î
-	double idealAngleDiffer; //µ±Ç°HUSV£¬Ä¿±êUSVºÍËüµÄnextHUSVµÄ¼Ğ½ÇÓëµÈ·Ö½ÇµÄ²îÖµ
+	double nearAngleDiffer; //ä¸‰ä¸ªç›¸äº’é‚»æ¥çš„ï¼Œä»¥ç›®æ ‡USVä¸ºä¸­å¿ƒçš„HUSVçš„å¤¹è§’ä¹‹å·®
+	//å¤‡æ³¨ï¼šnearAngleDifferéšè—äºç»“æ„ä½“ä¸­ï¼Œä¸å¯¹å¤–æš´éœ²
+	double idealDistanceDiffer; //å½“å‰HUSVå’Œç›®æ ‡å®‰å…¨åœˆçš„è·ç¦»
+	double headDirectionDiffer; //å½“å‰HUSVçš„æœå‘å’Œç›®æ ‡æœå‘è§’åº¦ä¹‹å·®
+	double idealAngleDiffer; //å½“å‰HUSVï¼Œç›®æ ‡USVå’Œå®ƒçš„nextHUSVçš„å¤¹è§’ä¸ç­‰åˆ†è§’çš„å·®å€¼
 }EI, * PEI, ** PPEI;
 typedef struct _Point
 {
@@ -116,9 +119,9 @@ typedef struct _huntingUSV
 	double velocity;
 	double movableAngleRange;
 	double headDirection;
-	EI evaluationIndicator; //ºóÖÃ¶¨Òå
-	LIST_ENTRY hunterListEntry; //ºóÖÃ¶¨Òå
-}HUSV, * PHUSV, ** PPHUSV; //ºóÖÃ¶¨ÒåÔÚµÚÒ»´Î³õÊ¼»¯Ê±Ã»ÓĞÌØ¶¨Öµ£¬ĞèÒªÔÚºóĞøµÄ¹¦ÄÜº¯Êıµ¥¶À¸³Öµ¡£
+	EI evaluationIndicator; //åç½®å®šä¹‰
+	LIST_ENTRY hunterListEntry; //åç½®å®šä¹‰
+}HUSV, * PHUSV, ** PPHUSV; //åç½®å®šä¹‰åœ¨ç¬¬ä¸€æ¬¡åˆå§‹åŒ–æ—¶æ²¡æœ‰ç‰¹å®šå€¼ï¼Œéœ€è¦åœ¨åç»­çš„åŠŸèƒ½å‡½æ•°å•ç‹¬èµ‹å€¼ã€‚
 //Initializing Functions:
 void initializeTargetUSV(OUTPTR PTUSV* Tusv, IN Point position, IN double normalVelocity, IN double escapingVelocity, IN double alertingRadius, IN double Sradius, IN double movableAngleRange, IN double headDirection);
 void initializeHunterUsv(OUTPTR PHUSV* Husv, IN Point position, IN double velocity, IN double movableAngleRange, IN double headDirection);
@@ -153,20 +156,26 @@ void calculateTwoVertical_V(IN V v, OUT V* temp1, OUT V* temp2);
 void normalizeV(OUT V* v);
 double calculate_P$P$P_unsignedAngle(IN Point A, IN Point B, IN Point C);
 double calculate_P$P_distance(IN Point A, IN Point B);
+void mergeVector(IN PV vectorArray, IN size_t vectorArraySize, OUT V* vectorOut);
 //Updating Functions:
 void updateTargetPosByNewPoint(IN_OUT PTUSV* target, IN Point newPoint);
 void updateHunterPosByNewPoint(IN_OUT PHUSV* hunter, IN Point newPoint);
 void updateTargetPosByMovingDistanceAndUnsignedAngle(IN_OUT PTUSV* target, IN double movingDistance, IN double angle);
 void updateHunterPosByMovingDistanceAndUnsignedAngle(IN_OUT PHUSV* hunter, IN double movingDistance, IN double angle);
-void movingNormalTargetRandomly(PTUSV* target);
+void movingNormalTargetRandomly(OUT PTUSV* target);
 //Geometry Functions:
 void getTwoCuttingPointOnCircle(IN Point center, IN double radius, IN Point externals, OUT Point* res1, OUT Point* res2);
 BOOL checkPointIsSafe(IN Point loc, IN PTUSV target);
-//Simulation Functions:
-void getHuntersFourEIByHuntersLocAndHeadDirection(IN PHUSV hunter, IN PTUSV target);
-double getRewardPointsForHunterByHuntersEI(IN PHUSV hunter);
-void changingHunterInfomationByRewardFunction(IN_OUT PHUSV* hunter, IN PTUSV target);
-BOOLEAN isSurroundingSuccess(PHUSV hunter[huntersNum], PTUSV target);
+//Surroundding Simulation Functions:
+void _SURROUNDING_getHuntersFourEIByHuntersLocAndHeadDirection(IN PHUSV hunter, IN PTUSV target);
+double _SURROUNDING_getRewardPointsForHunterByHuntersEI(IN PHUSV hunter);
+void _SURROUNDING_changingHunterInfomationByRewardFunction(IN_OUT PHUSV* hunter, IN PTUSV target);
+BOOLEAN isSurroundingSuccess(IN PHUSV hunter[huntersNum], IN PTUSV target);
+//TestRoutine: all hunters go towards target directly.
+void testRoutine(IN PHUSV hunter[huntersNum], IN PTUSV target);
+
+//Target Escaping Simulation Functions:
+double getEscapingAngleByVectorMethod(IN PHUSV hunter[huntersNum], IN PTUSV target);
 //C-Python Interaction Functions:
 void makePythonFile(FILE* fp, PHUSV hunter[3], PTUSV target);
 #endif
