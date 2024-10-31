@@ -72,11 +72,6 @@ do\
 #define RtE (targetEscapingVelocity * samplingTimeGap)
 #define Rh (huntersVelocity * samplingTimeGap)
 
-#define threhold_AngleDiffer 3
-#define threhold_headDirectionDiffer 100
-#define threhold_idealAngleDiffer 5
-#define threhold_distanceDiffer 1
-
 #define w_hidden 0
 #define w_headDirectionDiffer 0.1
 #define w_idealAngleDiffer 12
@@ -84,6 +79,9 @@ do\
 
 #define huntersRecyclingRadius 3
 #define targetHarmingRadius 2
+
+#define targetEscapingWeights_angle 5
+#define targetEscapingWeights_distance 5
 
 typedef struct _evaluationIndicators
 {
@@ -119,6 +117,7 @@ typedef struct _huntingUSV
 	double velocity;
 	double movableAngleRange;
 	double headDirection;
+	BOOLEAN isInsightByTarget;
 	EI evaluationIndicator; //后置定义
 	LIST_ENTRY hunterListEntry; //后置定义
 }HUSV, * PHUSV, ** PPHUSV; //后置定义在第一次初始化时没有特定值，需要在后续的功能函数单独赋值。
@@ -128,10 +127,10 @@ void initializeHunterUsv(OUTPTR PHUSV* Husv, IN Point position, IN double veloci
 void buildCycleList(IN_OUT PHUSV* hunter);
 void showTarget(IN PTUSV target);
 void showHunter(IN PHUSV hunter);
-void checkCycleListF(IN PPHUSV hunter);
-void checkCycleListB(IN PPHUSV hunter);
-void checkCycleList(IN PPHUSV hunter);
-void checkEI(IN EI evaluationIndicator);
+void checkHuntersCycleListF(IN PPHUSV hunter);
+void checkHuntersCycleListB(IN PPHUSV hunter);
+void checkHuntersCycleList(IN PPHUSV hunter);
+void checkHuntersEI(IN EI evaluationIndicator);
 //Mathematical Functions:
 double mabs(IN double x);
 double msign(IN double x);
@@ -171,11 +170,11 @@ void _SURROUNDING_getHuntersFourEIByHuntersLocAndHeadDirection(IN PHUSV hunter, 
 double _SURROUNDING_getRewardPointsForHunterByHuntersEI(IN PHUSV hunter);
 void _SURROUNDING_changingHunterInfomationByRewardFunction(IN_OUT PHUSV* hunter, IN PTUSV target);
 BOOLEAN isSurroundingSuccess(IN PHUSV hunter[huntersNum], IN PTUSV target);
-//TestRoutine: all hunters go towards target directly.
-void testRoutine(IN PHUSV hunter[huntersNum], IN PTUSV target);
-
+//Hunters Hunting Method Simulation Functions:
+void _HUNTER_goTowardsTargetDirectly(IN PHUSV hunter[huntersNum], IN PTUSV target);
 //Target Escaping Simulation Functions:
-double getEscapingAngleByVectorMethod(IN PHUSV hunter[huntersNum], IN PTUSV target);
+void _TARGET_escapingAngleByVectorMethod(IN PHUSV hunter[huntersNum], IN PTUSV* target);
+//void _TARGET_escapingAngleByLearningMethod(IN PHUSV hunter[huntersNum], IN PTUSV* target);
 //C-Python Interaction Functions:
-void makePythonFile(FILE* fp, PHUSV hunter[3], PTUSV target);
+void makePythonFile(IN FILE* fp, IN PHUSV hunter[3], IN PTUSV target);
 #endif
