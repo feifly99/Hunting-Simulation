@@ -1,5 +1,6 @@
 #include "HuntingSimulation.h"
-#pragma warning(disable:6011)
+#pragma warning(disable: 6011)
+#pragma warning(disable: 6387)
 //Initializing Functions:
 void initializeTargetUSV(OUTPTR PTUSV* Tusv, IN Point position, IN double normalVelocity, IN double escapingVelocity, IN double alertingRadius, IN double Sradius, IN double movableAngleRange, IN double headDirection)
 {
@@ -22,6 +23,7 @@ void initializeHunterUsv(OUTPTR PHUSV* Husv, IN Point position, IN double veloci
 	(*Husv)->velocity = velocity;
 	(*Husv)->movableAngleRange = movableAngleRange;
 	(*Husv)->headDirection = headDirection;
+	(*Husv)->isInsightByTarget = 0;
 	(*Husv)->evaluationIndicator.nearAngleDiffer = 0.0;
 	(*Husv)->evaluationIndicator.idealDistanceDiffer = 0.0;
 	(*Husv)->evaluationIndicator.headDirectionDiffer = 0.0;
@@ -54,7 +56,7 @@ void showHunter(IN PHUSV hunter)
 	printf("This->hunter has position: (%.3f, %.3f) with velocity: %.3f\n", hunter->pos.x, hunter->pos.y, hunter->velocity);
 	return;
 }
-void checkCycleListF(IN PPHUSV hunter)
+void checkHuntersCycleListF(IN PPHUSV hunter)
 {
 	if (hunter)
 	{
@@ -67,7 +69,7 @@ void checkCycleListF(IN PPHUSV hunter)
 		}
 	}
 }
-void checkCycleListB(IN PPHUSV hunter)
+void checkHuntersCycleListB(IN PPHUSV hunter)
 {
 	if (hunter)
 	{
@@ -80,11 +82,11 @@ void checkCycleListB(IN PPHUSV hunter)
 		}
 	}
 }
-void checkCycleList(IN PPHUSV hunter)
+void checkHuntersCycleList(IN PPHUSV hunter)
 {
-	checkCycleListF(hunter);
+	checkHuntersCycleListF(hunter);
 }
-void checkEI(IN EI pEvaluationIndicator)
+void checkHuntersEI(IN EI pEvaluationIndicator)
 {
 	//ckFloatValue(pevaluationIndicator.angleDiffer); 此成员隐藏，不对外暴露
 	ckFloatValue(pEvaluationIndicator.idealDistanceDiffer);
@@ -315,8 +317,8 @@ void movingNormalTargetRandomly(OUT PTUSV* target)
 	int flag = rand() % 2;
 	int angle_x = (flag == 0) ? (rand() % 70 - rand() % 24) : (-1) * (rand() % 70 - rand() % 24);
 	int angle_y = (flag == 0) ? (rand() % 110 - rand() % 14) : (-1) * (rand() % 110 - rand() % 14);
-	(*target)->pos.x += targetNormalVelocity * flag * cosa(30);
-	(*target)->pos.y += targetNormalVelocity * flag * sina(30);
+	(*target)->pos.x += RtN * flag * cosa((double)angle_x);
+	(*target)->pos.y += RtN * flag * sina((double)angle_y);
 	return;
 }
 //Geometry Functions:
@@ -414,7 +416,7 @@ void _SURROUNDING_changingHunterInfomationByRewardFunction(IN_OUT PHUSV* hunter,
 	Point nextHunterIdealLoc = { 0 };
 	PHUSV nextHunterIdealInfo = NULL;
 
-	initializeHunterUsv(&nextHunterIdealInfo, nextHunterIdealLoc, 0, 0, 0);
+	nextHunterIdealInfo = (PHUSV)malloc(sizeof(HUSV));
 	memcpy(nextHunterIdealInfo, *hunter, sizeof(HUSV));
 
 	double newMaxRewardPoints = -9999.0;
@@ -480,8 +482,8 @@ BOOLEAN isSurroundingSuccess(IN PHUSV hunter[huntersNum], IN PTUSV target)
 	//maxTolerance值必须大于_SURROUNDING_getRewardPointsForHunterByHuntersEI中定义的episilon_distance；
 	//否则永不收敛
 
-	double maxDistanceTolerance = 0.3;
-	double maxAngleTolerance = 2.0;
+	double maxDistanceTolerance = 0.8;
+	double maxAngleTolerance = 2.5;
 
 	double d[huntersNum] = { 0 };
 	double a[huntersNum] = { 0 };
@@ -506,35 +508,8 @@ BOOLEAN isSurroundingSuccess(IN PHUSV hunter[huntersNum], IN PTUSV target)
 	return 1;
 	
 }
-//Alerting Target Functions:
-static void _ALERTING_alertingTargetIntensionally(IN PHUSV hunter[huntersNum], IN PTUSV target)
-{
-	double minDistance = 9999999.0;
-	size_t global_j = 0;
-	//选择最近的捕食者：
-	fors(
-		huntersNum,
-		if (hunter[j]->evaluationIndicator.idealDistanceDiffer < minDistance)
-		{
-			minDistance = hunter[j]->evaluationIndicator.idealDistanceDiffer;
-			global_j = j;
-		}
-	);
-	//确定最近的捕食者的移动方向，直接向目标移动：
-	V closestHunterMovingDirection = { 0 };
-	closestHunterMovingDirection.a = target->pos.x - hunter[global_j]->pos.x;
-	closestHunterMovingDirection.b = target->pos.y - hunter[global_j]->pos.y;
-	//确定最终的移动角度：
-	double ultimateMovingAngle = calculate_OX$V_unsignedAngle(&closestHunterMovingDirection);
-	//移动最近的捕食者，直接向目标移动：
-	updateHunterPosByMovingDistanceAndUnsignedAngle(&hunter[global_j], Rh, ultimateMovingAngle);
-	//调试信息打印：
-	ckFloatValue(calculate_P$P_distance(hunter[global_j]->pos, target->pos));
-
-	return;
-}
-//TestRoutine: all hunters go towards target directly.
-void testRoutine(IN PHUSV hunter[huntersNum], IN PTUSV target)
+//Hunters Hunting Method Simulation Functions:
+void _HUNTER_goTowardsTargetDirectly(IN PHUSV hunter[huntersNum], IN PTUSV target)
 {
 	V direction[huntersNum] = { {0} };
 	fors(
@@ -554,85 +529,98 @@ void testRoutine(IN PHUSV hunter[huntersNum], IN PTUSV target)
 	return;
 }
 //Target Escaping Simulation Functions:
-double getEscapingAngleByVectorMethod(IN PHUSV hunter[huntersNum], IN PTUSV target)
+void _TARGET_escapingAngleByVectorMethod(IN PHUSV hunter[huntersNum], IN PTUSV* target)
 {
-	//进入了目标危险半径内的捕食者个数：
-	size_t huntersInDangerousRadius = 0;
-	//进入了目标危险半径内捕食者的指标数组：若第j个捕食者进入了危险半径内则其对应的index为1，否则为0：
-	int huntersInDangerousFlagIndex[huntersNum] = { 0 };
-	//确定进入了目标危险半径内的捕食者个数和指标数组：
+	//记录每一个目标-捕食者分支向量：
+	V movingVectorEachDirection[huntersNum] = { {0} };
+	//记录最终要移动的方向：
+	V ultimateMovingDirection = { 0 };
+	//【静态变量】：记录【上一次】移动的方向角度：
+	//只要曾经触发过快速逃逸，那么记忆上一次的逃逸角度；
+	//如果还没挣脱开包围，那么更新此记忆；
+	//如果挣脱了包围（所有isInsightByTarget都是零），那么此值为上一次记忆的角度：
+	static double ultimateMovingAngle = 0.0;
+	//【静态变量】：记录是否被捕食者惊动【过】：
+	//只要曾经有一个捕食者惊动过目标，此值在以后就恒为1.
+	static BOOLEAN isAlreadyAlerted = 0;
+	//零初始化
 	fors(
 		huntersNum,
-		if (calculate_P$P_distance(hunter[j]->pos, target->pos) < target->alertingRadius)
+		movingVectorEachDirection[j].a = 0.0;
+		movingVectorEachDirection[j].b = 0.0;
+	);
+	//底层层面：记录movingVectorEachDirection是否全为0, 在后面用strncmp验证这个指标来看是否触发了向量逃逸：
+	PVOID temp = malloc(huntersNum * sizeof(V));
+	memcpy(temp, movingVectorEachDirection, huntersNum * sizeof(V));
+	//循环判断各个捕食者和目标的距离：
+	fors(
+		huntersNum,
+		if (calculate_P$P_distance(hunter[j]->pos, (*target)->pos) < (*target)->alertingRadius)
 		{
-			huntersInDangerousRadius++;
-			huntersInDangerousFlagIndex[j]++;
+			//如果某个捕食者进入了目标的警戒距离，那么把捕食者标志位置1；
+			hunter[j]->isInsightByTarget = 1;
+			//并且把【静态变量】isAlreadyAlerted【永远地】置为1，表达目标已经收到惊动，往后永远以高速行动.
+			isAlreadyAlerted = 1;			
+		}
+		else
+		{
+			hunter[j]->isInsightByTarget = 0;
 		}
 	);
-	//分配内存，仅在危险半径内的目标-捕食者向量才会被计算：
-	PV dangerousVector = (PV)malloc(huntersInDangerousRadius * sizeof(V));
-	//零初始化：
-	RtlZeroMemory(dangerousVector, huntersInDangerousRadius * sizeof(V));
-	//由于使用了FLAG_ARRAY-VALID_COUNT范式，用自增index方法对malloc的内存进行顺序分配：
-	size_t index = 0;
-	//如果分配成功（几乎100%）
-	if (dangerousVector)
+	if (!isAlreadyAlerted)
 	{
-		for (size_t j = 0; j < huntersNum; j++)
-		{
-			if (huntersInDangerousFlagIndex[j] == 1)
+		//如果没有受惊，那么无事发生，随便溜达：
+		movingNormalTargetRandomly(target);
+	}
+	else
+	{
+		//此时受惊了，目标将会恒定以高速移动：
+		fors(
+			huntersNum,
+			if (hunter[j]->isInsightByTarget == 1)
 			{
-				//如果第j个捕食者处于危险半径内，那么赋值由malloc分配的向量：
-				dangerousVector[index].a = target->pos.x - hunter[j]->pos.x;
-				dangerousVector[index].b = target->pos.y - hunter[j]->pos.y;
-				//自增index来循环
-				index++;
-				//防止溢出：
-				if (index > huntersInDangerousRadius)
-				{
-					break;
-				}
+				//只记录那些在受惊距离内的捕食者的向量，因为不在受惊距离内目标探测不到捕食者：
+				movingVectorEachDirection[j].a = (*target)->pos.x - hunter[j]->pos.x;
+				movingVectorEachDirection[j].b = (*target)->pos.y - hunter[j]->pos.y;
 			}
+		);
+		if (strncmp((CONST CHAR*)temp, (CONST CHAR*)movingVectorEachDirection, huntersNum * sizeof(V)) != 0)
+		{
+			//字节比较，如果某一个向量非零，那么触发了向量逃逸方法，记录最终移动的方向和角度：
+			fors(
+				huntersNum,
+				ultimateMovingDirection.a += movingVectorEachDirection[j].a;
+				ultimateMovingDirection.b += movingVectorEachDirection[j].b;
+			);
+			//确定最终逃逸角度：
+			ultimateMovingAngle = calculate_OX$V_unsignedAngle(&ultimateMovingDirection);
+			updateTargetPosByMovingDistanceAndUnsignedAngle(target, RtE, ultimateMovingAngle);
+			
+		}
+		else
+		{
+			//如果目标高速逃逸后远远甩开了捕食者，那么由于已经受惊，则：
+			//1. 目标速度保持为高速；
+			//2. 按照上次记忆的方向移动：
+			updateTargetPosByMovingDistanceAndUnsignedAngle(target, RtE, ultimateMovingAngle);
+			//printf("围捕失败!\n");
+			
 		}
 	}
-	//计算最终的方向：
-	V ultimateVector = { 0 };
-	mergeVector(dangerousVector, huntersInDangerousRadius, &ultimateVector);
-	//确定最终移动角度
-	double ultimateMovingAngle = calculate_OX$V_unsignedAngle(&ultimateVector);
-	//释放malloc内存：
-	free(dangerousVector);
-	dangerousVector = NULL;
-	return ultimateMovingAngle;
+	//释放内存，清理悬挂指针：
+	free(temp);
+	temp = NULL;
+	//返回
+	return;
 }
-BOOLEAN isRecyclingSuccess(PHUSV hunter[huntersNum], PTUSV target)
+void _TARGET_escapingAngleByLearningMethod(IN PHUSV hunter[huntersNum], IN PTUSV* target)
 {
-	double d[huntersNum] = { 0 };
-	double a[huntersNum] = { 0 };
-	for (size_t j = 0; j < huntersNum; j++)
-	{
-		d[j] = hunter[j]->evaluationIndicator.idealDistanceDiffer;
-		a[j] = hunter[j]->evaluationIndicator.idealAngleDiffer;
-	}
-	for (size_t j = 0; j < huntersNum; j++)
-	{
-		if (d[j] <= 0 || d[j] >= 3)
-		{
-			return 0;
-		}
-		if (mabs(a[j]) >= 2)
-		{
-			return 0;
-		}
-	}
-
-	return 1;
-
+	
 }
 //C-Python Interaction Functions:
-void makePythonFile(FILE* fp, PHUSV hunter[3], PTUSV target) 
+void makePythonFile(IN FILE* fp, IN PHUSV hunter[3], IN PTUSV target) 
 {
-	Point h[3] = { {0} };
+	Point h[huntersNum] = { {0} };
 
 	for (int j = 0; j < huntersNum; j++)
 	{
@@ -651,7 +639,7 @@ void makePythonFile(FILE* fp, PHUSV hunter[3], PTUSV target)
 		return;
 	}
 
-	for (int i = 0; i < 3; i++) 
+	for (int i = 0; i < huntersNum; i++)
 	{
 		fprintf(fp, "hunter %d: x = %.3f, hunter %d: y = %.3f\n", i, h[i].x, i, h[i].y);
 	}
