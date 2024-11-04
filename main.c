@@ -6,12 +6,31 @@ int main()
 	FILE* fp = fopen("output.txt", "w");
 	PTUSV target = NULL;
 	//如果更改目标的坐标，请注意捕食者的链表链接顺序.
-	Point targetPos = { -16, 9 };
+	Point targetPos = { 16 - rand() % 4, 9 - rand() % 4 }; // - rand() % 4
 	PHUSV hunter[huntersNum] = { NULL };
 	//从目标坐标的右侧射线方向逆时针旋转，第一个碰到的捕食者为链表头，最后一个碰到的为链表尾.
-	Point hunterPos[huntersNum] = { {7, 18},{-7, 20}, { 3, 2 } };//, { 1, 8 }, { 8, 8.5 }
-
-	double hunterHeadDirection[huntersNum] = { 30, 45, 60 };//, 75, 90 };
+	//一定一定要保证链表顺序！只要围捕的时候撞上绝对是链表顺序问题！！！
+	Point hunterPos[huntersNum] = { {0, 0} };
+	double beginAngle = 110.0;
+	double beginRadius = 2.0 * targetSafetyRadius;
+	for (size_t j = 0; j < huntersNum; j++)
+	{
+		hunterPos[j].x = targetPos.x + beginRadius * cosa(beginAngle + 14.0 * (double)j);
+		hunterPos[j].y = targetPos.y + beginRadius * sina(beginAngle + 14.0 * (double)j);
+	}
+	/*double Xx = targetPos.x + beginRadius;
+	double Yy = targetPos.y;
+	hunterPos[0].x = Xx;
+	hunterPos[0].y = Yy + 6;
+	hunterPos[1].x = Xx;
+	hunterPos[1].y = Yy + 12;
+	hunterPos[2].x = Xx;
+	hunterPos[2].y = Yy - 12;
+	hunterPos[3].x = Xx;
+	hunterPos[3].y = Yy - 6;*/
+	UCHAR typeHuntingCase = 0;
+	UCHAR typeEscapingCase = 1;
+	double hunterHeadDirection[huntersNum] = { 0.0 };
 	initializeTargetUSV(
 		&target,
 		targetPos,
@@ -29,22 +48,22 @@ int main()
 			hunterPos[j],
 			huntersVelocity,
 			huntersMovableAngleRange,
-			hunterHeadDirection[j]
+			hunterHeadDirection[j],
+			j
 		);
 	);
-	buildCycleList(hunter); //补全了hunter结构的LIST_ENTRY项
+	buildCycleListByHuntersOriginalIndex(hunter); //补全了hunter结构的LIST_ENTRY项
 	fors(
 		huntersNum,
-		_SURROUNDING_getHuntersFourEIByHuntersLocAndHeadDirection(hunter[j], target); //补全了hunter结构的EI项
+		_SURROUNDING_getHuntersFourEIByHuntersLocAndHeadDirection(&hunter[j], target); //补全了hunter结构的EI项
 		_SURROUNDING_getRewardPointsForHunterByHuntersEI(hunter[j]);
 		QAQ;
 	);
 
 	size_t surroundingAttempCount = 0x0;
 
-	while (1)
+	while (surroundingAttempCount < 200)
 	{
-		//由于捕食者速度在目标未发现之前快于目标，所以合围100%能实现.
 		if (!isSurroundingSuccess(hunter, target)) //!isSurroundingSuccess(hunter, target)
 		{
 			//如果出现三个捕食者都不动弹，那么：
@@ -57,6 +76,7 @@ int main()
 				huntersNum,
 				_SURROUNDING_changingHunterInfomationByRewardFunction(&hunter[j], target);
 			);
+			//_SURROUNDING_remakeHuntersCycleListByRelativeLocCompareToTarget(&hunter, target);
 			//注意printf必须在这里打印才能确保距离大于safetyRadius + mostSafetyRadius！
 			//只有在调整完位置后，距离条件大于safetyRadius + mostSafetyRadius才能满足；
 			//否则打印的是前一次的位置信息，造成了视觉上错误，但本质上是对的。
@@ -66,10 +86,14 @@ int main()
 				printf("[当前距离信息] %zu -> %lf\n", j, calculate_P$P_distance(hunter[j]->pos, target->pos));
 			);
 			//printf也不能放在movingNormalTargetRandomly之下，原因同上。
-			movingNormalTargetRandomly(&target);
+			movingNormalTargetStably(&target);
 			makePythonFile(fp, hunter, target);
 			QAQ;
 			surroundingAttempCount++;
+			if (surroundingAttempCount == 100)
+			{
+				system("pause");
+			}
 			continue;
 		}
 		else
@@ -82,9 +106,9 @@ int main()
 		}
 	}
 	//合围已经成功，现在开始进行回收过程.
+	system("pause");
 	//从现在开始根据猎人和目标的行为策略进行模拟追捕过程：
-	UCHAR typeHuntingCase = 0;
-	UCHAR typeEscapingCase = 0;
+	
 	if(typeHuntingCase == 0 && typeEscapingCase == 0)
 	{
 		/*
@@ -95,19 +119,34 @@ int main()
 				仿真测试结果：失败
 				是否符合预期：是
 		*/
-		size_t testRoutine_type1_totalSteps = 50;
-		while (testRoutine_type1_totalSteps--)
+		size_t testRoutine_type1_totalSteps = 0;
+		while (!isRecyclingSuccess(hunter, target))
 		{
-			_HUNTER_goTowardsTargetDirectly(hunter, target);
-			printf("测试例程:1 --- 当前模拟次数: %zu", testRoutine_type1_totalSteps);
+			fors(
+				huntersNum,
+				_HUNTER_goTowardsTargetDirectly(&hunter[j], target);
+			);
+			printf("测试例程:1 --- 当前模拟次数: %zu\n", ++testRoutine_type1_totalSteps);
 			fors(
 				huntersNum,
 				printf("[距离信息] hunter[%zu] <-> target: %lf\n", j, calculate_P$P_distance(hunter[j]->pos, target->pos));
 			);
 			_TARGET_escapingAngleByVectorMethod(hunter, &target);
-			
-			
 			makePythonFile(fp, hunter, target);
+			if (isTerminatingRecycling(hunter, target))
+			{
+				printf("合围失败!\n");
+				break;
+			}
+			if (testRoutine_type1_totalSteps >= 20)
+			{
+				break;
+			}
+			else
+			{
+				continue;
+			}
+			
 		}
 	}
 	else if(typeHuntingCase == 0 && typeEscapingCase == 1)
@@ -120,17 +159,29 @@ int main()
 				仿真测试结果：失败
 				是否符合预期：是
 		*/
-		size_t testRoutine_type2_totalSteps = 200;
-		while (testRoutine_type2_totalSteps--)
+		size_t testRoutine_type2_totalSteps = 0;
+		while (!isRecyclingSuccess(hunter, target))
 		{
-			_HUNTER_goTowardsTargetDirectly(hunter, target);
-			//_TARGET_escapingAngleByLearningMethod(hunter, &target);
-			printf("测试例程:1 --- 当前模拟次数: %zu", testRoutine_type2_totalSteps);
+			fors(
+				huntersNum,
+				_HUNTER_goTowardsTargetDirectly(&hunter[j], target);
+			);
+			printf("测试例程:2 --- 当前模拟次数: %zu\n", ++testRoutine_type2_totalSteps);
 			fors(
 				huntersNum,
 				printf("[距离信息] hunter[%zu] <-> target: %lf\n", j, calculate_P$P_distance(hunter[j]->pos, target->pos));
 			);
+			_TARGET_escapingAngleByLearningMethod(hunter, &target);
 			makePythonFile(fp, hunter, target);
+			if (isTerminatingRecycling(hunter, target))
+			{
+				printf("合围失败!\n");
+				break;
+			}
+			if (testRoutine_type2_totalSteps >= 20)
+			{
+				break;
+			}
 		}
 	}
 	else if (typeHuntingCase == 1 && typeEscapingCase == 0)
@@ -186,8 +237,8 @@ int main()
 		fors(
 			huntersNum,
 			free(hunter[j]);
-		hunter[j] = NULL;
-			);
+			hunter[j] = NULL;
+		);
 		free(target);
 		target = NULL;
 		fclose(fp);
@@ -203,5 +254,5 @@ int main()
 	free(target);
 	target = NULL;
 	fclose(fp);
-	return 0;
+	return 0xFF;
 }
