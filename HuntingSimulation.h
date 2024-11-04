@@ -21,14 +21,13 @@
 #endif //means out ptr is created by MALLOC.
 
 #define fors(times, sentence) \
-QAQ;\
 do\
 {\
 	for(size_t j = 0; j < times; j++) \
 	{\
 		sentence\
 	}\
-}while (0); QAQ
+}while (0); 
 
 #define ckFloatValue(sentence) \
 do\
@@ -59,9 +58,9 @@ do\
 #define targetSafetyRadius 8
 #define targetMovableAngleRange 60
 
-#define huntersNum 3
-#define huntersVelocity 2
-#define huntersSafetyRadius 6
+#define huntersNum 5
+#define huntersVelocity (0.6 * pi * targetNormalVelocity * samplingTimeGap)
+#define huntersSafetyRadius 8
 #define huntersRecycleRadius 2
 #define huntersMovableAngleRange 80
 
@@ -69,19 +68,21 @@ do\
 #define SEMI_SURROUNDING_ANGLE_MAX 140
 
 #define RtN (targetNormalVelocity * samplingTimeGap)
-#define RtE (targetEscapingVelocity * samplingTimeGap)
+#define RtE (1.5 * huntersVelocity)
 #define Rh (huntersVelocity * samplingTimeGap)
 
 #define w_hidden 0
 #define w_headDirectionDiffer 0.1
-#define w_idealAngleDiffer 12
+#define w_idealAngleDiffer 11
 #define w_distanceDiffer 3
 
 #define huntersRecyclingRadius 3
 #define targetHarmingRadius 2
 
 #define targetEscapingWeights_angle 5
-#define targetEscapingWeights_distance 5
+#define targetEscapingWeights_distance 20
+
+#define STACK_MAX_SIZE 600
 
 typedef struct _evaluationIndicators
 {
@@ -114,6 +115,8 @@ typedef struct _targetUSV
 typedef struct _huntingUSV
 {
 	Point pos;
+	size_t originalIndex;
+	size_t currentIndex;
 	double velocity;
 	double movableAngleRange;
 	double headDirection;
@@ -123,8 +126,8 @@ typedef struct _huntingUSV
 }HUSV, * PHUSV, ** PPHUSV; //后置定义在第一次初始化时没有特定值，需要在后续的功能函数单独赋值。
 //Initializing Functions:
 void initializeTargetUSV(OUTPTR PTUSV* Tusv, IN Point position, IN double normalVelocity, IN double escapingVelocity, IN double alertingRadius, IN double Sradius, IN double movableAngleRange, IN double headDirection);
-void initializeHunterUsv(OUTPTR PHUSV* Husv, IN Point position, IN double velocity, IN double movableAngleRange, IN double headDirection);
-void buildCycleList(IN_OUT PHUSV* hunter);
+void initializeHunterUsv(OUTPTR PHUSV* Husv, IN Point position, IN double velocity, IN double movableAngleRange, IN double headDirection, IN size_t originalIndex);
+void buildCycleListByHuntersOriginalIndex(IN_OUT PHUSV* hunter);
 void showTarget(IN PTUSV target);
 void showHunter(IN PHUSV hunter);
 void checkHuntersCycleListF(IN PPHUSV hunter);
@@ -138,6 +141,8 @@ double mmin(IN double x, IN double y);
 double mmax(IN double x, IN double y);
 double cosa(IN double x);
 double sina(IN double x);
+double closeBetter(IN double indicator, IN double numberCloseTo);
+void sortArray(IN double* array, IN size_t size);
 BOOL floatSame10(IN double x, IN double y);
 BOOL floatSame100(IN double x, IN double y);
 BOOL floatSame1000(IN double x, IN double y);
@@ -162,19 +167,25 @@ void updateHunterPosByNewPoint(IN_OUT PHUSV* hunter, IN Point newPoint);
 void updateTargetPosByMovingDistanceAndUnsignedAngle(IN_OUT PTUSV* target, IN double movingDistance, IN double angle);
 void updateHunterPosByMovingDistanceAndUnsignedAngle(IN_OUT PHUSV* hunter, IN double movingDistance, IN double angle);
 void movingNormalTargetRandomly(OUT PTUSV* target);
+void movingNormalTargetStably(OUT PTUSV* target);
 //Geometry Functions:
 void getTwoCuttingPointOnCircle(IN Point center, IN double radius, IN Point externals, OUT Point* res1, OUT Point* res2);
 BOOL checkPointIsSafe(IN Point loc, IN PTUSV target);
 //Surroundding Simulation Functions:
-void _SURROUNDING_getHuntersFourEIByHuntersLocAndHeadDirection(IN PHUSV hunter, IN PTUSV target);
+void _SURROUNDING_getHuntersFourEIByHuntersLocAndHeadDirection(IN_OUT PHUSV* hunter, IN PTUSV target);
 double _SURROUNDING_getRewardPointsForHunterByHuntersEI(IN PHUSV hunter);
 void _SURROUNDING_changingHunterInfomationByRewardFunction(IN_OUT PHUSV* hunter, IN PTUSV target);
+void _SURROUNDING_remakeHuntersCycleListByRelativeLocCompareToTarget(IN_OUT PHUSV (*hunter)[huntersNum], IN PTUSV target);
 BOOLEAN isSurroundingSuccess(IN PHUSV hunter[huntersNum], IN PTUSV target);
 //Hunters Hunting Method Simulation Functions:
-void _HUNTER_goTowardsTargetDirectly(IN PHUSV hunter[huntersNum], IN PTUSV target);
+void _HUNTER_goTowardsTargetDirectly(IN_OUT PHUSV* hunter, IN PTUSV target);
 //Target Escaping Simulation Functions:
 void _TARGET_escapingAngleByVectorMethod(IN PHUSV hunter[huntersNum], IN PTUSV* target);
+void _TARGET_escapingAngleByLearningMethod(IN PHUSV hunter[huntersNum], IN PTUSV* target);
+//Recycling Outcomes Judge Functions:
+BOOLEAN isRecyclingSuccess(IN PHUSV hunter[huntersNum], IN PTUSV target);
+BOOLEAN isTerminatingRecycling(IN PHUSV hunter[huntersNum], IN PTUSV target);
 //void _TARGET_escapingAngleByLearningMethod(IN PHUSV hunter[huntersNum], IN PTUSV* target);
 //C-Python Interaction Functions:
-void makePythonFile(IN FILE* fp, IN PHUSV hunter[3], IN PTUSV target);
+void makePythonFile(IN FILE* fp, IN PHUSV hunter[huntersNum], IN PTUSV target);
 #endif
