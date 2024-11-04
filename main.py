@@ -6,8 +6,12 @@ import matplotlib.cm as cm
 file_path = r"E:\VS SOLUTIONS\mathworks\mathworks\output.txt"
 
 # Number of hunters
-huntersNum = 3
+huntersNum = 5
 gap = 500
+x_min = -50 * 3
+y_min = -50 * 3
+x_max = 50 * 3
+y_max = 50 * 3
 # Function to read data from file
 def read_data(file_path):
     with open(file_path, 'r') as f:
@@ -51,8 +55,8 @@ hunter_positions, target_positions = read_data(file_path)
 
 # Create figure
 fig, ax = plt.subplots()
-ax.set_xlim(-400, 200)  # Adjusted as needed
-ax.set_ylim(-600, 216)
+ax.set_xlim(x_min, x_max)  # Adjusted as needed
+ax.set_ylim(y_min, y_max)
 
 # Ensure equal aspect ratio
 ax.set_aspect('equal', adjustable='box')
