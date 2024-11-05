@@ -7,11 +7,12 @@ int main()
 	PTUSV target = NULL;
 	//如果更改目标的坐标，请注意捕食者的链表链接顺序.
 	Point targetPos = { 16 - rand() % 4, 9 - rand() % 4 }; // - rand() % 4
+	ckFloatValue(targetPos.x); ckFloatValue(targetPos.y);
 	PHUSV hunter[huntersNum] = { NULL };
 	//从目标坐标的右侧射线方向逆时针旋转，第一个碰到的捕食者为链表头，最后一个碰到的为链表尾.
 	//一定一定要保证链表顺序！只要围捕的时候撞上绝对是链表顺序问题！！！
 	Point hunterPos[huntersNum] = { {0, 0} };
-	double beginAngle = 110.0;
+	double beginAngle = 160.0;
 	double beginRadius = 2.0 * targetSafetyRadius;
 	for (size_t j = 0; j < huntersNum; j++)
 	{
