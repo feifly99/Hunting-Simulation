@@ -451,11 +451,15 @@ double _SURROUNDING_getRewardPointsForHunterByHuntersEI(IN PHUSV hunter)
 }
 void _SURROUNDING_changingHunterInfomationByRewardFunction(IN_OUT PHUSV* hunter, IN PTUSV target)
 {
+	//B = Blink, F = Flink, T = target, Next = nextHunterIdealInfo || nextHunterIdealLoc
+	//定义当前捕食者最大移动的角度，不能越过链表顺序(∠B_T_F)：
 	double currentHunterValidRegionAngle = calculate_P$P$P_unsignedAngle(CONTAINING_RECORD((*hunter)->hunterListEntry.Blink, HUSV, hunterListEntry)->pos, target->pos, CONTAINING_RECORD((*hunter)->hunterListEntry.Flink, HUSV, hunterListEntry)->pos);
+	//当前捕食者的下一个位置参数：
 	Point nextHunterIdealLoc = { 0 };
 	PHUSV nextHunterIdealInfo = NULL;
 	nextHunterIdealInfo = (PHUSV)malloc(sizeof(HUSV));
 	memcpy(nextHunterIdealInfo, *hunter, sizeof(HUSV));
+	//重复刷新的最大捕食者评分分数：
 	double newMaxRewardPoints = -9999.0;
 	typedef struct _globalIndex
 	{
@@ -468,10 +472,14 @@ void _SURROUNDING_changingHunterInfomationByRewardFunction(IN_OUT PHUSV* hunter,
 		PGI stackTopPointer;
 		PGI stackButtomPointer;
 	}GIS, *PGIS;
+	//优先栈：评分最大的位置在栈顶，最大评分不符合条件出栈即可：
 	PGIS stack = (PGIS)malloc(sizeof(GIS));
 	stack->globalIndex = (GI*)malloc(STACK_MAX_SIZE * sizeof(GI));
 	stack->stackTopPointer = stack->globalIndex;
 	stack->stackButtomPointer = stack->globalIndex;
+	//填充优先栈：
+	//遍历当前捕猎者的下一个所有可能位置依次评分；
+	//每刷新一次最大值就把此时刻的位置入栈.
 	for (int j = 0; j < 180; j++)
 	{
 		for (int i = 0; i <= 20; i++) //注意i从0开始，可能保持不动
@@ -488,15 +496,21 @@ void _SURROUNDING_changingHunterInfomationByRewardFunction(IN_OUT PHUSV* hunter,
 			}
 		}
 	}
+	//保存和当前捕食者为邻居的船间距离：
 	double neighborDistanceDifferOfNextLoc[2] = { 0.0 };
+	//定义的安全距离。如果下一个位置距离某个邻居小于此界限，那么视为不合适：
 	double huntersSafetyNeighborDistance = 1.1 * Rh;
+	//由于填充栈后的最后一次操作是stack->stackTopPointer++，所以用栈之前要把指针下移一次：
 	stack->stackTopPointer--;
+	//遍历栈
 	while(stack->stackTopPointer != stack->stackButtomPointer)
 	{
+		//循环计算当前捕食者的下一个位置：
 		nextHunterIdealLoc.x = (*hunter)->pos.x + ((double)(stack->stackTopPointer->i) * ((double)huntersVelocity / (double)20.0)) * cosa((double)(stack->stackTopPointer->j * 2.0));
 		nextHunterIdealLoc.y = (*hunter)->pos.y + ((double)(stack->stackTopPointer->i) * ((double)huntersVelocity / (double)20.0)) * sina((double)(stack->stackTopPointer->j * 2.0));
 		nextHunterIdealInfo->pos.x = nextHunterIdealLoc.x;
 		nextHunterIdealInfo->pos.y = nextHunterIdealLoc.y;
+		//计算当前捕食者的下一个位置和邻居的距离：
 		neighborDistanceDifferOfNextLoc[0] = calculate_P$P_distance(CONTAINING_RECORD(nextHunterIdealInfo->hunterListEntry.Flink, HUSV, hunterListEntry)->pos, nextHunterIdealInfo->pos);
 		neighborDistanceDifferOfNextLoc[1] = calculate_P$P_distance(CONTAINING_RECORD(nextHunterIdealInfo->hunterListEntry.Blink, HUSV, hunterListEntry)->pos, nextHunterIdealInfo->pos);
 		if 
@@ -516,29 +530,39 @@ void _SURROUNDING_changingHunterInfomationByRewardFunction(IN_OUT PHUSV* hunter,
 			)
 		)
 		{
+			//如果下一个位置离邻居太近，或者越过了链表顺序（即：∠B_T_Next >= ∠B_T_F || ∠Next_T_F >= ∠B_T_F）
+			//那么退栈，选取次优位置：
 			stack->stackTopPointer--;
 			if (stack->stackTopPointer == stack->stackButtomPointer)
 			{
+				//如果到达栈底，那么保持不动：
 				printf("警告：最优全局i_j已经到达栈底.\n");
 				nextHunterIdealLoc.x = (*hunter)->pos.x;
 				nextHunterIdealLoc.y = (*hunter)->pos.y;
+				//system("pause");
 				break;
 			}
 			return;
 		}
 		else
 		{
+			//如果当前捕食者的下一个位置是合理的（不满足上面三个条件）
+			//那么退出，此时nextHunterIdealLoc保存的就是最合理的位置：
 			break;
 		}
 	}
+	//更新此捕食者的坐标：
 	updateHunterPosByNewPoint(hunter, nextHunterIdealLoc);
+	//调整此捕食者的EI指标。此函数会对hunter造成副作用：
 	_SURROUNDING_getHuntersFourEIByHuntersLocAndHeadDirection(hunter, target);
+	//释放内存：
 	free(stack->globalIndex);
 	stack->globalIndex = NULL;
 	free(stack);
 	stack = NULL;
 	free(nextHunterIdealInfo);
 	nextHunterIdealInfo = NULL;
+	//返回：
 	return;
 }
 void _SURROUNDING_remakeHuntersCycleListByRelativeLocCompareToTarget(IN_OUT PHUSV (*hunter)[huntersNum], IN PTUSV target)
