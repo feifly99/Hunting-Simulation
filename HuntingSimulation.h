@@ -49,17 +49,17 @@ do\
 
 #define bug(num) printf("%ld\n", num)
 
-#define samplingTimeGap 1 
 #define MaxRunningAngle 80
 
+#define reachIdealPointTime 15
 #define targetNormalVelocity 1.5
+#define targetSafetyRadius 30
 #define targetEscapingVelocity 3
 #define targetAlertingRadius 7
-#define targetSafetyRadius 8
 #define targetMovableAngleRange 60
 
 #define huntersNum 5
-#define huntersVelocity (0.6 * pi * targetNormalVelocity * samplingTimeGap)
+#define huntersVelocity (0.5 * pi * targetNormalVelocity + (targetSafetyRadius * pi) / reachIdealPointTime)
 #define huntersSafetyRadius 8
 #define huntersRecycleRadius 2
 #define huntersMovableAngleRange 80
@@ -67,13 +67,13 @@ do\
 #define SEMI_SURROUNDING_ANGLE_MIN 90
 #define SEMI_SURROUNDING_ANGLE_MAX 140
 
-#define RtN (targetNormalVelocity * samplingTimeGap)
+#define RtN (targetNormalVelocity)
 #define RtE (1.5 * huntersVelocity)
-#define Rh (huntersVelocity * samplingTimeGap)
+#define Rh (huntersVelocity)
 
 #define w_hidden 0
 #define w_headDirectionDiffer 0.1
-#define w_idealAngleDiffer 11
+#define w_idealAngleDiffer 14
 #define w_distanceDiffer 3
 
 #define huntersRecyclingRadius 3
