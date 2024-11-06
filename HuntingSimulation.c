@@ -477,6 +477,7 @@ void _SURROUNDING_changingHunterInfomationByRewardFunction(IN_OUT PHUSV* hunter,
 	stack->globalIndex = (GI*)malloc(STACK_MAX_SIZE * sizeof(GI));
 	stack->stackTopPointer = stack->globalIndex;
 	stack->stackButtomPointer = stack->globalIndex;
+	RtlZeroMemory(stack->globalIndex, STACK_MAX_SIZE * sizeof(GI));
 	//填充优先栈：
 	//遍历当前捕猎者的下一个所有可能位置依次评分；
 	//每刷新一次最大值就把此时刻的位置入栈.
@@ -490,9 +491,9 @@ void _SURROUNDING_changingHunterInfomationByRewardFunction(IN_OUT PHUSV* hunter,
 			if (_SURROUNDING_getRewardPointsForHunterByHuntersEI(nextHunterIdealInfo) > newMaxRewardPoints)
 			{
 				newMaxRewardPoints = _SURROUNDING_getRewardPointsForHunterByHuntersEI(nextHunterIdealInfo);
-				stack->stackTopPointer->i = i;
-				stack->stackTopPointer->j = j;
 				stack->stackTopPointer++;
+				stack->stackTopPointer->i = i;
+				stack->stackTopPointer->j = j;				
 			}
 		}
 	}
@@ -500,8 +501,6 @@ void _SURROUNDING_changingHunterInfomationByRewardFunction(IN_OUT PHUSV* hunter,
 	double neighborDistanceDifferOfNextLoc[2] = { 0.0 };
 	//定义的安全距离。如果下一个位置距离某个邻居小于此界限，那么视为不合适：
 	double huntersSafetyNeighborDistance = 1.1 * Rh;
-	//由于填充栈后的最后一次操作是stack->stackTopPointer++，所以用栈之前要把指针下移一次：
-	stack->stackTopPointer--;
 	//遍历栈
 	while(stack->stackTopPointer != stack->stackButtomPointer)
 	{
