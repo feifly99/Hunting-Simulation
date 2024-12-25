@@ -1,605 +1,1078 @@
-hunter 0: x = 8.575, hunter 0: y = 16.938
-hunter 1: x = 4.762, hunter 1: y = 2.712
-hunter 2: x = 2.899, hunter 2: y = 8.066
-target: x = 21.492, target: y = 8.536
-QAQ
-hunter 0: x = 10.186, hunter 0: y = 15.931
-hunter 1: x = 6.569, hunter 1: y = 3.299
-hunter 2: x = 4.798, hunter 2: y = 8.133
-target: x = 22.883, target: y = 8.073
-QAQ
-hunter 0: x = 11.798, hunter 0: y = 14.924
-hunter 1: x = 8.395, hunter 1: y = 3.823
-hunter 2: x = 6.698, hunter 2: y = 8.133
-target: x = 24.324, target: y = 7.129
-QAQ
-hunter 0: x = 13.409, hunter 0: y = 13.917
-hunter 1: x = 10.254, hunter 1: y = 4.218
-hunter 2: x = 8.593, hunter 2: y = 8.000
-target: x = 25.802, target: y = 6.641
-QAQ
-hunter 0: x = 15.054, hunter 0: y = 12.967
-hunter 1: x = 12.135, hunter 1: y = 4.482
-hunter 2: x = 10.488, hunter 2: y = 7.868
-target: x = 27.279, target: y = 5.355
-QAQ
-hunter 0: x = 16.666, hunter 0: y = 11.960
-hunter 1: x = 14.030, hunter 1: y = 4.615
-hunter 2: x = 12.370, hunter 2: y = 7.603
-target: x = 27.279, target: y = 5.355
-QAQ
-hunter 0: x = 17.866, hunter 0: y = 11.960
-hunter 1: x = 15.821, hunter 1: y = 4.426
-hunter 2: x = 14.251, hunter 2: y = 7.339
-target: x = 28.768, target: y = 4.069
-QAQ
-hunter 0: x = 19.403, hunter 0: y = 10.843
-hunter 1: x = 17.288, hunter 1: y = 4.738
-hunter 2: x = 16.110, hunter 2: y = 6.944
-target: x = 29.670, target: y = 2.651
-QAQ
-hunter 0: x = 20.956, hunter 0: y = 10.152
-hunter 1: x = 18.189, hunter 1: y = 3.297
-hunter 2: x = 17.917, hunter 2: y = 6.357
-target: x = 29.670, target: y = 2.651
-QAQ
-hunter 0: x = 21.357, hunter 0: y = 10.598
-hunter 1: x = 18.171, hunter 1: y = 2.797
-hunter 2: x = 19.219, hunter 2: y = 7.449
-target: x = 31.041, target: y = 1.174
-QAQ
-hunter 0: x = 22.724, hunter 0: y = 9.278
-hunter 1: x = 19.550, hunter 1: y = 1.640
-hunter 2: x = 20.794, hunter 2: y = 6.387
-target: x = 31.041, target: y = 1.174
-QAQ
-hunter 0: x = 22.689, hunter 0: y = 9.081
-hunter 1: x = 19.547, hunter 1: y = 1.540
-hunter 2: x = 20.575, hunter 2: y = 5.937
-target: x = 32.459, target: y = 0.379
-QAQ
-hunter 0: x = 24.016, hunter 0: y = 8.186
-hunter 1: x = 20.959, hunter 1: y = 0.269
-hunter 2: x = 21.839, hunter 2: y = 4.800
-target: x = 32.459, target: y = 0.379
-QAQ
-hunter 0: x = 24.951, hunter 0: y = 9.089
-hunter 1: x = 20.993, hunter 1: y = 1.268
-hunter 2: x = 21.282, hunter 2: y = 3.088
-target: x = 33.893, target: y = -1.094
-QAQ
-hunter 0: x = 26.222, hunter 0: y = 7.677
-hunter 1: x = 22.449, hunter 1: y = 0.047
-hunter 2: x = 23.043, hunter 2: y = 2.714
-target: x = 35.361, target: y = -0.556
-QAQ
-hunter 0: x = 27.419, hunter 0: y = 7.761
-hunter 1: x = 23.862, hunter 1: y = -0.704
-hunter 2: x = 23.997, hunter 2: y = 1.187
-target: x = 36.604, target: y = -0.399
-QAQ
-hunter 0: x = 27.912, hunter 0: y = 7.131
-hunter 1: x = 25.123, hunter 1: y = -1.019
-hunter 2: x = 25.129, hunter 2: y = 0.364
-target: x = 38.104, target: y = -1.565
-QAQ
-hunter 0: x = 29.409, hunter 0: y = 5.961
-hunter 1: x = 26.620, hunter 1: y = -2.189
-hunter 2: x = 26.627, hunter 2: y = -0.805
-target: x = 38.104, target: y = -1.565
-QAQ
-hunter 0: x = 30.312, hunter 0: y = 6.896
-hunter 1: x = 26.620, hunter 1: y = -0.789
-hunter 2: x = 26.623, hunter 2: y = -0.905
-target: x = 39.146, target: y = -3.042
-QAQ
-hunter 0: x = 31.420, hunter 0: y = 5.478
-hunter 1: x = 27.908, hunter 1: y = -0.608
-hunter 2: x = 27.670, hunter 2: y = -2.245
-target: x = 40.483, target: y = -3.277
-QAQ
-hunter 0: x = 32.212, hunter 0: y = 4.713
-hunter 1: x = 29.375, hunter 1: y = -0.296
-hunter 2: x = 28.990, hunter 2: y = -3.612
-target: x = 41.883, target: y = -3.614
-QAQ
-hunter 0: x = 33.689, hunter 0: y = 4.453
-hunter 1: x = 30.674, hunter 1: y = -1.046
-hunter 2: x = 30.382, hunter 2: y = -3.758
-target: x = 41.883, target: y = -3.614
-QAQ
-hunter 0: x = 34.729, hunter 0: y = 5.390
-hunter 1: x = 30.795, hunter 1: y = -0.561
-hunter 2: x = 30.385, hunter 2: y = -3.858
-target: x = 43.383, target: y = -3.277
-QAQ
-hunter 0: x = 36.197, hunter 0: y = 5.702
-hunter 1: x = 32.093, hunter 1: y = -1.085
-hunter 2: x = 31.886, hunter 2: y = -3.060
-target: x = 44.881, target: y = -4.027
-QAQ
-hunter 0: x = 37.523, hunter 0: y = 4.807
-hunter 1: x = 33.919, hunter 1: y = -0.561
-hunter 2: x = 33.384, hunter 2: y = -4.230
-target: x = 46.166, target: y = -5.408
-QAQ
-hunter 0: x = 38.935, hunter 0: y = 3.536
-hunter 1: x = 35.582, hunter 1: y = -0.915
-hunter 2: x = 34.876, hunter 2: y = -3.223
-target: x = 46.166, target: y = -5.408
-QAQ
-hunter 0: x = 39.171, hunter 0: y = 3.720
-hunter 1: x = 35.786, hunter 1: y = -0.458
-hunter 2: x = 34.807, hunter 2: y = -3.617
-target: x = 46.166, target: y = -5.408
-QAQ
-hunter 0: x = 40.332, hunter 0: y = 4.503
-hunter 1: x = 36.686, hunter 1: y = 1.101
-hunter 2: x = 34.807, hunter 2: y = -3.617
-target: x = 47.639, target: y = -6.289
-QAQ
-hunter 0: x = 41.774, hunter 0: y = 3.602
-hunter 1: x = 38.557, hunter 1: y = 0.771
-hunter 2: x = 36.497, hunter 2: y = -3.439
-target: x = 48.975, target: y = -7.503
-QAQ
-hunter 0: x = 43.111, hunter 0: y = 2.398
-hunter 1: x = 39.975, hunter 1: y = -0.337
-hunter 2: x = 37.835, hunter 2: y = -4.644
-target: x = 50.457, target: y = -7.763
-QAQ
-hunter 0: x = 44.001, hunter 0: y = 1.751
-hunter 1: x = 41.675, hunter 1: y = -0.337
-hunter 2: x = 39.137, hunter 2: y = -5.736
-target: x = 50.457, target: y = -7.763
-QAQ
-hunter 0: x = 45.474, hunter 0: y = 2.601
-hunter 1: x = 42.717, hunter 1: y = 0.742
-hunter 2: x = 39.120, hunter 2: y = -5.835
-target: x = 50.457, target: y = -7.763
-QAQ
-hunter 0: x = 46.864, hunter 0: y = 3.163
-hunter 1: x = 44.057, hunter 1: y = 1.788
-hunter 2: x = 39.120, hunter 2: y = -5.835
-target: x = 50.457, target: y = -7.763
-QAQ
-hunter 0: x = 47.633, hunter 0: y = 3.384
-hunter 1: x = 45.442, hunter 1: y = 2.588
-hunter 2: x = 39.120, hunter 2: y = -5.835
-target: x = 51.949, target: y = -7.275
-QAQ
-hunter 0: x = 47.726, hunter 0: y = 3.421
-hunter 1: x = 46.510, hunter 1: y = 2.854
-hunter 2: x = 40.623, hunter 2: y = -5.288
-target: x = 51.949, target: y = -7.275
-QAQ
-hunter 0: x = 49.058, hunter 0: y = 3.854
-hunter 1: x = 48.063, hunter 1: y = 3.546
-hunter 2: x = 40.456, hunter 2: y = -6.879
-target: x = 53.114, target: y = -7.979
-QAQ
-hunter 0: x = 50.406, hunter 0: y = 3.196
-hunter 1: x = 48.954, hunter 1: y = 2.743
-hunter 2: x = 41.735, hunter 2: y = -6.310
-target: x = 54.463, target: y = -8.541
-QAQ
-hunter 0: x = 51.554, hunter 0: y = 2.586
-hunter 1: x = 50.476, hunter 1: y = 2.248
-hunter 2: x = 43.220, hunter 2: y = -6.101
-target: x = 55.833, target: y = -9.799
-QAQ
-hunter 0: x = 51.365, hunter 0: y = 0.796
-hunter 1: x = 51.377, hunter 1: y = 0.807
-hunter 2: x = 45.011, hunter 2: y = -5.913
-target: x = 57.300, target: y = -11.071
-QAQ
-hunter 0: x = 52.423, hunter 0: y = -0.660
-hunter 1: x = 52.744, hunter 1: y = -0.513
-hunter 2: x = 46.892, hunter 2: y = -6.177
-target: x = 58.544, target: y = -12.383
-QAQ
-hunter 0: x = 53.879, hunter 0: y = -1.882
-hunter 1: x = 54.199, hunter 1: y = -1.734
-hunter 2: x = 48.393, hunter 2: y = -6.975
-target: x = 59.934, target: y = -13.480
-QAQ
-hunter 0: x = 55.335, hunter 0: y = -2.940
-hunter 1: x = 55.140, hunter 1: y = -3.029
-hunter 2: x = 50.275, hunter 2: y = -7.240
-target: x = 59.934, target: y = -13.480
-QAQ
-hunter 0: x = 55.891, hunter 0: y = -2.715
-hunter 1: x = 56.925, hunter 1: y = -2.379
-hunter 2: x = 50.116, hunter 2: y = -7.494
-target: x = 59.934, target: y = -13.480
-QAQ
-hunter 0: x = 56.938, hunter 0: y = -2.375
-hunter 1: x = 58.099, hunter 1: y = -2.130
-hunter 2: x = 50.116, hunter 2: y = -7.494
-target: x = 59.934, target: y = -13.480
-QAQ
-hunter 0: x = 58.111, hunter 0: y = -2.126
-hunter 1: x = 59.392, hunter 1: y = -1.994
-hunter 2: x = 50.116, hunter 2: y = -7.494
-target: x = 59.934, target: y = -13.480
-QAQ
-hunter 0: x = 59.404, hunter 0: y = -1.990
-hunter 1: x = 61.291, hunter 1: y = -2.060
-hunter 2: x = 50.116, hunter 2: y = -7.494
-target: x = 59.934, target: y = -13.480
-QAQ
-hunter 0: x = 61.303, hunter 0: y = -2.056
-hunter 1: x = 62.571, hunter 1: y = -2.286
-hunter 2: x = 50.116, hunter 2: y = -7.494
-target: x = 61.283, target: y = -14.828
-QAQ
-hunter 0: x = 62.508, hunter 0: y = -3.394
-hunter 1: x = 63.100, hunter 1: y = -3.473
-hunter 2: x = 51.482, hunter 2: y = -8.814
-target: x = 61.283, target: y = -14.828
-QAQ
-hunter 0: x = 63.300, hunter 0: y = -3.505
-hunter 1: x = 64.273, hunter 1: y = -3.723
-hunter 2: x = 51.429, hunter 2: y = -8.899
-target: x = 62.750, target: y = -14.881
-QAQ
-hunter 0: x = 64.400, hunter 0: y = -3.505
-hunter 1: x = 65.969, hunter 1: y = -3.841
-hunter 2: x = 52.366, hunter 2: y = -9.939
-target: x = 62.750, target: y = -14.881
-QAQ
-hunter 0: x = 66.063, hunter 0: y = -3.858
-hunter 1: x = 67.379, hunter 1: y = -4.354
-hunter 2: x = 52.122, hunter 2: y = -10.487
-target: x = 64.199, target: y = -15.115
-QAQ
-hunter 0: x = 67.638, hunter 0: y = -4.136
-hunter 1: x = 69.139, hunter 1: y = -4.729
-hunter 2: x = 53.718, hunter 2: y = -10.376
-target: x = 65.625, target: y = -16.604
-QAQ
-hunter 0: x = 67.075, hunter 0: y = -5.196
-hunter 1: x = 70.411, hunter 1: y = -6.141
-hunter 2: x = 55.396, hunter 2: y = -11.268
-target: x = 65.625, target: y = -16.604
-QAQ
-hunter 0: x = 65.778, hunter 0: y = -5.105
-hunter 1: x = 71.559, hunter 1: y = -6.751
-hunter 2: x = 55.208, hunter 2: y = -11.731
-target: x = 65.625, target: y = -16.604
-QAQ
-hunter 0: x = 65.478, hunter 0: y = -5.105
-hunter 1: x = 73.096, hunter 1: y = -7.868
-hunter 2: x = 55.046, hunter 2: y = -12.097
-target: x = 65.625, target: y = -16.604
-QAQ
-hunter 0: x = 65.478, hunter 0: y = -5.105
-hunter 1: x = 74.416, hunter 1: y = -9.234
-hunter 2: x = 55.046, hunter 2: y = -12.097
-target: x = 67.006, target: y = -16.447
-QAQ
-hunter 0: x = 64.290, hunter 0: y = -5.272
-hunter 1: x = 75.603, hunter 1: y = -8.706
-hunter 2: x = 55.835, hunter 2: y = -13.714
-target: x = 67.006, target: y = -16.447
-QAQ
-hunter 0: x = 64.193, hunter 0: y = -5.296
-hunter 1: x = 75.140, hunter 1: y = -8.518
-hunter 2: x = 55.574, hunter 2: y = -15.192
-target: x = 67.006, target: y = -16.447
-QAQ
-hunter 0: x = 63.520, hunter 0: y = -5.489
-hunter 1: x = 74.136, hunter 1: y = -7.404
-hunter 2: x = 55.512, hunter 2: y = -16.089
-target: x = 67.687, target: y = -17.057
-QAQ
-hunter 0: x = 62.870, hunter 0: y = -6.615
-hunter 1: x = 73.837, hunter 1: y = -7.425
-hunter 2: x = 56.203, hunter 2: y = -17.642
-target: x = 69.035, target: y = -16.594
-QAQ
-hunter 0: x = 62.828, hunter 0: y = -6.912
-hunter 1: x = 73.594, hunter 1: y = -6.046
-hunter 2: x = 57.740, hunter 2: y = -18.759
-target: x = 69.035, target: y = -16.594
-QAQ
-hunter 0: x = 62.414, hunter 0: y = -7.192
-hunter 1: x = 73.259, hunter 1: y = -5.674
-hunter 2: x = 57.823, hunter 2: y = -19.151
-target: x = 69.896, target: y = -16.282
-QAQ
-hunter 0: x = 62.107, hunter 0: y = -7.821
-hunter 1: x = 72.809, hunter 1: y = -5.138
-hunter 2: x = 58.949, hunter 2: y = -19.801
-target: x = 71.244, target: y = -17.717
-QAQ
-hunter 0: x = 63.378, hunter 0: y = -9.233
-hunter 1: x = 74.080, hunter 1: y = -6.550
-hunter 2: x = 59.947, hunter 2: y = -19.870
-target: x = 72.286, target: y = -18.831
-QAQ
-hunter 0: x = 64.070, hunter 0: y = -10.786
-hunter 1: x = 75.536, hunter 1: y = -7.771
-hunter 2: x = 60.842, hunter 2: y = -19.964
-target: x = 73.146, target: y = -18.648
-QAQ
-hunter 0: x = 64.070, hunter 0: y = -11.586
-hunter 1: x = 77.417, hunter 1: y = -8.036
-hunter 2: x = 61.671, hunter 2: y = -19.405
-target: x = 73.146, target: y = -18.648
-QAQ
-hunter 0: x = 64.070, hunter 0: y = -11.586
-hunter 1: x = 77.917, hunter 1: y = -8.053
-hunter 2: x = 61.907, hunter 2: y = -21.089
-target: x = 74.573, target: y = -19.443
-QAQ
-hunter 0: x = 65.667, hunter 0: y = -12.167
-hunter 1: x = 78.663, hunter 1: y = -8.557
-hunter 2: x = 63.253, hunter 2: y = -21.475
-target: x = 74.573, target: y = -19.443
-QAQ
-hunter 0: x = 64.903, hunter 0: y = -13.219
-hunter 1: x = 78.831, hunter 1: y = -8.805
-hunter 2: x = 63.253, hunter 2: y = -21.475
-target: x = 74.573, target: y = -19.443
-QAQ
-hunter 0: x = 64.744, hunter 0: y = -13.473
-hunter 1: x = 78.089, hunter 1: y = -8.506
-hunter 2: x = 63.253, hunter 2: y = -21.475
-target: x = 76.015, target: y = -20.905
-QAQ
-hunter 0: x = 66.319, hunter 0: y = -14.536
-hunter 1: x = 79.361, hunter 1: y = -9.918
-hunter 2: x = 64.541, hunter 2: y = -21.655
-target: x = 76.015, target: y = -20.905
-QAQ
-hunter 0: x = 66.402, hunter 0: y = -14.592
-hunter 1: x = 80.828, hunter 1: y = -10.229
-hunter 2: x = 64.555, hunter 2: y = -21.855
-target: x = 77.433, target: y = -21.293
-QAQ
-hunter 0: x = 67.250, hunter 0: y = -15.949
-hunter 1: x = 82.381, hunter 1: y = -10.921
-hunter 2: x = 65.951, hunter 2: y = -21.953
-target: x = 77.433, target: y = -21.293
-QAQ
-hunter 0: x = 67.297, hunter 0: y = -15.860
-hunter 1: x = 82.287, hunter 1: y = -10.744
-hunter 2: x = 65.965, hunter 2: y = -22.152
-target: x = 78.888, target: y = -22.791
-QAQ
-hunter 0: x = 68.942, hunter 0: y = -16.810
-hunter 1: x = 83.457, hunter 1: y = -12.241
-hunter 2: x = 67.392, hunter 2: y = -22.616
-target: x = 78.888, target: y = -22.791
-QAQ
-hunter 0: x = 68.605, hunter 0: y = -17.645
-hunter 1: x = 85.134, hunter 1: y = -13.133
-hunter 2: x = 67.392, hunter 2: y = -22.516
-target: x = 80.344, target: y = -22.479
-QAQ
-hunter 0: x = 69.255, hunter 0: y = -19.430
-hunter 1: x = 85.663, hunter 1: y = -12.405
-hunter 2: x = 68.884, hunter 2: y = -21.509
-target: x = 81.778, target: y = -23.860
-QAQ
-hunter 0: x = 71.016, hunter 0: y = -19.805
-hunter 1: x = 87.001, hunter 1: y = -13.610
-hunter 2: x = 70.385, hunter 2: y = -22.307
-target: x = 81.778, target: y = -23.860
-QAQ
-hunter 0: x = 70.981, hunter 0: y = -19.899
-hunter 1: x = 88.670, hunter 1: y = -14.284
-hunter 2: x = 70.371, hunter 2: y = -22.406
-target: x = 81.778, target: y = -23.860
-QAQ
-hunter 0: x = 70.981, hunter 0: y = -19.899
-hunter 1: x = 88.427, hunter 1: y = -14.460
-hunter 2: x = 70.371, hunter 2: y = -22.406
-target: x = 82.801, target: y = -24.939
-QAQ
-hunter 0: x = 72.644, hunter 0: y = -19.545
-hunter 1: x = 89.794, hunter 1: y = -15.780
-hunter 2: x = 71.499, hunter 2: y = -22.817
-target: x = 82.801, target: y = -24.939
-QAQ
-hunter 0: x = 71.994, hunter 0: y = -21.007
-hunter 1: x = 89.897, hunter 1: y = -16.062
-hunter 2: x = 71.499, hunter 2: y = -22.817
-target: x = 84.138, target: y = -26.137
-QAQ
-hunter 0: x = 73.466, hunter 0: y = -21.857
-hunter 1: x = 91.394, hunter 1: y = -17.232
-hunter 2: x = 72.874, hunter 2: y = -23.816
-target: x = 85.462, target: y = -27.179
-QAQ
-hunter 0: x = 74.768, hunter 0: y = -22.950
-hunter 1: x = 92.891, hunter 1: y = -18.402
-hunter 2: x = 74.260, hunter 2: y = -24.616
-target: x = 85.462, target: y = -27.179
-QAQ
-hunter 0: x = 74.768, hunter 0: y = -22.950
-hunter 1: x = 92.891, hunter 1: y = -18.602
-hunter 2: x = 74.034, hunter 2: y = -25.896
-target: x = 85.462, target: y = -27.179
-QAQ
-hunter 0: x = 74.768, hunter 0: y = -22.950
-hunter 1: x = 91.956, hunter 1: y = -17.699
-hunter 2: x = 74.034, hunter 2: y = -25.896
-target: x = 86.924, target: y = -27.388
-QAQ
-hunter 0: x = 75.861, hunter 0: y = -24.252
-hunter 1: x = 93.433, hunter 1: y = -17.959
-hunter 2: x = 75.652, hunter 2: y = -25.107
-target: x = 86.924, target: y = -27.388
-QAQ
-hunter 0: x = 75.916, hunter 0: y = -24.060
-hunter 1: x = 94.347, hunter 1: y = -18.366
-hunter 2: x = 76.148, hunter 2: y = -23.377
-target: x = 86.924, target: y = -27.388
-QAQ
-hunter 0: x = 75.916, hunter 0: y = -24.060
-hunter 1: x = 95.504, hunter 1: y = -19.745
-hunter 2: x = 76.410, hunter 2: y = -22.728
-target: x = 86.924, target: y = -27.388
-QAQ
-hunter 0: x = 75.916, hunter 0: y = -24.060
-hunter 1: x = 95.954, hunter 1: y = -20.281
-hunter 2: x = 76.410, hunter 2: y = -22.728
-target: x = 88.196, target: y = -28.022
-QAQ
-hunter 0: x = 77.009, hunter 0: y = -25.362
-hunter 1: x = 97.278, hunter 1: y = -20.985
-hunter 2: x = 77.439, hunter 2: y = -23.953
-target: x = 89.439, target: y = -29.045
-QAQ
-hunter 0: x = 78.333, hunter 0: y = -26.066
-hunter 1: x = 98.465, hunter 1: y = -21.727
-hunter 2: x = 79.023, hunter 2: y = -24.176
-target: x = 89.439, target: y = -29.045
-QAQ
-hunter 0: x = 78.212, hunter 0: y = -26.551
-hunter 1: x = 98.500, hunter 1: y = -22.226
-hunter 2: x = 79.586, hunter 2: y = -23.117
-target: x = 89.439, target: y = -29.045
-QAQ
-hunter 0: x = 77.962, hunter 0: y = -28.334
-hunter 1: x = 99.271, hunter 1: y = -23.145
-hunter 2: x = 80.257, hunter 2: y = -22.122
-target: x = 89.439, target: y = -29.045
-QAQ
-hunter 0: x = 77.962, hunter 0: y = -29.734
-hunter 1: x = 99.871, hunter 1: y = -24.184
-hunter 2: x = 81.029, hunter 2: y = -21.202
-target: x = 89.439, target: y = -29.045
-QAQ
-hunter 0: x = 78.077, hunter 0: y = -30.828
-hunter 1: x = 100.321, hunter 1: y = -25.297
-hunter 2: x = 81.892, hunter 2: y = -20.369
-target: x = 90.588, target: y = -30.463
-QAQ
-hunter 0: x = 79.188, hunter 0: y = -31.979
-hunter 1: x = 101.491, hunter 1: y = -26.794
-hunter 2: x = 83.467, hunter 2: y = -21.431
-target: x = 92.074, target: y = -31.963
-QAQ
-hunter 0: x = 80.601, hunter 0: y = -32.730
-hunter 1: x = 102.903, hunter 1: y = -28.066
-hunter 2: x = 84.688, hunter 2: y = -22.887
-target: x = 92.074, target: y = -31.963
-QAQ
-hunter 0: x = 80.837, hunter 0: y = -34.413
-hunter 1: x = 103.692, hunter 1: y = -29.683
-hunter 2: x = 86.101, hunter 2: y = -22.136
-target: x = 92.074, target: y = -31.963
-QAQ
-hunter 0: x = 81.251, hunter 0: y = -35.855
-hunter 1: x = 103.692, hunter 1: y = -31.283
-hunter 2: x = 87.249, hunter 2: y = -21.525
-target: x = 93.492, target: y = -31.425
-QAQ
-hunter 0: x = 83.023, hunter 0: y = -36.168
-hunter 1: x = 104.989, hunter 1: y = -31.374
-hunter 2: x = 88.471, hunter 2: y = -21.081
-target: x = 93.492, target: y = -31.425
-QAQ
-hunter 0: x = 83.775, hunter 0: y = -37.580
-hunter 1: x = 105.126, hunter 1: y = -31.855
-hunter 2: x = 89.954, hunter 2: y = -20.481
-target: x = 93.492, target: y = -31.425
-QAQ
-hunter 0: x = 84.656, hunter 0: y = -38.794
-hunter 1: x = 104.849, hunter 1: y = -33.430
-hunter 2: x = 91.118, hunter 2: y = -20.191
-target: x = 94.977, target: y = -31.737
-QAQ
-hunter 0: x = 86.442, hunter 0: y = -39.444
-hunter 1: x = 106.334, hunter 1: y = -33.639
-hunter 2: x = 92.165, hunter 2: y = -20.531
-target: x = 94.977, target: y = -31.737
-QAQ
-hunter 0: x = 87.277, hunter 0: y = -40.440
-hunter 1: x = 106.039, hunter 1: y = -35.313
-hunter 2: x = 91.732, hunter 2: y = -20.781
-target: x = 94.977, target: y = -31.737
-QAQ
-hunter 0: x = 86.185, hunter 0: y = -39.137
-hunter 1: x = 106.265, hunter 1: y = -34.033
-hunter 2: x = 92.554, hunter 2: y = -20.415
-target: x = 94.977, target: y = -31.737
-QAQ
-hunter 0: x = 86.985, hunter 0: y = -40.162
-hunter 1: x = 105.853, hunter 1: y = -35.683
-hunter 2: x = 92.104, hunter 2: y = -20.634
-target: x = 94.977, target: y = -31.737
-QAQ
-hunter 0: x = 86.431, hunter 0: y = -39.453
-hunter 1: x = 106.168, hunter 1: y = -34.421
-hunter 2: x = 92.176, hunter 2: y = -20.565
-target: x = 95.880, target: y = -31.374
-QAQ
-hunter 0: x = 87.225, hunter 0: y = -39.030
-hunter 1: x = 107.067, hunter 1: y = -33.983
-hunter 2: x = 93.181, hunter 2: y = -20.117
-target: x = 96.653, target: y = -31.296
-QAQ
-hunter 0: x = 88.309, hunter 0: y = -39.221
-hunter 1: x = 107.896, hunter 1: y = -33.424
-hunter 2: x = 93.572, hunter 2: y = -20.200
-target: x = 98.114, target: y = -31.906
-QAQ
-hunter 0: x = 90.016, hunter 0: y = -40.054
-hunter 1: x = 109.487, hunter 1: y = -33.256
-hunter 2: x = 94.698, hunter 2: y = -20.850
-target: x = 98.114, target: y = -31.906
-QAQ
-hunter 0: x = 90.908, hunter 0: y = -40.857
-hunter 1: x = 109.209, hunter 1: y = -34.832
-hunter 2: x = 94.333, hunter 2: y = -21.013
-target: x = 99.296, target: y = -31.492
-QAQ
-hunter 0: x = 90.961, hunter 0: y = -39.358
-hunter 1: x = 110.621, hunter 1: y = -33.561
-hunter 2: x = 96.140, hunter 2: y = -20.426
-target: x = 100.785, target: y = -30.979
-QAQ
-hunter 0: x = 92.387, hunter 0: y = -38.894
-hunter 1: x = 112.030, hunter 1: y = -32.610
-hunter 2: x = 97.757, hunter 2: y = -19.901
-target: x = 100.785, target: y = -30.979
-QAQ
-hunter 0: x = 93.353, hunter 0: y = -39.764
-hunter 1: x = 111.999, hunter 1: y = -33.510
-hunter 2: x = 96.520, hunter 2: y = -20.302
-target: x = 100.785, target: y = -30.979
-QAQ
-hunter 0: x = 92.684, hunter 0: y = -39.162
-hunter 1: x = 112.103, hunter 1: y = -33.020
-hunter 2: x = 97.366, hunter 2: y = -19.995
-target: x = 100.785, target: y = -30.979
-QAQ
-hunter 0: x = 93.056, hunter 0: y = -39.496
-hunter 1: x = 111.916, hunter 1: y = -33.901
-hunter 2: x = 96.890, hunter 2: y = -20.149
-target: x = 100.785, target: y = -30.979
-QAQ
-hunter 0: x = 92.409, hunter 0: y = -38.871
-hunter 1: x = 112.020, hunter 1: y = -33.412
-hunter 2: x = 97.756, hunter 2: y = -19.901
-target: x = 101.646, target: y = -31.752
-QAQ
-hunter 0: x = 93.821, hunter 0: y = -40.143
-hunter 1: x = 112.971, hunter 1: y = -33.721
-hunter 2: x = 98.675, hunter 2: y = -20.672
-target: x = 102.688, target: y = -31.647
-QAQ
-hunter 0: x = 94.718, hunter 0: y = -40.080
-hunter 1: x = 114.067, hunter 1: y = -33.233
-hunter 2: x = 99.046, hunter 2: y = -20.822
-target: x = 104.187, target: y = -32.352
-QAQ
-hunter 0: x = 94.718, hunter 0: y = -40.080
-hunter 1: x = 114.067, hunter 1: y = -33.233
-hunter 2: x = 99.046, hunter 2: y = -20.822
-target: x = 104.187, target: y = -32.352
+hunter 0: x = 434.007, hunter 0: y = 160.328, distance: 444.821841, angle differ: 27.099683
+hunter 1: x = 380.407, hunter 1: y = 243.930, distance: 433.500697, angle differ: 25.674461
+hunter 2: x = 302.023, hunter 2: y = 317.148, distance: 419.994368, angle differ: 24.216121
+hunter 3: x = 204.298, hunter 3: y = 376.901, distance: 412.475280, angle differ: 23.575356
+hunter 4: x = 93.950, hunter 4: y = 420.738, distance: 417.916313, angle differ: 24.257679
+hunter 5: x = -22.077, hunter 5: y = 446.786, distance: 438.079943, angle differ: 26.114013
+hunter 6: x = -135.499, hunter 6: y = 453.784, distance: 468.406456, angle differ: 28.264462
+hunter 7: x = -238.725, hunter 7: y = 441.301, distance: 500.265523, angle differ: 29.971287
+hunter 8: x = -325.646, hunter 8: y = 408.899, distance: 524.492277, angle differ: 209.173061
+target: x = 15.250, target: y = 10.299
+QAQ
+hunter 0: x = 429.153, hunter 0: y = 157.747, distance: 439.655252, angle differ: 27.099307
+hunter 1: x = 376.195, hunter 1: y = 240.396, distance: 427.985896, angle differ: 25.671283
+hunter 2: x = 298.791, hunter 2: y = 312.701, distance: 414.106700, angle differ: 24.200300
+hunter 3: x = 202.418, hunter 3: y = 371.734, distance: 406.215702, angle differ: 23.527182
+hunter 4: x = 93.566, hunter 4: y = 415.254, distance: 411.326520, angle differ: 24.204608
+hunter 5: x = -20.934, hunter 5: y = 441.408, distance: 431.268251, angle differ: 26.061123
+hunter 6: x = -133.089, hunter 6: y = 448.843, distance: 461.482084, angle differ: 28.224039
+hunter 7: x = -235.340, hunter 7: y = 436.968, distance: 493.315213, angle differ: 29.789923
+hunter 8: x = -322.571, hunter 8: y = 404.342, distance: 517.556329, angle differ: 208.777764
+target: x = 14.500, target: y = 11.598
+QAQ
+hunter 0: x = 424.212, hunter 0: y = 155.337, distance: 434.474355, angle differ: 27.124675
+hunter 1: x = 371.984, hunter 1: y = 236.862, distance: 422.482756, angle differ: 25.668821
+hunter 2: x = 295.560, hunter 2: y = 308.253, distance: 408.230104, angle differ: 24.184702
+hunter 3: x = 200.537, hunter 3: y = 366.568, distance: 399.965862, angle differ: 23.477790
+hunter 4: x = 93.183, hunter 4: y = 409.770, distance: 404.743456, angle differ: 24.149730
+hunter 5: x = -19.791, hunter 5: y = 436.031, distance: 424.460711, angle differ: 26.006337
+hunter 6: x = -130.679, hunter 6: y = 443.902, distance: 454.559873, angle differ: 28.182231
+hunter 7: x = -231.955, hunter 7: y = 432.636, distance: 486.365935, angle differ: 29.603516
+hunter 8: x = -319.497, hunter 8: y = 399.784, distance: 510.621989, angle differ: 208.397804
+target: x = 13.750, target: y = 12.897
+QAQ
+hunter 0: x = 419.270, hunter 0: y = 152.927, distance: 429.303901, angle differ: 27.151338
+hunter 1: x = 367.772, hunter 1: y = 233.328, distance: 416.991739, angle differ: 25.667141
+hunter 2: x = 292.328, hunter 2: y = 303.805, distance: 402.365063, angle differ: 24.169373
+hunter 3: x = 198.657, hunter 3: y = 361.402, distance: 393.726225, angle differ: 23.427145
+hunter 4: x = 92.799, hunter 4: y = 404.285, distance: 398.167456, angle differ: 24.092954
+hunter 5: x = -18.648, hunter 5: y = 430.653, distance: 417.657527, angle differ: 25.949557
+hunter 6: x = -128.269, hunter 6: y = 438.960, distance: 447.639921, angle differ: 28.138968
+hunter 7: x = -228.570, hunter 7: y = 428.304, distance: 479.417733, angle differ: 29.411856
+hunter 8: x = -316.423, hunter 8: y = 395.226, distance: 503.689325, angle differ: 208.008332
+target: x = 13.000, target: y = 14.196
+QAQ
+hunter 0: x = 414.329, hunter 0: y = 150.517, distance: 424.144273, angle differ: 27.179366
+hunter 1: x = 363.561, hunter 1: y = 229.794, distance: 411.513330, angle differ: 25.666312
+hunter 2: x = 289.097, hunter 2: y = 299.357, distance: 396.512091, angle differ: 24.154362
+hunter 3: x = 196.776, hunter 3: y = 356.236, distance: 387.497283, angle differ: 23.375208
+hunter 4: x = 92.416, hunter 4: y = 398.801, distance: 391.598876, angle differ: 24.034187
+hunter 5: x = -17.505, hunter 5: y = 425.275, distance: 410.858915, angle differ: 25.890675
+hunter 6: x = -125.859, hunter 6: y = 434.019, distance: 440.722337, angle differ: 28.094175
+hunter 7: x = -225.186, hunter 7: y = 423.971, distance: 472.470655, angle differ: 29.214716
+hunter 8: x = -313.348, hunter 8: y = 390.668, distance: 496.758405, angle differ: 207.609001
+target: x = 12.250, target: y = 15.495
+QAQ
+hunter 0: x = 409.388, hunter 0: y = 148.107, distance: 418.995870, angle differ: 27.208834
+hunter 1: x = 359.349, hunter 1: y = 226.260, distance: 406.048041, angle differ: 25.666409
+hunter 2: x = 285.865, hunter 2: y = 294.909, distance: 390.671731, angle differ: 24.139724
+hunter 3: x = 194.896, hunter 3: y = 351.070, distance: 381.279560, angle differ: 23.321941
+hunter 4: x = 92.032, hunter 4: y = 393.316, distance: 385.038096, angle differ: 23.973328
+hunter 5: x = -16.362, hunter 5: y = 419.898, distance: 404.065106, angle differ: 25.829578
+hunter 6: x = -123.449, hunter 6: y = 429.078, distance: 433.807232, angle differ: 28.047771
+hunter 7: x = -221.801, hunter 7: y = 419.639, distance: 465.524752, angle differ: 29.011861
+hunter 8: x = -310.274, hunter 8: y = 386.110, distance: 489.829306, angle differ: 207.199446
+target: x = 11.500, target: y = 16.794
+QAQ
+hunter 0: x = 404.446, hunter 0: y = 145.697, distance: 413.859112, angle differ: 27.239820
+hunter 1: x = 355.138, hunter 1: y = 222.726, distance: 400.596407, angle differ: 25.667514
+hunter 2: x = 282.634, hunter 2: y = 290.462, distance: 384.844556, angle differ: 24.125522
+hunter 3: x = 193.016, hunter 3: y = 345.903, distance: 375.073615, angle differ: 23.267306
+hunter 4: x = 91.649, hunter 4: y = 387.832, distance: 378.485520, angle differ: 23.910269
+hunter 5: x = -15.219, hunter 5: y = 414.520, distance: 397.276346, angle differ: 25.766144
+hunter 6: x = -121.039, hunter 6: y = 424.136, distance: 426.894728, angle differ: 27.999672
+hunter 7: x = -218.416, hunter 7: y = 415.307, distance: 458.580076, angle differ: 28.803038
+hunter 8: x = -307.200, hunter 8: y = 381.552, distance: 482.902103, angle differ: 206.779285
+target: x = 10.750, target: y = 18.093
+QAQ
+hunter 0: x = 399.505, hunter 0: y = 143.287, distance: 408.734437, angle differ: 27.244899
+hunter 1: x = 350.805, hunter 1: y = 219.342, distance: 395.130252, angle differ: 25.697227
+hunter 2: x = 279.402, hunter 2: y = 286.014, distance: 379.031175, angle differ: 24.111823
+hunter 3: x = 191.135, hunter 3: y = 340.737, distance: 368.880041, angle differ: 23.211264
+hunter 4: x = 91.265, hunter 4: y = 382.348, distance: 371.941583, angle differ: 23.844895
+hunter 5: x = -14.076, hunter 5: y = 409.142, distance: 390.492898, angle differ: 25.700242
+hunter 6: x = -118.628, hunter 6: y = 419.195, distance: 419.984953, angle differ: 27.949785
+hunter 7: x = -215.031, hunter 7: y = 410.975, distance: 451.636684, angle differ: 28.587983
+hunter 8: x = -304.125, hunter 8: y = 376.994, distance: 475.976882, angle differ: 206.348119
+target: x = 10.000, target: y = 19.392
+QAQ
+hunter 0: x = 394.564, hunter 0: y = 140.876, distance: 403.622307, angle differ: 27.250953
+hunter 1: x = 346.473, hunter 1: y = 215.957, distance: 389.676653, angle differ: 25.728849
+hunter 2: x = 276.171, hunter 2: y = 281.566, distance: 373.232232, angle differ: 24.098703
+hunter 3: x = 189.255, hunter 3: y = 335.571, distance: 362.699473, angle differ: 23.153777
+hunter 4: x = 90.882, hunter 4: y = 376.863, distance: 365.406748, angle differ: 23.777086
+hunter 5: x = -12.933, hunter 5: y = 403.765, distance: 383.715046, angle differ: 25.631732
+hunter 6: x = -116.218, hunter 6: y = 414.253, distance: 413.078044, angle differ: 27.898014
+hunter 7: x = -211.646, hunter 7: y = 406.642, distance: 444.694636, angle differ: 28.366413
+hunter 8: x = -301.051, hunter 8: y = 372.436, distance: 469.053729, angle differ: 205.905527
+target: x = 9.250, target: y = 20.691
+QAQ
+hunter 0: x = 389.622, hunter 0: y = 138.466, distance: 398.523202, angle differ: 27.258057
+hunter 1: x = 342.141, hunter 1: y = 212.572, distance: 384.236143, angle differ: 25.762506
+hunter 2: x = 272.939, hunter 2: y = 277.118, distance: 367.448411, angle differ: 24.086246
+hunter 3: x = 187.375, hunter 3: y = 330.405, distance: 356.532587, angle differ: 23.094806
+hunter 4: x = 90.498, hunter 4: y = 371.379, distance: 358.881514, angle differ: 23.706711
+hunter 5: x = -11.790, hunter 5: y = 398.387, distance: 376.943089, angle differ: 25.560463
+hunter 6: x = -113.808, hunter 6: y = 409.312, distance: 406.174147, angle differ: 27.844253
+hunter 7: x = -208.262, hunter 7: y = 402.310, distance: 437.753997, angle differ: 28.138028
+hunter 8: x = -297.977, hunter 8: y = 367.879, distance: 462.132737, angle differ: 205.451070
+target: x = 8.500, target: y = 21.990
+QAQ
+hunter 0: x = 384.681, hunter 0: y = 136.056, distance: 393.437630, angle differ: 27.266288
+hunter 1: x = 337.808, hunter 1: y = 209.187, distance: 378.809286, angle differ: 25.768339
+hunter 2: x = 269.554, hunter 2: y = 272.786, distance: 361.649115, angle differ: 24.104536
+hunter 3: x = 185.494, hunter 3: y = 325.238, distance: 350.380105, angle differ: 23.034314
+hunter 4: x = 90.115, hunter 4: y = 365.894, distance: 352.366413, angle differ: 23.633632
+hunter 5: x = -10.646, hunter 5: y = 393.009, distance: 370.177352, angle differ: 25.486274
+hunter 6: x = -111.398, hunter 6: y = 404.371, distance: 399.273419, angle differ: 27.788388
+hunter 7: x = -204.877, hunter 7: y = 397.978, distance: 430.814834, angle differ: 27.902513
+hunter 8: x = -294.902, hunter 8: y = 363.321, distance: 455.214005, angle differ: 204.984285
+target: x = 7.750, target: y = 23.289
+QAQ
+hunter 0: x = 379.658, hunter 0: y = 133.820, distance: 388.337172, angle differ: 27.303719
+hunter 1: x = 333.476, hunter 1: y = 205.802, distance: 373.396678, angle differ: 25.775583
+hunter 2: x = 266.170, hunter 2: y = 268.454, distance: 355.863932, angle differ: 24.093119
+hunter 3: x = 183.435, hunter 3: y = 320.141, distance: 344.209968, angle differ: 23.003735
+hunter 4: x = 89.731, hunter 4: y = 360.410, distance: 345.862018, angle differ: 23.557700
+hunter 5: x = -9.503, hunter 5: y = 387.632, distance: 363.418182, angle differ: 25.408990
+hunter 6: x = -108.988, hunter 6: y = 399.429, distance: 392.376026, angle differ: 27.730300
+hunter 7: x = -201.492, hunter 7: y = 393.645, distance: 423.877220, angle differ: 27.659528
+hunter 8: x = -291.828, hunter 8: y = 358.763, distance: 448.297638, angle differ: 204.532674
+target: x = 7.000, target: y = 24.588
+QAQ
+hunter 0: x = 374.636, hunter 0: y = 131.584, distance: 383.249073, angle differ: 27.343140
+hunter 1: x = 329.144, hunter 1: y = 202.418, distance: 367.998947, angle differ: 25.784360
+hunter 2: x = 262.785, hunter 2: y = 264.121, distance: 350.093563, angle differ: 24.082542
+hunter 3: x = 181.375, hunter 3: y = 315.043, distance: 338.053317, angle differ: 22.972631
+hunter 4: x = 89.348, hunter 4: y = 354.926, distance: 339.368945, angle differ: 23.478757
+hunter 5: x = -8.360, hunter 5: y = 382.254, distance: 356.665952, angle differ: 25.328424
+hunter 6: x = -106.578, hunter 6: y = 394.488, distance: 385.482148, angle differ: 27.669857
+hunter 7: x = -198.107, hunter 7: y = 389.313, distance: 416.941232, angle differ: 27.408716
+hunter 8: x = -288.754, hunter 8: y = 354.205, distance: 441.383746, angle differ: 204.068427
+target: x = 6.250, target: y = 25.887
+QAQ
+hunter 0: x = 369.613, hunter 0: y = 129.348, distance: 378.173834, angle differ: 27.384667
+hunter 1: x = 324.811, hunter 1: y = 199.033, distance: 362.616758, angle differ: 25.794804
+hunter 2: x = 259.400, hunter 2: y = 259.789, distance: 344.338751, angle differ: 24.072920
+hunter 3: x = 179.316, hunter 3: y = 309.946, distance: 331.910905, angle differ: 22.941016
+hunter 4: x = 88.964, hunter 4: y = 349.441, distance: 332.887856, angle differ: 23.396635
+hunter 5: x = -7.217, hunter 5: y = 376.876, distance: 349.921065, angle differ: 25.244372
+hunter 6: x = -104.168, hunter 6: y = 389.547, distance: 378.591977, angle differ: 27.606919
+hunter 7: x = -194.723, hunter 7: y = 384.981, distance: 410.006953, angle differ: 27.149693
+hunter 8: x = -285.679, hunter 8: y = 349.647, distance: 434.472448, angle differ: 203.591027
+target: x = 5.500, target: y = 27.187
+QAQ
+hunter 0: x = 364.591, hunter 0: y = 127.112, distance: 373.111978, angle differ: 27.428425
+hunter 1: x = 320.479, hunter 1: y = 195.648, distance: 357.250814, angle differ: 25.807060
+hunter 2: x = 256.015, hunter 2: y = 255.457, distance: 338.600291, angle differ: 24.064380
+hunter 3: x = 177.256, hunter 3: y = 304.849, distance: 325.783535, angle differ: 22.908907
+hunter 4: x = 88.581, hunter 4: y = 343.957, distance: 326.419464, angle differ: 23.311153
+hunter 5: x = -6.074, hunter 5: y = 371.499, distance: 343.183953, angle differ: 25.156617
+hunter 6: x = -101.758, hunter 6: y = 384.605, distance: 371.705718, angle differ: 27.541335
+hunter 7: x = -191.338, hunter 7: y = 380.648, distance: 403.074471, angle differ: 26.882053
+hunter 8: x = -282.605, hunter 8: y = 345.089, distance: 427.563869, angle differ: 203.099930
+target: x = 4.750, target: y = 28.486
+QAQ
+hunter 0: x = 359.568, hunter 0: y = 124.876, distance: 368.064058, angle differ: 27.474545
+hunter 1: x = 316.147, hunter 1: y = 192.263, distance: 351.901857, angle differ: 25.821287
+hunter 2: x = 252.631, hunter 2: y = 251.124, distance: 332.879027, angle differ: 24.057062
+hunter 3: x = 175.197, hunter 3: y = 299.751, distance: 319.672075, angle differ: 22.876328
+hunter 4: x = 88.197, hunter 4: y = 338.472, distance: 319.964541, angle differ: 23.222117
+hunter 5: x = -4.931, hunter 5: y = 366.121, distance: 336.455083, angle differ: 25.064921
+hunter 6: x = -99.348, hunter 6: y = 379.664, distance: 364.823593, angle differ: 27.472941
+hunter 7: x = -187.953, hunter 7: y = 376.316, distance: 396.143880, angle differ: 26.605360
+hunter 8: x = -279.531, hunter 8: y = 340.531, distance: 420.658145, angle differ: 202.594561
+target: x = 4.000, target: y = 29.785
+QAQ
+hunter 0: x = 354.546, hunter 0: y = 122.639, distance: 363.030656, angle differ: 27.491913
+hunter 1: x = 311.699, hunter 1: y = 189.032, distance: 346.537681, angle differ: 25.868909
+hunter 2: x = 249.246, hunter 2: y = 246.792, distance: 327.175861, angle differ: 24.051123
+hunter 3: x = 173.137, hunter 3: y = 294.654, distance: 313.577452, angle differ: 22.808840
+hunter 4: x = 87.623, hunter 4: y = 333.005, distance: 313.488517, angle differ: 23.163790
+hunter 5: x = -3.788, hunter 5: y = 360.743, distance: 329.734960, angle differ: 24.969028
+hunter 6: x = -96.938, hunter 6: y = 374.722, distance: 357.945842, angle differ: 27.401560
+hunter 7: x = -184.568, hunter 7: y = 371.984, distance: 389.215282, angle differ: 26.319151
+hunter 8: x = -276.456, hunter 8: y = 335.973, distance: 413.755416, angle differ: 202.074314
+target: x = 3.250, target: y = 31.084
+QAQ
+hunter 0: x = 349.523, hunter 0: y = 120.403, distance: 358.012383, angle differ: 27.511038
+hunter 1: x = 307.251, hunter 1: y = 185.800, distance: 341.189406, angle differ: 25.919756
+hunter 2: x = 245.861, hunter 2: y = 242.460, distance: 321.491758, angle differ: 24.046738
+hunter 3: x = 171.078, hunter 3: y = 289.556, distance: 307.500670, angle differ: 22.739594
+hunter 4: x = 87.048, hunter 4: y = 327.537, distance: 307.025132, angle differ: 23.102836
+hunter 5: x = -2.645, hunter 5: y = 355.366, distance: 323.024130, angle differ: 24.868660
+hunter 6: x = -94.528, hunter 6: y = 369.781, distance: 351.072720, angle differ: 27.327000
+hunter 7: x = -181.183, hunter 7: y = 367.651, distance: 382.288784, angle differ: 26.022930
+hunter 8: x = -273.382, hunter 8: y = 331.416, distance: 406.855837, angle differ: 201.538552
+target: x = 2.500, target: y = 32.383
+QAQ
+hunter 0: x = 344.501, hunter 0: y = 118.167, distance: 353.009886, angle differ: 27.532051
+hunter 1: x = 302.803, hunter 1: y = 182.569, distance: 335.857793, angle differ: 25.939842
+hunter 2: x = 242.327, hunter 2: y = 238.248, distance: 315.792308, angle differ: 24.078317
+hunter 3: x = 169.018, hunter 3: y = 284.459, distance: 301.442806, angle differ: 22.668565
+hunter 4: x = 86.473, hunter 4: y = 322.069, distance: 300.575200, angle differ: 23.004898
+hunter 5: x = -1.690, hunter 5: y = 349.952, distance: 316.288562, angle differ: 24.797707
+hunter 6: x = -92.118, hunter 6: y = 364.840, distance: 344.204505, angle differ: 27.249055
+hunter 7: x = -177.799, hunter 7: y = 363.319, distance: 375.364502, angle differ: 25.716165
+hunter 8: x = -270.308, hunter 8: y = 326.858, distance: 399.959570, angle differ: 200.986600
+target: x = 1.750, target: y = 33.682
+QAQ
+hunter 0: x = 339.478, hunter 0: y = 115.931, distance: 348.023843, angle differ: 27.555093
+hunter 1: x = 298.356, hunter 1: y = 179.337, distance: 330.543647, angle differ: 25.962493
+hunter 2: x = 238.793, hunter 2: y = 234.037, distance: 310.111022, angle differ: 24.113002
+hunter 3: x = 166.959, hunter 3: y = 279.361, distance: 295.405025, angle differ: 22.595736
+hunter 4: x = 85.899, hunter 4: y = 316.602, distance: 294.139606, angle differ: 22.902577
+hunter 5: x = -0.736, hunter 5: y = 344.537, distance: 309.561415, angle differ: 24.723060
+hunter 6: x = -89.708, hunter 6: y = 359.898, distance: 337.341497, angle differ: 27.167498
+hunter 7: x = -174.414, hunter 7: y = 358.987, distance: 368.442563, angle differ: 25.398287
+hunter 8: x = -267.234, hunter 8: y = 322.300, distance: 393.066789, angle differ: 200.417746
+target: x = 1.000, target: y = 34.981
+QAQ
+hunter 0: x = 334.381, hunter 0: y = 113.871, distance: 343.021841, angle differ: 27.611887
+hunter 1: x = 293.908, hunter 1: y = 176.106, distance: 325.247824, angle differ: 25.987934
+hunter 2: x = 235.259, hunter 2: y = 229.825, distance: 304.448918, angle differ: 24.113864
+hunter 3: x = 164.723, hunter 3: y = 274.339, distance: 289.349803, angle differ: 22.558309
+hunter 4: x = 85.324, hunter 4: y = 311.134, distance: 287.719314, angle differ: 22.795598
+hunter 5: x = 0.219, hunter 5: y = 339.123, distance: 302.843249, angle differ: 24.644444
+hunter 6: x = -87.298, hunter 6: y = 354.957, distance: 330.484020, angle differ: 27.082083
+hunter 7: x = -171.029, hunter 7: y = 354.654, distance: 361.523100, angle differ: 25.068686
+hunter 8: x = -264.159, hunter 8: y = 317.742, distance: 386.177681, angle differ: 199.862806
+target: x = 0.250, target: y = 36.280
+QAQ
+hunter 0: x = 329.284, hunter 0: y = 111.812, distance: 338.035104, angle differ: 27.671873
+hunter 1: x = 289.460, hunter 1: y = 172.874, distance: 319.971235, angle differ: 26.016413
+hunter 2: x = 231.725, hunter 2: y = 225.614, distance: 298.807087, angle differ: 24.116987
+hunter 3: x = 162.486, hunter 3: y = 269.316, distance: 283.314011, angle differ: 22.520515
+hunter 4: x = 84.749, hunter 4: y = 305.666, distance: 281.315370, angle differ: 22.683664
+hunter 5: x = 1.174, hunter 5: y = 333.709, distance: 296.134675, angle differ: 24.561558
+hunter 6: x = -84.887, hunter 6: y = 350.016, distance: 323.632426, angle differ: 26.992545
+hunter 7: x = -167.644, hunter 7: y = 350.322, distance: 354.606259, angle differ: 24.726706
+hunter 8: x = -261.085, hunter 8: y = 313.184, distance: 379.292446, angle differ: 199.290262
+target: x = -0.500, target: y = 37.579
+QAQ
+hunter 0: x = 324.186, hunter 0: y = 109.752, distance: 333.064318, angle differ: 27.735252
+hunter 1: x = 285.012, hunter 1: y = 169.643, distance: 314.714847, angle differ: 26.048201
+hunter 2: x = 228.191, hunter 2: y = 221.402, distance: 293.186698, angle differ: 24.122649
+hunter 3: x = 160.250, hunter 3: y = 264.294, distance: 277.298918, angle differ: 22.482431
+hunter 4: x = 84.174, hunter 4: y = 300.199, distance: 274.928917, angle differ: 22.566456
+hunter 5: x = 2.128, hunter 5: y = 328.295, distance: 289.436360, angle differ: 24.474071
+hunter 6: x = -82.477, hunter 6: y = 345.074, distance: 316.787097, angle differ: 26.898592
+hunter 7: x = -164.260, hunter 7: y = 345.990, distance: 347.692195, angle differ: 24.371642
+hunter 8: x = -258.011, hunter 8: y = 308.626, distance: 372.411299, angle differ: 198.699295
+target: x = -1.250, target: y = 38.878
+QAQ
+hunter 0: x = 319.089, hunter 0: y = 107.693, distance: 328.110209, angle differ: 27.767351
+hunter 1: x = 280.454, hunter 1: y = 166.568, distance: 309.443369, angle differ: 26.118480
+hunter 2: x = 224.658, hunter 2: y = 217.190, distance: 287.589009, angle differ: 24.131160
+hunter 3: x = 158.014, hunter 3: y = 259.271, distance: 271.305900, angle differ: 22.444155
+hunter 4: x = 83.600, hunter 4: y = 294.731, distance: 268.561202, angle differ: 22.443630
+hunter 5: x = 3.083, hunter 5: y = 322.880, distance: 282.749034, angle differ: 24.381620
+hunter 6: x = -80.067, hunter 6: y = 340.133, distance: 309.948447, angle differ: 26.799905
+hunter 7: x = -160.875, hunter 7: y = 341.658, distance: 340.781078, angle differ: 24.002735
+hunter 8: x = -254.936, hunter 8: y = 304.068, distance: 365.534471, angle differ: 198.089037
+target: x = -2.000, target: y = 40.177
+QAQ
+hunter 0: x = 313.991, hunter 0: y = 105.633, distance: 323.173543, angle differ: 27.802203
+hunter 1: x = 275.896, hunter 1: y = 163.494, distance: 304.191082, angle differ: 26.193768
+hunter 2: x = 221.124, hunter 2: y = 212.979, distance: 282.015371, angle differ: 24.142866
+hunter 3: x = 155.778, hunter 3: y = 254.249, distance: 265.336452, angle differ: 22.405803
+hunter 4: x = 83.025, hunter 4: y = 289.263, distance: 262.213591, angle differ: 22.314815
+hunter 5: x = 4.038, hunter 5: y = 317.466, distance: 276.073496, angle differ: 24.283806
+hunter 6: x = -77.657, hunter 6: y = 335.191, distance: 303.116929, angle differ: 26.696137
+hunter 7: x = -157.490, hunter 7: y = 337.325, distance: 333.873091, angle differ: 23.619166
+hunter 8: x = -251.862, hunter 8: y = 299.511, distance: 358.662210, angle differ: 197.458565
+target: x = -2.750, target: y = 41.476
+QAQ
+hunter 0: x = 308.894, hunter 0: y = 103.574, distance: 318.255132, angle differ: 27.840018
+hunter 1: x = 271.338, hunter 1: y = 160.420, distance: 298.958998, angle differ: 26.235562
+hunter 2: x = 217.445, hunter 2: y = 208.893, distance: 276.427074, angle differ: 24.197048
+hunter 3: x = 153.542, hunter 3: y = 249.226, distance: 259.392203, angle differ: 22.367515
+hunter 4: x = 82.450, hunter 4: y = 283.796, distance: 255.887580, angle differ: 22.179613
+hunter 5: x = 4.992, hunter 5: y = 312.052, distance: 269.410620, angle differ: 24.180188
+hunter 6: x = -75.247, hunter 6: y = 330.250, distance: 296.293036, angle differ: 26.586905
+hunter 7: x = -154.105, hunter 7: y = 332.993, distance: 326.968432, angle differ: 23.220051
+hunter 8: x = -248.788, hunter 8: y = 294.953, distance: 351.794784, angle differ: 196.806900
+target: x = -3.500, target: y = 42.775
+QAQ
+hunter 0: x = 303.796, hunter 0: y = 101.514, distance: 313.355835, angle differ: 27.881022
+hunter 1: x = 266.781, hunter 1: y = 157.345, distance: 293.748197, angle differ: 26.281749
+hunter 2: x = 213.766, hunter 2: y = 204.808, distance: 270.862197, angle differ: 24.256669
+hunter 3: x = 151.306, hunter 3: y = 244.204, distance: 253.474925, angle differ: 22.286564
+hunter 4: x = 81.685, hunter 4: y = 278.351, distance: 249.541105, angle differ: 22.080493
+hunter 5: x = 5.947, hunter 5: y = 306.637, distance: 262.761371, angle differ: 24.033026
+hunter 6: x = -73.011, hunter 6: y = 325.228, distance: 289.439786, angle differ: 26.509042
+hunter 7: x = -150.720, hunter 7: y = 328.661, distance: 320.067317, angle differ: 22.804435
+hunter 8: x = -245.713, hunter 8: y = 290.395, distance: 344.932482, angle differ: 196.133000
+target: x = -4.250, target: y = 44.074
+QAQ
+hunter 0: x = 298.630, hunter 0: y = 99.634, distance: 308.440325, angle differ: 27.960464
+hunter 1: x = 262.223, hunter 1: y = 154.271, distance: 288.559831, angle differ: 26.332730
+hunter 2: x = 210.087, hunter 2: y = 200.722, distance: 265.322214, angle differ: 24.279078
+hunter 3: x = 148.896, hunter 3: y = 239.263, distance: 247.541879, angle differ: 22.247227
+hunter 4: x = 80.920, hunter 4: y = 272.907, distance: 243.215990, angle differ: 21.976111
+hunter 5: x = 6.902, hunter 5: y = 301.223, distance: 256.126810, angle differ: 23.877316
+hunter 6: x = -70.775, hunter 6: y = 320.205, distance: 282.593300, angle differ: 26.426553
+hunter 7: x = -147.336, hunter 7: y = 324.328, distance: 313.169980, angle differ: 22.403347
+hunter 8: x = -242.482, hunter 8: y = 285.947, distance: 338.043462, angle differ: 195.502826
+target: x = -5.000, target: y = 45.373
+QAQ
+hunter 0: x = 293.464, hunter 0: y = 97.754, distance: 303.542768, angle differ: 28.044617
+hunter 1: x = 257.665, hunter 1: y = 151.197, distance: 283.395133, angle differ: 26.388946
+hunter 2: x = 206.409, hunter 2: y = 196.636, distance: 259.808717, angle differ: 24.306202
+hunter 3: x = 146.486, hunter 3: y = 234.321, distance: 241.635724, angle differ: 22.208302
+hunter 4: x = 80.155, hunter 4: y = 267.463, distance: 236.913946, angle differ: 21.866085
+hunter 5: x = 7.856, hunter 5: y = 295.809, distance: 249.508108, angle differ: 23.712346
+hunter 6: x = -68.539, hunter 6: y = 315.183, distance: 275.754082, angle differ: 26.339045
+hunter 7: x = -143.951, hunter 7: y = 319.996, distance: 306.276676, angle differ: 21.984885
+hunter 8: x = -239.250, hunter 8: y = 281.499, distance: 331.158731, angle differ: 194.850426
+target: x = -5.750, target: y = 46.672
+QAQ
+hunter 0: x = 288.298, hunter 0: y = 95.873, distance: 298.664047, angle differ: 28.133796
+hunter 1: x = 253.107, hunter 1: y = 148.122, distance: 278.255421, angle differ: 26.450875
+hunter 2: x = 202.730, hunter 2: y = 192.551, distance: 254.323429, angle differ: 24.338617
+hunter 3: x = 144.075, hunter 3: y = 229.380, distance: 235.758482, angle differ: 22.170043
+hunter 4: x = 79.390, hunter 4: y = 262.019, distance: 230.636864, angle differ: 21.750004
+hunter 5: x = 8.811, hunter 5: y = 290.395, distance: 242.906562, angle differ: 23.537327
+hunter 6: x = -66.303, hunter 6: y = 310.160, distance: 268.922687, angle differ: 26.246078
+hunter 7: x = -140.566, hunter 7: y = 315.664, distance: 299.387684, angle differ: 21.547907
+hunter 8: x = -236.019, hunter 8: y = 277.051, distance: 324.278561, angle differ: 194.174647
+target: x = -6.500, target: y = 47.971
+QAQ
+hunter 0: x = 283.131, hunter 0: y = 93.993, distance: 293.805101, angle differ: 28.189028
+hunter 1: x = 248.445, hunter 1: y = 145.209, distance: 273.100723, angle differ: 26.558357
+hunter 2: x = 199.051, hunter 2: y = 188.465, distance: 248.868214, angle differ: 24.376972
+hunter 3: x = 141.665, hunter 3: y = 224.438, distance: 229.912370, angle differ: 22.132754
+hunter 4: x = 78.625, hunter 4: y = 256.574, distance: 224.386839, angle differ: 21.627423
+hunter 5: x = 9.766, hunter 5: y = 284.980, distance: 236.323610, angle differ: 23.351388
+hunter 6: x = -64.066, hunter 6: y = 305.138, distance: 262.099728, angle differ: 26.147168
+hunter 7: x = -137.181, hunter 7: y = 311.331, distance: 292.503308, angle differ: 21.091166
+hunter 8: x = -232.787, hunter 8: y = 272.604, distance: 317.403250, angle differ: 193.474258
+target: x = -7.250, target: y = 49.270
+QAQ
+hunter 0: x = 277.965, hunter 0: y = 92.113, distance: 288.966927, angle differ: 28.248666
+hunter 1: x = 243.782, hunter 1: y = 142.296, distance: 267.970210, angle differ: 26.630082
+hunter 2: x = 195.232, hunter 2: y = 184.510, distance: 243.399858, angle differ: 24.465891
+hunter 3: x = 139.255, hunter 3: y = 219.497, distance: 224.099824, angle differ: 22.096801
+hunter 4: x = 77.860, hunter 4: y = 251.130, distance: 218.166196, angle differ: 21.497863
+hunter 5: x = 10.720, hunter 5: y = 279.566, distance: 229.760850, angle differ: 23.153561
+hunter 6: x = -61.830, hunter 6: y = 300.115, distance: 255.285879, angle differ: 26.041769
+hunter 7: x = -133.797, hunter 7: y = 306.999, distance: 285.623882, angle differ: 20.613305
+hunter 8: x = -229.556, hunter 8: y = 268.156, distance: 310.533118, angle differ: 192.747939
+target: x = -8.000, target: y = 50.569
+QAQ
+hunter 0: x = 272.799, hunter 0: y = 90.232, distance: 284.150587, angle differ: 28.313057
+hunter 1: x = 239.120, hunter 1: y = 139.382, distance: 262.865296, angle differ: 26.708884
+hunter 2: x = 191.413, hunter 2: y = 180.555, distance: 237.961421, angle differ: 24.564032
+hunter 3: x = 136.845, hunter 3: y = 214.556, distance: 218.323525, angle differ: 22.062620
+hunter 4: x = 77.094, hunter 4: y = 245.686, distance: 211.977522, angle differ: 21.360804
+hunter 5: x = 11.675, hunter 5: y = 274.152, distance: 223.220063, angle differ: 22.942768
+hunter 6: x = -59.594, hunter 6: y = 295.093, distance: 248.481891, angle differ: 25.929276
+hunter 7: x = -130.412, hunter 7: y = 302.667, distance: 278.749773, angle differ: 20.112838
+hunter 8: x = -226.324, hunter 8: y = 263.708, distance: 303.668520, angle differ: 191.994280
+target: x = -8.750, target: y = 51.868
+QAQ
+hunter 0: x = 267.633, hunter 0: y = 88.352, distance: 279.357209, angle differ: 28.382575
+hunter 1: x = 234.457, hunter 1: y = 136.469, distance: 257.787505, angle differ: 26.795432
+hunter 2: x = 187.594, hunter 2: y = 176.601, distance: 232.555000, angle differ: 24.622554
+hunter 3: x = 134.264, hunter 3: y = 209.701, distance: 212.534855, angle differ: 22.080556
+hunter 4: x = 76.329, hunter 4: y = 240.241, distance: 205.823701, angle differ: 21.215693
+hunter 5: x = 12.630, hunter 5: y = 268.738, distance: 216.703238, angle differ: 22.717811
+hunter 6: x = -57.358, hunter 6: y = 290.070, distance: 241.688596, angle differ: 25.809007
+hunter 7: x = -127.027, hunter 7: y = 298.334, distance: 271.881384, angle differ: 19.588140
+hunter 8: x = -223.093, hunter 8: y = 259.260, distance: 296.809837, angle differ: 191.211768
+target: x = -9.500, target: y = 53.167
+QAQ
+hunter 0: x = 262.404, hunter 0: y = 86.653, distance: 274.547158, angle differ: 28.496753
+hunter 1: x = 229.795, hunter 1: y = 133.556, distance: 252.738469, angle differ: 26.890465
+hunter 2: x = 183.775, hunter 2: y = 172.646, distance: 227.182883, angle differ: 24.690029
+hunter 3: x = 131.683, hunter 3: y = 204.847, distance: 206.783460, angle differ: 22.050934
+hunter 4: x = 75.375, hunter 4: y = 234.827, distance: 199.653703, angle differ: 21.064339
+hunter 5: x = 13.395, hunter 5: y = 263.293, distance: 210.161369, angle differ: 22.527765
+hunter 6: x = -55.122, hunter 6: y = 285.048, distance: 234.906923, angle differ: 25.680197
+hunter 7: x = -123.642, hunter 7: y = 294.002, distance: 265.019160, angle differ: 19.037427
+hunter 8: x = -219.861, hunter 8: y = 254.812, distance: 289.957490, angle differ: 190.437909
+target: x = -10.250, target: y = 54.466
+QAQ
+hunter 0: x = 257.175, hunter 0: y = 84.954, distance: 269.759016, angle differ: 28.574933
+hunter 1: x = 225.034, hunter 1: y = 130.807, distance: 247.675524, angle differ: 27.037973
+hunter 2: x = 179.956, hunter 2: y = 168.691, distance: 221.847560, angle differ: 24.767577
+hunter 3: x = 129.102, hunter 3: y = 199.993, distance: 201.072538, angle differ: 22.024553
+hunter 4: x = 74.420, hunter 4: y = 229.413, distance: 193.520095, angle differ: 20.903689
+hunter 5: x = 14.160, hunter 5: y = 257.849, distance: 203.643917, angle differ: 22.323598
+hunter 6: x = -52.886, hunter 6: y = 280.025, distance: 228.137907, angle differ: 25.541984
+hunter 7: x = -120.257, hunter 7: y = 289.670, distance: 258.163592, angle differ: 18.458739
+hunter 8: x = -216.630, hunter 8: y = 250.365, distance: 283.111940, angle differ: 189.633046
+target: x = -11.000, target: y = 55.765
+QAQ
+hunter 0: x = 251.947, hunter 0: y = 83.255, distance: 264.993971, angle differ: 28.659267
+hunter 1: x = 220.273, hunter 1: y = 128.058, distance: 242.640780, angle differ: 27.197202
+hunter 2: x = 176.137, hunter 2: y = 164.736, distance: 216.551753, angle differ: 24.856460
+hunter 3: x = 126.521, hunter 3: y = 195.139, distance: 195.405638, angle differ: 22.002229
+hunter 4: x = 73.465, hunter 4: y = 223.999, distance: 187.426448, angle differ: 20.733031
+hunter 5: x = 14.925, hunter 5: y = 252.405, distance: 197.153303, angle differ: 22.103842
+hunter 6: x = -50.650, hunter 6: y = 275.003, distance: 221.382710, angle differ: 25.393394
+hunter 7: x = -116.873, hunter 7: y = 285.337, distance: 251.315225, angle differ: 17.849915
+hunter 8: x = -213.398, hunter 8: y = 245.917, distance: 276.273690, angle differ: 188.795339
+target: x = -11.750, target: y = 57.064
+QAQ
+hunter 0: x = 246.718, hunter 0: y = 81.556, distance: 260.253291, angle differ: 28.750251
+hunter 1: x = 215.511, hunter 1: y = 125.309, distance: 237.636030, angle differ: 27.319143
+hunter 2: x = 172.182, hunter 2: y = 160.917, distance: 211.245595, angle differ: 25.008133
+hunter 3: x = 123.940, hunter 3: y = 190.284, distance: 189.786703, angle differ: 21.984937
+hunter 4: x = 72.511, hunter 4: y = 218.584, distance: 181.376792, angle differ: 20.551602
+hunter 5: x = 15.690, hunter 5: y = 246.960, distance: 190.692267, angle differ: 21.866841
+hunter 6: x = -48.413, hunter 6: y = 269.980, distance: 214.642636, angle differ: 25.233323
+hunter 7: x = -113.488, hunter 7: y = 281.005, distance: 244.474664, angle differ: 17.208570
+hunter 8: x = -210.167, hunter 8: y = 241.469, distance: 269.443298, angle differ: 187.922800
+target: x = -12.500, target: y = 58.363
+QAQ
+hunter 0: x = 241.489, hunter 0: y = 79.857, distance: 255.538333, angle differ: 28.848427
+hunter 1: x = 210.750, hunter 1: y = 122.560, distance: 232.663208, angle differ: 27.452833
+hunter 2: x = 168.227, hunter 2: y = 157.098, distance: 205.979787, angle differ: 25.119473
+hunter 3: x = 121.191, hunter 3: y = 185.523, distance: 184.161090, angle differ: 22.030644
+hunter 4: x = 71.556, hunter 4: y = 213.170, distance: 175.375677, angle differ: 20.358601
+hunter 5: x = 16.456, hunter 5: y = 241.516, distance: 184.263922, angle differ: 21.610722
+hunter 6: x = -46.177, hunter 6: y = 264.958, distance: 207.919156, angle differ: 25.060517
+hunter 7: x = -110.103, hunter 7: y = 276.673, distance: 237.642583, angle differ: 16.532064
+hunter 8: x = -206.935, hunter 8: y = 237.021, distance: 262.621376, angle differ: 187.013281
+target: x = -13.250, target: y = 59.662
+QAQ
+hunter 0: x = 236.260, hunter 0: y = 78.158, distance: 250.850546, angle differ: 28.954382
+hunter 1: x = 205.989, hunter 1: y = 119.811, distance: 227.724407, angle differ: 27.599422
+hunter 2: x = 164.272, hunter 2: y = 153.279, distance: 200.757505, angle differ: 25.246303
+hunter 3: x = 118.442, hunter 3: y = 180.762, distance: 178.586298, angle differ: 22.086783
+hunter 4: x = 70.601, hunter 4: y = 207.756, distance: 169.428264, angle differ: 20.153191
+hunter 5: x = 17.221, hunter 5: y = 236.072, distance: 177.871811, angle differ: 21.333364
+hunter 6: x = -43.941, hunter 6: y = 259.935, distance: 201.213933, angle differ: 24.873547
+hunter 7: x = -106.718, hunter 7: y = 272.340, distance: 230.819736, angle differ: 15.817466
+hunter 8: x = -203.704, hunter 8: y = 232.573, distance: 255.808602, angle differ: 186.064458
+target: x = -14.000, target: y = 60.962
+QAQ
+hunter 0: x = 230.976, hunter 0: y = 76.643, distance: 246.146125, angle differ: 29.112147
+hunter 1: x = 201.228, hunter 1: y = 117.062, distance: 222.821888, angle differ: 27.760172
+hunter 2: x = 160.318, hunter 2: y = 149.460, distance: 195.582234, angle differ: 25.390611
+hunter 3: x = 115.693, hunter 3: y = 176.001, distance: 173.067239, angle differ: 22.091924
+hunter 4: x = 69.458, hunter 4: y = 202.378, distance: 163.474660, angle differ: 19.997692
+hunter 5: x = 17.986, hunter 5: y = 230.628, distance: 171.519985, angle differ: 21.032365
+hunter 6: x = -41.705, hunter 6: y = 254.913, distance: 194.528856, angle differ: 24.670779
+hunter 7: x = -103.334, hunter 7: y = 268.008, distance: 224.006966, angle differ: 15.061517
+hunter 8: x = -200.472, hunter 8: y = 228.126, distance: 249.005726, angle differ: 185.117209
+target: x = -14.750, target: y = 62.261
+QAQ
+hunter 0: x = 225.691, hunter 0: y = 75.128, distance: 241.468020, angle differ: 29.231828
+hunter 1: x = 196.373, hunter 1: y = 114.481, distance: 217.906784, angle differ: 27.929999
+hunter 2: x = 156.232, hunter 2: y = 145.781, distance: 190.400283, angle differ: 25.609725
+hunter 3: x = 112.944, hunter 3: y = 171.239, distance: 167.609420, angle differ: 22.107578
+hunter 4: x = 68.315, hunter 4: y = 197.001, distance: 157.580005, angle differ: 19.831778
+hunter 5: x = 18.751, hunter 5: y = 225.183, distance: 165.213092, angle differ: 20.704997
+hunter 6: x = -39.469, hunter 6: y = 249.890, distance: 187.866075, angle differ: 24.450341
+hunter 7: x = -99.949, hunter 7: y = 263.676, distance: 217.205221, angle differ: 14.260583
+hunter 8: x = -197.240, hunter 8: y = 223.678, distance: 242.213583, angle differ: 184.126830
+target: x = -15.500, target: y = 63.560
+QAQ
+hunter 0: x = 220.406, hunter 0: y = 73.612, distance: 236.817790, angle differ: 29.360988
+hunter 1: x = 191.519, hunter 1: y = 111.900, distance: 213.028026, angle differ: 28.116304
+hunter 2: x = 152.146, hunter 2: y = 142.102, distance: 185.267198, angle differ: 25.789870
+hunter 3: x = 110.031, hunter 3: y = 166.577, distance: 162.152818, angle differ: 22.199623
+hunter 4: x = 67.172, hunter 4: y = 191.623, distance: 151.751166, angle differ: 19.654756
+hunter 5: x = 19.516, hunter 5: y = 219.739, distance: 158.956479, angle differ: 20.348166
+hunter 6: x = -37.233, hunter 6: y = 244.868, distance: 181.228049, angle differ: 24.210075
+hunter 7: x = -96.564, hunter 7: y = 259.344, distance: 210.415570, angle differ: 13.410597
+hunter 8: x = -194.009, hunter 8: y = 219.230, distance: 235.433102, angle differ: 183.090380
+target: x = -16.250, target: y = 64.859
+QAQ
+hunter 0: x = 215.121, hunter 0: y = 72.097, distance: 232.197109, angle differ: 29.500418
+hunter 1: x = 186.665, hunter 1: y = 109.319, distance: 208.188167, angle differ: 28.320738
+hunter 2: x = 148.061, hunter 2: y = 138.424, distance: 180.187156, angle differ: 25.994284
+hunter 3: x = 107.118, hunter 3: y = 161.915, distance: 156.762856, angle differ: 22.310381
+hunter 4: x = 66.029, hunter 4: y = 186.245, distance: 145.996028, angle differ: 19.398799
+hunter 5: x = 20.091, hunter 5: y = 214.271, distance: 152.687265, angle differ: 20.025531
+hunter 6: x = -34.996, hunter 6: y = 239.845, distance: 174.617601, angle differ: 23.947497
+hunter 7: x = -93.179, hunter 7: y = 255.011, distance: 203.639223, angle differ: 12.506999
+hunter 8: x = -190.777, hunter 8: y = 214.782, distance: 228.665320, angle differ: 182.004647
+target: x = -17.000, target: y = 66.158
+QAQ
+hunter 0: x = 209.836, hunter 0: y = 70.581, distance: 227.607778, angle differ: 29.650974
+hunter 1: x = 181.811, hunter 1: y = 106.738, distance: 203.389985, angle differ: 28.545114
+hunter 2: x = 143.975, hunter 2: y = 134.745, distance: 175.164773, angle differ: 26.226128
+hunter 3: x = 104.204, hunter 3: y = 157.252, distance: 151.446649, angle differ: 22.370946
+hunter 4: x = 64.699, hunter 4: y = 180.911, distance: 140.248546, angle differ: 19.198103
+hunter 5: x = 20.665, hunter 5: y = 208.804, distance: 146.474318, angle differ: 19.670466
+hunter 6: x = -32.760, hunter 6: y = 234.823, distance: 168.037986, angle differ: 23.659726
+hunter 7: x = -89.794, hunter 7: y = 250.679, distance: 196.877555, angle differ: 11.544656
+hunter 8: x = -187.546, hunter 8: y = 210.334, distance: 221.911398, angle differ: 180.866114
+target: x = -17.750, target: y = 67.457
+QAQ
+hunter 0: x = 204.502, hunter 0: y = 69.251, distance: 223.002399, angle differ: 29.808202
+hunter 1: x = 176.869, hunter 1: y = 104.328, distance: 198.581333, angle differ: 28.783532
+hunter 2: x = 139.763, hunter 2: y = 131.211, distance: 170.141110, angle differ: 26.480111
+hunter 3: x = 101.130, hunter 3: y = 152.694, distance: 146.140418, angle differ: 22.522639
+hunter 4: x = 63.369, hunter 4: y = 175.576, distance: 134.585101, angle differ: 18.984174
+hunter 5: x = 21.240, hunter 5: y = 203.336, distance: 140.325111, angle differ: 19.278714
+hunter 6: x = -30.524, hunter 6: y = 229.800, distance: 161.492973, angle differ: 23.343420
+hunter 7: x = -86.410, hunter 7: y = 246.347, distance: 190.132130, angle differ: 10.517775
+hunter 8: x = -184.314, hunter 8: y = 205.887, distance: 215.172643, angle differ: 179.718566
+target: x = -18.500, target: y = 68.756
+QAQ
+hunter 0: x = 199.167, hunter 0: y = 67.921, distance: 218.427787, angle differ: 29.978061
+hunter 1: x = 171.928, hunter 1: y = 101.918, distance: 193.815004, angle differ: 29.045394
+hunter 2: x = 135.552, hunter 2: y = 127.677, distance: 165.178621, angle differ: 26.768140
+hunter 3: x = 98.056, hunter 3: y = 148.137, distance: 140.916174, angle differ: 22.703687
+hunter 4: x = 62.039, hunter 4: y = 170.242, distance: 129.016758, angle differ: 18.756613
+hunter 5: x = 21.815, hunter 5: y = 197.868, distance: 134.248404, angle differ: 18.845404
+hunter 6: x = -28.288, hunter 6: y = 224.778, distance: 154.986946, angle differ: 22.994685
+hunter 7: x = -83.025, hunter 7: y = 242.014, distance: 183.404742, angle differ: 9.419796
+hunter 8: x = -181.083, hunter 8: y = 201.439, distance: 208.450525, angle differ: 178.511779
+target: x = -19.250, target: y = 70.055
+QAQ
+hunter 0: x = 193.833, hunter 0: y = 66.591, distance: 213.885916, angle differ: 30.161630
+hunter 1: x = 166.987, hunter 1: y = 99.508, distance: 189.094199, angle differ: 29.333079
+hunter 2: x = 131.340, hunter 2: y = 124.143, distance: 160.282985, angle differ: 27.094678
+hunter 3: x = 94.981, hunter 3: y = 143.579, distance: 135.783379, angle differ: 22.838995
+hunter 4: x = 60.524, hunter 4: y = 164.957, distance: 123.473025, angle differ: 18.595510
+hunter 5: x = 22.389, hunter 5: y = 192.401, distance: 128.254503, angle differ: 18.364987
+hunter 6: x = -26.052, hunter 6: y = 219.756, distance: 148.525027, angle differ: 22.608973
+hunter 7: x = -79.640, hunter 7: y = 237.682, distance: 176.697449, angle differ: 8.243262
+hunter 8: x = -177.851, hunter 8: y = 196.991, distance: 201.746707, angle differ: 177.241114
+target: x = -20.000, target: y = 71.354
+QAQ
+hunter 0: x = 188.498, hunter 0: y = 65.261, distance: 209.378918, angle differ: 30.360074
+hunter 1: x = 162.045, hunter 1: y = 97.098, distance: 184.422414, angle differ: 29.583133
+hunter 2: x = 127.008, hunter 2: y = 120.759, distance: 155.391752, angle differ: 27.454164
+hunter 3: x = 91.750, hunter 3: y = 139.131, distance: 130.673350, angle differ: 23.086561
+hunter 4: x = 59.008, hunter 4: y = 159.672, distance: 118.041169, angle differ: 18.344825
+hunter 5: x = 22.773, hunter 5: y = 186.916, distance: 122.271778, angle differ: 17.912054
+hunter 6: x = -23.816, hunter 6: y = 214.733, distance: 142.113234, angle differ: 22.180961
+hunter 7: x = -76.255, hunter 7: y = 233.350, distance: 170.012632, angle differ: 6.979669
+hunter 8: x = -174.620, hunter 8: y = 192.543, distance: 195.063075, angle differ: 175.901442
+target: x = -20.750, target: y = 72.653
+QAQ
+hunter 0: x = 183.164, hunter 0: y = 63.931, distance: 204.909094, angle differ: 30.516598
+hunter 1: x = 157.023, hunter 1: y = 94.861, distance: 179.743059, angle differ: 29.919494
+hunter 2: x = 122.676, hunter 2: y = 117.374, distance: 150.572574, angle differ: 27.861752
+hunter 3: x = 88.518, hunter 3: y = 134.683, distance: 125.667383, angle differ: 23.380639
+hunter 4: x = 57.493, hunter 4: y = 154.387, distance: 112.737364, angle differ: 18.080694
+hunter 5: x = 23.156, hunter 5: y = 181.432, distance: 116.387961, angle differ: 17.404206
+hunter 6: x = -21.580, hunter 6: y = 209.711, distance: 135.758670, angle differ: 21.704403
+hunter 7: x = -72.871, hunter 7: y = 229.017, distance: 163.353048, angle differ: 5.619281
+hunter 8: x = -171.388, hunter 8: y = 188.095, distance: 188.401779, angle differ: 174.487067
+target: x = -21.500, target: y = 73.952
+QAQ
+hunter 0: x = 177.786, hunter 0: y = 62.788, distance: 200.424133, angle differ: 30.740846
+hunter 1: x = 152.000, hunter 1: y = 92.625, distance: 175.114281, angle differ: 30.289520
+hunter 2: x = 118.343, hunter 2: y = 113.989, distance: 145.832595, angle differ: 28.323607
+hunter 3: x = 85.287, hunter 3: y = 130.235, distance: 120.778417, angle differ: 23.640179
+hunter 4: x = 55.794, hunter 4: y = 149.159, distance: 107.485752, angle differ: 17.893622
+hunter 5: x = 23.540, hunter 5: y = 175.948, distance: 110.618836, angle differ: 16.756118
+hunter 6: x = -19.520, hunter 6: y = 204.613, distance: 129.390950, angle differ: 21.249414
+hunter 7: x = -69.486, hunter 7: y = 224.685, distance: 156.721915, angle differ: 4.150909
+hunter 8: x = -168.157, hunter 8: y = 183.647, distance: 181.765274, angle differ: 173.044216
+target: x = -22.250, target: y = 75.251
+QAQ
+hunter 0: x = 172.409, hunter 0: y = 61.645, distance: 195.976242, angle differ: 30.983586
+hunter 1: x = 146.978, hunter 1: y = 90.389, distance: 170.540197, angle differ: 30.624868
+hunter 2: x = 113.896, hunter 2: y = 110.757, distance: 141.104792, angle differ: 28.834307
+hunter 3: x = 81.902, hunter 3: y = 125.903, distance: 115.931608, angle differ: 24.042402
+hunter 4: x = 54.095, hunter 4: y = 143.930, distance: 102.389865, angle differ: 17.610752
+hunter 5: x = 23.732, hunter 5: y = 170.453, distance: 104.888807, angle differ: 16.121653
+hunter 6: x = -17.461, hunter 6: y = 199.516, distance: 123.090360, angle differ: 20.735933
+hunter 7: x = -66.101, hunter 7: y = 220.353, distance: 150.123004, angle differ: 2.561639
+hunter 8: x = -164.925, hunter 8: y = 179.200, distance: 175.156377, angle differ: 171.515141
+target: x = -23.000, target: y = 76.550
+QAQ
+hunter 0: x = 167.031, hunter 0: y = 60.502, distance: 191.568002, angle differ: 31.246402
+hunter 1: x = 141.955, hunter 1: y = 88.153, distance: 166.025328, angle differ: 30.997710
+hunter 2: x = 109.448, hunter 2: y = 107.526, distance: 136.463835, angle differ: 29.412690
+hunter 3: x = 78.517, hunter 3: y = 121.571, distance: 111.221210, angle differ: 24.422285
+hunter 4: x = 52.215, hunter 4: y = 138.764, distance: 97.371523, angle differ: 17.416729
+hunter 5: x = 23.924, hunter 5: y = 164.959, distance: 99.301932, angle differ: 15.405476
+hunter 6: x = -15.401, hunter 6: y = 194.418, distance: 116.867756, angle differ: 19.862933
+hunter 7: x = -63.352, hunter 7: y = 215.591, distance: 143.322397, angle differ: 1.127716
+hunter 8: x = -161.694, hunter 8: y = 174.752, distance: 168.578337, angle differ: 169.891941
+target: x = -23.750, target: y = 77.849
+QAQ
+hunter 0: x = 161.653, hunter 0: y = 59.359, distance: 187.202215, angle differ: 31.467267
+hunter 1: x = 136.858, hunter 1: y = 86.094, distance: 161.507222, angle differ: 31.475764
+hunter 2: x = 105.000, hunter 2: y = 104.294, distance: 131.918890, angle differ: 29.977428
+hunter 3: x = 74.983, hunter 3: y = 117.359, distance: 106.569253, angle differ: 24.872051
+hunter 4: x = 50.155, hunter 4: y = 133.666, distance: 92.442467, angle differ: 17.226877
+hunter 5: x = 23.924, hunter 5: y = 159.461, distance: 93.781690, angle differ: 14.695877
+hunter 6: x = -13.342, hunter 6: y = 189.321, distance: 110.736287, angle differ: 17.463661
+hunter 7: x = -63.927, hunter 7: y = 210.124, distance: 136.781272, angle differ: 0.986795
+hunter 8: x = -158.462, hunter 8: y = 170.304, distance: 162.034910, angle differ: 168.165721
+target: x = -24.500, target: y = 79.148
+QAQ
+hunter 0: x = 156.239, hunter 0: y = 58.404, distance: 182.822770, angle differ: 31.766377
+hunter 1: x = 131.760, hunter 1: y = 84.034, distance: 157.051318, angle differ: 31.924334
+hunter 2: x = 100.442, hunter 2: y = 101.220, distance: 127.397146, angle differ: 30.607521
+hunter 3: x = 71.305, hunter 3: y = 113.273, distance: 101.982098, angle differ: 25.508129
+hunter 4: x = 48.096, hunter 4: y = 128.569, distance: 87.722665, angle differ: 17.046675
+hunter 5: x = 23.924, hunter 5: y = 153.963, distance: 88.445780, angle differ: 13.887817
+hunter 6: x = -11.282, hunter 6: y = 184.223, distance: 104.711962, angle differ: 14.797079
+hunter 7: x = -64.502, hunter 7: y = 204.656, distance: 130.263431, angle differ: 0.845708
+hunter 8: x = -155.231, hunter 8: y = 165.856, distance: 155.530466, angle differ: 166.383639
+target: x = -25.250, target: y = 80.447
+QAQ
+hunter 0: x = 150.825, hunter 0: y = 57.450, distance: 178.486218, angle differ: 32.090618
+hunter 1: x = 126.663, hunter 1: y = 81.975, distance: 152.663063, angle differ: 32.422551
+hunter 2: x = 95.884, hunter 2: y = 98.146, distance: 122.982617, angle differ: 31.327355
+hunter 3: x = 67.626, hunter 3: y = 109.188, distance: 97.564521, angle differ: 26.149486
+hunter 4: x = 45.859, hunter 4: y = 123.546, distance: 83.132584, angle differ: 16.885445
+hunter 5: x = 23.732, hunter 5: y = 148.469, distance: 83.217493, angle differ: 12.980658
+hunter 6: x = -9.402, hunter 6: y = 179.057, distance: 98.716328, angle differ: 11.916559
+hunter 7: x = -65.076, hunter 7: y = 199.188, distance: 123.772553, angle differ: 0.706563
+hunter 8: x = -151.999, hunter 8: y = 161.408, distance: 149.070107, angle differ: 164.479236
+target: x = -26.000, target: y = 81.746
+QAQ
+hunter 0: x = 145.411, hunter 0: y = 56.495, distance: 174.195764, angle differ: 32.373453
+hunter 1: x = 121.497, hunter 1: y = 80.094, distance: 148.276030, angle differ: 32.961547
+hunter 2: x = 91.222, hunter 2: y = 95.232, distance: 118.599722, angle differ: 32.130923
+hunter 3: x = 63.807, hunter 3: y = 105.233, distance: 93.235294, angle differ: 26.902446
+hunter 4: x = 43.449, hunter 4: y = 118.605, distance: 78.692062, angle differ: 16.866685
+hunter 5: x = 23.540, hunter 5: y = 142.974, distance: 78.234084, angle differ: 11.949030
+hunter 6: x = -7.521, hunter 6: y = 173.891, distance: 92.858326, angle differ: 8.683153
+hunter 7: x = -65.651, hunter 7: y = 193.721, distance: 117.313112, angle differ: 0.572343
+hunter 8: x = -148.768, hunter 8: y = 156.961, distance: 142.659824, angle differ: 162.439580
+target: x = -26.750, target: y = 83.045
+QAQ
+hunter 0: x = 139.996, hunter 0: y = 55.540, distance: 169.954898, angle differ: 32.683060
+hunter 1: x = 116.330, hunter 1: y = 78.214, distance: 143.961019, angle differ: 33.559916
+hunter 2: x = 86.560, hunter 2: y = 92.319, distance: 114.337949, angle differ: 32.942481
+hunter 3: x = 59.852, hunter 3: y = 101.414, distance: 89.004144, angle differ: 27.783539
+hunter 4: x = 40.868, hunter 4: y = 113.751, distance: 74.424184, angle differ: 16.899785
+hunter 5: x = 23.156, hunter 5: y = 137.490, distance: 73.420255, angle differ: 10.897078
+hunter 6: x = -5.641, hunter 6: y = 168.725, distance: 87.165710, angle differ: 5.036802
+hunter 7: x = -66.226, hunter 7: y = 188.253, distance: 110.890603, angle differ: 0.521527
+hunter 8: x = -145.383, hunter 8: y = 152.628, distance: 136.231837, angle differ: 160.324188
+target: x = -27.500, target: y = 84.344
+QAQ
+hunter 0: x = 134.552, hunter 0: y = 54.775, distance: 165.702527, angle differ: 33.084317
+hunter 1: x = 111.164, hunter 1: y = 76.333, distance: 139.724700, angle differ: 34.135967
+hunter 2: x = 81.798, hunter 2: y = 89.570, distance: 110.118315, angle differ: 33.959858
+hunter 3: x = 55.897, hunter 3: y = 97.595, distance: 84.991687, angle differ: 28.703817
+hunter 4: x = 38.119, hunter 4: y = 108.989, distance: 70.355795, angle differ: 17.002627
+hunter 5: x = 22.582, hunter 5: y = 132.022, distance: 68.810420, angle differ: 9.717247
+hunter 6: x = -3.942, hunter 6: y = 163.496, distance: 81.559208, angle differ: 1.014746
+hunter 7: x = -66.800, hunter 7: y = 182.785, distance: 104.511835, angle differ: 0.491408
+hunter 8: x = -141.998, hunter 8: y = 148.296, distance: 129.861535, angle differ: 158.109988
+target: x = -28.250, target: y = 85.643
+QAQ
+hunter 0: x = 129.108, hunter 0: y = 54.010, distance: 161.501026, angle differ: 33.445752
+hunter 1: x = 105.935, hunter 1: y = 74.635, distance: 135.495640, angle differ: 34.853788
+hunter 2: x = 77.037, hunter 2: y = 86.821, distance: 106.037123, angle differ: 35.002331
+hunter 3: x = 51.812, hunter 3: y = 93.916, distance: 81.111872, angle differ: 29.781765
+hunter 4: x = 35.206, hunter 4: y = 104.327, distance: 66.517956, angle differ: 17.072294
+hunter 5: x = 21.627, hunter 5: y = 126.608, distance: 64.315352, angle differ: 5.340496
+hunter 6: x = -6.691, hunter 6: y = 158.735, distance: 75.178683, angle differ: 0.269179
+hunter 7: x = -67.375, hunter 7: y = 177.318, distance: 98.185332, angle differ: 0.490544
+hunter 8: x = -138.613, hunter 8: y = 143.964, distance: 123.557843, angle differ: 155.717790
+target: x = -29.000, target: y = 86.942
+QAQ
+hunter 0: x = 123.663, hunter 0: y = 53.245, distance: 157.354472, angle differ: 33.841251
+hunter 1: x = 100.707, hunter 1: y = 72.936, distance: 131.351581, angle differ: 35.556319
+hunter 2: x = 72.183, hunter 2: y = 84.240, distance: 102.011295, angle differ: 36.166717
+hunter 3: x = 47.600, hunter 3: y = 90.382, distance: 77.379593, angle differ: 30.907807
+hunter 4: x = 31.974, hunter 4: y = 99.879, distance: 62.812026, angle differ: 17.251969
+hunter 5: x = 20.297, hunter 5: y = 121.273, distance: 59.965228, angle differ: 3.255180
+hunter 6: x = -6.307, hunter 6: y = 153.250, distance: 69.106526, angle differ: 4.173982
+hunter 7: x = -67.567, hunter 7: y = 171.823, distance: 91.739079, angle differ: 0.320165
+hunter 8: x = -135.229, hunter 8: y = 139.631, distance: 117.331494, angle differ: 153.125427
+target: x = -29.750, target: y = 88.241
+QAQ
+hunter 0: x = 118.219, hunter 0: y = 52.480, distance: 153.267325, angle differ: 34.195621
+hunter 1: x = 95.422, hunter 1: y = 71.420, distance: 127.219036, angle differ: 36.321789
+hunter 2: x = 67.241, hunter 2: y = 81.830, distance: 98.045058, angle differ: 37.463938
+hunter 3: x = 43.268, hunter 3: y = 86.997, distance: 73.811475, angle differ: 32.221338
+hunter 4: x = 28.590, hunter 4: y = 95.547, distance: 59.394189, angle differ: 15.208319
+hunter 5: x = 16.478, hunter 5: y = 117.319, distance: 54.576223, angle differ: 0.733326
+hunter 6: x = -10.262, hunter 6: y = 149.431, distance: 63.217674, angle differ: 4.553852
+hunter 7: x = -67.759, hunter 7: y = 166.329, distance: 85.350357, angle differ: 0.183280
+hunter 8: x = -131.844, hunter 8: y = 135.299, distance: 111.195484, angle differ: 150.307107
+target: x = -30.500, target: y = 89.540
+QAQ
+hunter 0: x = 112.751, hunter 0: y = 51.905, distance: 149.172069, angle differ: 34.655480
+hunter 1: x = 90.137, hunter 1: y = 69.905, distance: 123.179135, angle differ: 37.174478
+hunter 2: x = 62.300, hunter 2: y = 79.420, distance: 94.244430, angle differ: 38.686485
+hunter 3: x = 38.710, hunter 3: y = 83.923, distance: 70.300832, angle differ: 33.719551
+hunter 4: x = 24.911, hunter 4: y = 91.461, distance: 56.164387, angle differ: 13.050096
+hunter 5: x = 12.392, hunter 5: y = 113.640, distance: 49.239379, angle differ: 5.141201
+hunter 6: x = -14.217, hunter 6: y = 145.612, distance: 57.359989, angle differ: 4.943812
+hunter 7: x = -67.951, hunter 7: y = 160.834, distance: 79.033119, angle differ: 0.099943
+hunter 8: x = -128.459, hunter 8: y = 130.967, distance: 105.165626, angle differ: 147.301020
+target: x = -31.250, target: y = 90.839
+QAQ
+hunter 0: x = 107.284, hunter 0: y = 51.330, distance: 145.138808, angle differ: 35.075926
+hunter 1: x = 84.803, hunter 1: y = 68.575, distance: 119.155830, angle differ: 38.103456
+hunter 2: x = 57.278, hunter 2: y = 77.184, distance: 90.521394, angle differ: 319.944854
+hunter 3: x = 34.047, hunter 3: y = 81.010, distance: 66.978411, angle differ: 35.288732
+hunter 4: x = 20.956, hunter 4: y = 87.642, distance: 53.146698, angle differ: 6.431558
+hunter 5: x = 6.898, hunter 5: y = 113.448, distance: 44.352512, angle differ: 5.722684
+hunter 6: x = -18.172, hunter 6: y = 141.793, distance: 51.544095, angle differ: 5.062518
+hunter 7: x = -67.759, hunter 7: y = 155.340, distance: 72.616243, angle differ: 0.067841
+hunter 8: x = -124.925, hunter 8: y = 126.755, distance: 99.163535, angle differ: 144.101776
+target: x = -32.000, target: y = 92.138
+QAQ
+hunter 0: x = 101.816, hunter 0: y = 50.756, distance: 141.172858, angle differ: 35.540122
+hunter 1: x = 79.468, hunter 1: y = 67.245, distance: 115.234471, angle differ: 39.030044
+hunter 2: x = 52.180, hunter 2: y = 75.124, distance: 86.882065, angle differ: 319.869247
+hunter 3: x = 28.633, hunter 3: y = 80.055, distance: 62.824990, angle differ: 38.233759
+hunter 4: x = 16.624, hunter 4: y = 84.257, distance: 50.220017, angle differ: 0.658537
+hunter 5: x = 1.403, hunter 5: y = 113.256, distance: 39.487203, angle differ: 6.042701
+hunter 6: x = -21.851, hunter 6: y = 137.707, distance: 45.591874, angle differ: 1.345744
+hunter 7: x = -63.311, hunter 7: y = 152.108, distance: 66.153250, angle differ: 4.307594
+hunter 8: x = -121.391, hunter 8: y = 122.544, distance: 93.297597, angle differ: 140.580101
+target: x = -32.750, target: y = 93.437
+QAQ
+hunter 0: x = 96.332, hunter 0: y = 50.372, distance: 137.202298, angle differ: 36.125172
+hunter 1: x = 74.134, hunter 1: y = 65.915, distance: 111.425822, angle differ: 39.955379
+hunter 2: x = 47.014, hunter 2: y = 73.244, distance: 83.333141, angle differ: 319.704145
+hunter 3: x = 23.189, hunter 3: y = 79.290, distance: 58.755635, angle differ: 37.972745
+hunter 4: x = 11.126, hunter 4: y = 84.257, distance: 45.839900, angle differ: 5.225328
+hunter 5: x = -1.561, hunter 5: y = 114.702, distance: 37.665702, angle differ: 2.094314
+hunter 6: x = -22.805, hunter 6: y = 132.293, distance: 39.049631, angle differ: 5.618870
+hunter 7: x = -63.119, hunter 7: y = 146.614, distance: 59.737442, angle differ: 4.649373
+hunter 8: x = -117.857, hunter 8: y = 118.332, distance: 87.595167, angle differ: 136.761266
+target: x = -33.500, target: y = 94.737
+QAQ
+hunter 0: x = 90.847, hunter 0: y = 49.989, distance: 133.302873, angle differ: 36.675778
+hunter 1: x = 68.756, hunter 1: y = 64.772, distance: 107.646095, angle differ: 319.879003
+hunter 2: x = 41.529, hunter 2: y = 72.860, distance: 79.244010, angle differ: 319.721106
+hunter 3: x = 17.721, hunter 3: y = 79.865, distance: 54.428900, angle differ: 34.273761
+hunter 4: x = 6.794, hunter 4: y = 87.642, distance: 41.893165, angle differ: 5.471168
+hunter 5: x = -3.018, hunter 5: y = 117.033, distance: 37.634342, angle differ: 2.232877
+hunter 6: x = -25.472, hunter 6: y = 131.628, distance: 36.658855, angle differ: 6.313062
+hunter 7: x = -62.927, hunter 7: y = 141.120, distance: 53.431717, angle differ: 4.705194
+hunter 8: x = -114.179, hunter 8: y = 114.246, distance: 81.976940, angle differ: 132.627128
+target: x = -34.250, target: y = 96.036
+QAQ
+hunter 0: x = 85.353, hunter 0: y = 49.797, distance: 129.401153, angle differ: 37.267196
+hunter 1: x = 63.342, hunter 1: y = 63.817, distance: 103.896782, angle differ: 319.809021
+hunter 2: x = 36.032, hunter 2: y = 72.860, distance: 75.129775, angle differ: 319.766835
+hunter 3: x = 12.307, hunter 3: y = 80.819, distance: 50.106903, angle differ: 30.683190
+hunter 4: x = 3.214, hunter 4: y = 90.646, distance: 38.794861, angle differ: 1.805408
+hunter 5: x = -2.915, hunter 5: y = 117.288, distance: 37.783479, angle differ: 7.082438
+hunter 6: x = -27.979, hunter 6: y = 133.319, distance: 36.662835, angle differ: 6.355115
+hunter 7: x = -62.162, hunter 7: y = 135.675, distance: 46.987061, angle differ: 5.043287
+hunter 8: x = -110.500, hunter 8: y = 110.161, distance: 76.581599, angle differ: 128.088282
+target: x = -35.000, target: y = 97.335
+QAQ
+hunter 0: x = 79.858, hunter 0: y = 49.605, distance: 125.575179, angle differ: 37.918235
+hunter 1: x = 57.928, hunter 1: y = 62.862, distance: 100.274972, angle differ: 319.797262
+hunter 2: x = 30.537, hunter 2: y = 73.052, distance: 71.052105, angle differ: 319.765794
+hunter 3: x = 6.929, hunter 3: y = 81.962, distance: 45.819800, angle differ: 26.572115
+hunter 4: x = 2.549, hunter 4: y = 93.313, distance: 38.666690, angle differ: 2.521927
+hunter 5: x = -4.760, hunter 5: y = 120.023, distance: 37.655080, angle differ: 7.286106
+hunter 6: x = -30.598, hunter 6: y = 134.831, distance: 36.562010, angle differ: 6.691605
+hunter 7: x = -61.019, hunter 7: y = 130.298, distance: 40.510856, angle differ: 5.315359
+hunter 8: x = -106.681, hunter 8: y = 106.206, distance: 71.333839, angle differ: 123.112297
+target: x = -35.750, target: y = 98.634
+QAQ
+hunter 0: x = 74.364, hunter 0: y = 49.413, distance: 121.832089, angle differ: 38.536857
+hunter 1: x = 52.483, hunter 1: y = 62.097, distance: 96.693052, angle differ: 319.900460
+hunter 2: x = 25.070, hunter 2: y = 73.627, distance: 66.953718, angle differ: 319.538226
+hunter 3: x = 1.595, hunter 3: y = 83.292, distance: 41.570596, angle differ: 25.561516
+hunter 4: x = 1.850, hunter 4: y = 93.750, distance: 38.844693, angle differ: 6.937059
+hunter 5: x = -6.758, hunter 5: y = 122.986, distance: 37.630114, angle differ: 7.531748
+hunter 6: x = -33.511, hunter 6: y = 136.379, distance: 36.569189, angle differ: 7.153099
+hunter 7: x = -61.019, hunter 7: y = 126.724, distance: 36.317465, angle differ: 5.413628
+hunter 8: x = -102.726, hunter 8: y = 102.387, distance: 66.271461, angle differ: 117.624152
+target: x = -36.500, target: y = 99.933
+QAQ
+hunter 0: x = 68.866, hunter 0: y = 49.413, distance: 118.092433, angle differ: 39.304229
+hunter 1: x = 47.039, hunter 1: y = 61.332, distance: 93.255653, angle differ: 319.902796
+hunter 2: x = 19.602, hunter 2: y = 74.202, distance: 62.950466, angle differ: 319.581996
+hunter 3: x = -2.139, hunter 3: y = 84.223, distance: 39.013365, angle differ: 20.032395
+hunter 4: x = 1.229, hunter 4: y = 97.270, distance: 38.682464, angle differ: 6.851399
+hunter 5: x = -8.958, hunter 5: y = 125.802, distance: 37.471489, angle differ: 8.358395
+hunter 6: x = -36.824, hunter 6: y = 137.718, distance: 36.488920, angle differ: 11.300143
+hunter 7: x = -65.304, hunter 7: y = 124.250, distance: 36.288757, angle differ: 1.722860
+hunter 8: x = -98.640, hunter 8: y = 98.708, distance: 61.442189, angle differ: 111.619037
+target: x = -37.250, target: y = 101.232
+QAQ
+hunter 0: x = 63.368, hunter 0: y = 49.413, distance: 114.442324, angle differ: 319.956177
+hunter 1: x = 41.571, hunter 1: y = 60.757, distance: 89.869961, angle differ: 319.843347
+hunter 2: x = 14.158, hunter 2: y = 74.967, distance: 58.993109, angle differ: 319.771308
+hunter 3: x = -3.510, hunter 3: y = 84.127, distance: 39.092331, angle differ: 14.937743
+hunter 4: x = 0.543, hunter 4: y = 100.496, distance: 38.596844, angle differ: 8.062949
+hunter 5: x = -11.609, hunter 5: y = 128.960, distance: 37.350103, angle differ: 11.646841
+hunter 6: x = -42.238, hunter 6: y = 138.673, distance: 36.389712, angle differ: 4.473193
+hunter 7: x = -66.450, hunter 7: y = 125.437, distance: 36.524821, angle differ: 6.132751
+hunter 8: x = -94.308, hunter 8: y = 95.323, distance: 56.767414, angle differ: 105.051177
+target: x = -38.000, target: y = 102.531
+QAQ
+hunter 0: x = 57.874, hunter 0: y = 49.605, distance: 110.799496, angle differ: 319.953255
+hunter 1: x = 36.157, hunter 1: y = 61.712, distance: 85.935851, angle differ: 319.873239
+hunter 2: x = 8.991, hunter 2: y = 76.847, distance: 54.838865, angle differ: 319.735856
+hunter 3: x = -4.844, hunter 3: y = 84.460, distance: 39.048715, angle differ: 9.218715
+hunter 4: x = -0.314, hunter 4: y = 104.529, distance: 38.442257, angle differ: 10.232383
+hunter 5: x = -15.428, hunter 5: y = 132.915, distance: 37.281187, angle differ: 11.199144
+hunter 6: x = -46.594, hunter 6: y = 139.285, distance: 36.312379, angle differ: 3.912986
+hunter 7: x = -69.120, hunter 7: y = 124.017, distance: 36.466873, angle differ: 6.546824
+hunter 8: x = -89.860, hunter 8: y = 92.092, distance: 52.440751, angle differ: 97.765029
+target: x = -38.750, target: y = 103.830
+QAQ
+hunter 0: x = 52.380, hunter 0: y = 49.797, distance: 107.254288, angle differ: 319.904127
+hunter 1: x = 30.743, hunter 1: y = 62.667, distance: 82.079712, angle differ: 319.796079
+hunter 2: x = 3.825, hunter 2: y = 78.728, distance: 50.735562, angle differ: 319.764037
+hunter 3: x = -6.205, hunter 3: y = 84.651, distance: 39.088089, angle differ: 1.248037
+hunter 4: x = -1.457, hunter 4: y = 109.907, distance: 38.341737, angle differ: 10.461318
+hunter 5: x = -19.639, hunter 5: y = 136.449, distance: 37.086444, angle differ: 6.153600
+hunter 6: x = -48.150, hunter 6: y = 140.416, distance: 36.331939, angle differ: 8.446833
+hunter 7: x = -71.854, hunter 7: y = 122.172, distance: 36.568873, angle differ: 7.020234
+hunter 8: x = -85.198, hunter 8: y = 89.179, distance: 48.401482, angle differ: 89.701808
+target: x = -39.500, target: y = 105.129
+QAQ
+hunter 0: x = 46.895, hunter 0: y = 50.180, distance: 103.721081, angle differ: 319.967828
+hunter 1: x = 25.408, hunter 1: y = 63.997, distance: 78.175520, angle differ: 319.766000
+hunter 2: x = -1.197, hunter 2: y = 80.964, distance: 46.621195, angle differ: 38.830067
+hunter 3: x = -7.051, hunter 3: y = 85.734, distance: 39.119991, angle differ: 5.166351
+hunter 4: x = -2.973, hunter 4: y = 115.192, distance: 38.293801, angle differ: 6.503776
+hunter 5: x = -21.617, hunter 5: y = 138.358, distance: 36.969875, angle differ: 10.072220
+hunter 6: x = -52.546, hunter 6: y = 140.569, distance: 36.288239, angle differ: 8.984374
+hunter 7: x = -74.425, hunter 7: y = 119.690, distance: 36.657968, angle differ: 7.526631
+hunter 8: x = -80.344, hunter 8: y = 86.598, distance: 44.729614, angle differ: 80.842886
+target: x = -40.250, target: y = 106.428
+QAQ
+hunter 0: x = 41.411, hunter 0: y = 50.564, distance: 100.295307, angle differ: 319.976464
+hunter 1: x = 20.074, hunter 1: y = 65.327, distance: 74.349052, angle differ: 38.405776
+hunter 2: x = -1.885, hunter 2: y = 82.154, distance: 46.733204, angle differ: 36.785624
+hunter 3: x = -7.138, hunter 3: y = 88.207, distance: 39.085679, angle differ: 5.493916
+hunter 4: x = -4.202, hunter 4: y = 117.954, distance: 38.192385, angle differ: 10.250611
+hunter 5: x = -25.842, hunter 5: y = 141.428, distance: 36.953492, angle differ: 10.805064
+hunter 6: x = -57.193, hunter 6: y = 140.081, distance: 36.180264, angle differ: 9.484650
+hunter 7: x = -76.687, hunter 7: y = 116.577, distance: 36.767840, angle differ: 8.030122
+hunter 8: x = -75.246, hunter 8: y = 84.538, distance: 41.358458, angle differ: 71.150572
+target: x = -41.000, target: y = 107.727
+QAQ
+hunter 0: x = 35.943, hunter 0: y = 51.139, distance: 96.887405, angle differ: 319.962337
+hunter 1: x = 14.789, hunter 1: y = 66.842, distance: 70.541683, angle differ: 35.997614
+hunter 2: x = -2.667, hunter 2: y = 83.912, distance: 46.456241, angle differ: 31.029464
+hunter 3: x = -6.052, hunter 3: y = 93.316, distance: 39.002288, angle differ: 5.311570
+hunter 4: x = -6.439, hunter 4: y = 122.977, distance: 37.967342, angle differ: 10.907094
+hunter 5: x = -30.696, hunter 5: y = 144.009, distance: 36.688361, angle differ: 11.976393
+hunter 6: x = -62.302, hunter 6: y = 138.995, distance: 36.339222, angle differ: 9.585552
+hunter 7: x = -78.495, hunter 7: y = 112.870, distance: 36.945080, angle differ: 8.640907
+hunter 8: x = -69.961, hunter 8: y = 83.023, distance: 38.367323, angle differ: 60.643226
+target: x = -41.750, target: y = 109.026
+QAQ
+hunter 0: x = 30.475, hunter 0: y = 51.713, distance: 93.598890, angle differ: 319.866871
+hunter 1: x = 9.504, hunter 1: y = 68.358, distance: 66.825887, angle differ: 39.902284
+hunter 2: x = -8.002, hunter 2: y = 82.582, distance: 44.269814, angle differ: 23.095266
+hunter 3: x = -6.310, hunter 3: y = 95.776, distance: 39.004620, angle differ: 9.504937
+hunter 4: x = -9.020, hunter 4: y = 127.831, distance: 37.780858, angle differ: 11.705335
+hunter 5: x = -35.719, hunter 5: y = 146.246, distance: 36.555179, angle differ: 13.383979
+hunter 6: x = -67.145, hunter 6: y = 137.039, distance: 36.345238, angle differ: 9.967390
+hunter 7: x = -79.559, hunter 7: y = 108.603, distance: 37.098520, angle differ: 10.333992
+hunter 8: x = -65.629, hunter 8: y = 79.638, distance: 38.427224, angle differ: 48.235046
+target: x = -42.500, target: y = 110.325
+QAQ
+hunter 0: x = 25.031, hunter 0: y = 52.478, distance: 90.335616, angle differ: 319.886664
+hunter 1: x = 4.338, hunter 1: y = 70.238, distance: 63.066809, angle differ: 319.969802
+hunter 2: x = -12.856, hunter 2: y = 85.163, distance: 40.298766, angle differ: 14.873437
+hunter 3: x = -5.946, hunter 3: y = 100.986, distance: 38.791079, angle differ: 9.595412
+hunter 4: x = -11.933, hunter 4: y = 132.493, distance: 37.633514, angle differ: 12.613696
+hunter 5: x = -40.885, hunter 5: y = 148.126, distance: 36.578532, angle differ: 14.962892
+hunter 6: x = -71.668, hunter 6: y = 134.427, distance: 36.435636, angle differ: 11.948507
+hunter 7: x = -79.559, hunter 7: y = 103.105, distance: 37.294517, angle differ: 9.912492
+hunter 8: x = -60.688, hunter 8: y = 77.228, distance: 38.563883, angle differ: 35.983973
+target: x = -43.250, target: y = 111.624
+QAQ
+hunter 0: x = 19.617, hunter 0: y = 53.433, distance: 87.098617, angle differ: 319.865862
+hunter 1: x = -0.759, hunter 1: y = 72.297, distance: 59.331121, angle differ: 319.886848
+hunter 2: x = -15.470, hunter 2: y = 86.012, distance: 39.219011, angle differ: 6.678556
+hunter 3: x = -5.946, hunter 3: y = 106.209, distance: 38.641695, angle differ: 9.797969
+hunter 4: x = -15.165, hunter 4: y = 136.941, distance: 37.528016, angle differ: 13.769966
+hunter 5: x = -46.263, hunter 5: y = 149.269, distance: 36.416363, angle differ: 17.129546
+hunter 6: x = -75.754, hunter 6: y = 130.748, distance: 36.414656, angle differ: 12.721032
+hunter 7: x = -78.473, hunter 7: y = 97.996, distance: 37.565524, angle differ: 9.540116
+hunter 8: x = -55.353, hunter 8: y = 75.898, distance: 38.726850, angle differ: 23.967217
+target: x = -44.000, target: y = 112.923
+QAQ
+hunter 0: x = 14.203, hunter 0: y = 54.388, distance: 83.997396, angle differ: 319.900479
+hunter 1: x = -5.782, hunter 1: y = 74.534, distance: 55.620897, angle differ: 319.859958
+hunter 2: x = -17.384, hunter 2: y = 86.213, distance: 39.158419, angle differ: 1.528202
+hunter 3: x = -6.128, hunter 3: y = 111.429, distance: 38.722559, angle differ: 10.112622
+hunter 4: x = -18.843, hunter 4: y = 141.027, distance: 37.278011, angle differ: 15.110908
+hunter 5: x = -51.730, hunter 5: y = 149.844, distance: 36.299108, angle differ: 19.288788
+hunter 6: x = -79.287, hunter 6: y = 126.537, distance: 36.667230, angle differ: 12.818570
+hunter 7: x = -76.460, hunter 7: y = 93.476, distance: 37.893605, angle differ: 9.272629
+hunter 8: x = -49.869, hunter 8: y = 75.514, distance: 39.044861, angle differ: 12.107843
+target: x = -44.750, target: y = 114.222
+QAQ
+hunter 0: x = 8.825, hunter 0: y = 55.531, distance: 80.932343, angle differ: 39.930974
+hunter 1: x = -10.636, hunter 1: y = 77.115, distance: 51.870419, angle differ: 35.019893
+hunter 2: x = -16.719, hunter 2: y = 88.881, distance: 39.218109, angle differ: 4.758884
+hunter 3: x = -7.083, hunter 3: y = 116.843, distance: 38.439740, angle differ: 10.246452
+hunter 4: x = -22.662, hunter 4: y = 144.982, distance: 37.275665, angle differ: 16.647991
+hunter 5: x = -57.228, hunter 5: y = 149.844, distance: 36.271033, angle differ: 21.608649
+hunter 6: x = -81.697, hunter 6: y = 121.595, distance: 36.703616, angle differ: 12.019547
+hunter 7: x = -73.583, hunter 7: y = 89.794, distance: 38.086216, angle differ: 9.040100
+hunter 8: x = -44.454, hunter 8: y = 76.469, distance: 39.066226, angle differ: 0.629244
+target: x = -45.500, target: y = 115.521
+QAQ
+hunter 0: x = 3.491, hunter 0: y = 56.861, distance: 77.905326, angle differ: 319.965373
+hunter 1: x = -15.490, hunter 1: y = 79.696, distance: 48.211756, angle differ: 26.683421
+hunter 2: x = -14.968, hunter 2: y = 93.214, distance: 39.189441, angle differ: 5.123639
+hunter 3: x = -8.226, hunter 3: y = 122.221, distance: 38.405557, angle differ: 10.517025
+hunter 4: x = -26.995, hunter 4: y = 148.366, distance: 36.958474, angle differ: 18.379259
+hunter 5: x = -62.672, hunter 5: y = 149.079, distance: 36.198040, angle differ: 23.809776
+hunter 6: x = -83.213, hunter 6: y = 116.311, distance: 36.966395, angle differ: 10.867145
+hunter 7: x = -70.003, hunter 7: y = 86.790, distance: 38.288857, angle differ: 2.583307
+hunter 8: x = -46.882, hunter 8: y = 77.759, distance: 39.065850, angle differ: 0.604510
+target: x = -46.250, target: y = 116.820
+QAQ
+hunter 0: x = -1.844, hunter 0: y = 58.191, distance: 75.036473, angle differ: 39.907247
+hunter 1: x = -20.153, hunter 1: y = 82.609, distance: 44.516700, angle differ: 22.023587
+hunter 2: x = -14.882, hunter 2: y = 95.686, distance: 39.176654, angle differ: 9.058425
+hunter 3: x = -9.925, hunter 3: y = 127.449, distance: 38.231034, angle differ: 10.950093
+hunter 4: x = -31.442, hunter 4: y = 151.598, distance: 36.916894, angle differ: 20.260353
+hunter 5: x = -68.007, hunter 5: y = 147.749, distance: 36.320566, angle differ: 25.934226
+hunter 6: x = -83.596, hunter 6: y = 110.826, distance: 37.315990, angle differ: 1.960931
+hunter 7: x = -71.947, hunter 7: y = 89.106, distance: 38.263583, angle differ: 0.935097
+hunter 8: x = -46.834, hunter 8: y = 79.133, distance: 38.986528, angle differ: 3.246428
+target: x = -47.000, target: y = 118.119
+QAQ
+hunter 0: x = -7.129, hunter 0: y = 59.706, distance: 72.219134, angle differ: 39.895723
+hunter 1: x = -24.711, hunter 1: y = 85.683, distance: 40.851512, angle differ: 13.332258
+hunter 2: x = -13.518, hunter 2: y = 100.442, distance: 39.139510, angle differ: 9.158043
+hunter 3: x = -11.984, hunter 3: y = 132.547, distance: 38.099018, angle differ: 11.550732
+hunter 4: x = -36.204, hunter 4: y = 154.347, distance: 36.787474, angle differ: 22.383523
+hunter 5: x = -73.029, hunter 5: y = 145.512, distance: 36.331068, angle differ: 19.395336
+hunter 6: x = -84.130, hunter 6: y = 110.693, distance: 37.411474, angle differ: 3.090783
+hunter 7: x = -72.174, hunter 7: y = 89.899, distance: 38.313599, angle differ: 6.824572
+hunter 8: x = -52.118, hunter 8: y = 80.648, distance: 39.015150, angle differ: 0.655701
+target: x = -47.750, target: y = 119.418
+QAQ
+hunter 0: x = -12.357, hunter 0: y = 61.405, distance: 69.456509, angle differ: 39.922849
+hunter 1: x = -27.975, hunter 1: y = 87.137, distance: 39.356095, angle differ: 4.688433
+hunter 2: x = -12.659, hunter 2: y = 105.315, distance: 39.010303, angle differ: 9.435795
+hunter 3: x = -14.566, hunter 3: y = 137.401, distance: 37.814030, angle differ: 12.354447
+hunter 4: x = -41.226, hunter 4: y = 156.583, distance: 36.595791, angle differ: 24.713991
+hunter 5: x = -77.587, hunter 5: y = 142.438, distance: 36.302268, angle differ: 11.330620
+hunter 6: x = -84.682, hunter 6: y = 111.306, distance: 37.385590, angle differ: 6.910900
+hunter 7: x = -74.205, hunter 7: y = 92.498, distance: 38.171462, angle differ: 6.800330
+hunter 8: x = -54.683, hunter 8: y = 82.251, distance: 38.960206, angle differ: 0.487659
+target: x = -48.500, target: y = 120.717
+QAQ
+hunter 0: x = -17.524, hunter 0: y = 63.286, distance: 66.752244, angle differ: 39.626059
+hunter 1: x = -30.395, hunter 1: y = 87.651, distance: 39.197644, angle differ: 4.032736
+hunter 2: x = -12.113, hunter 2: y = 110.510, distance: 38.878817, angle differ: 9.460614
+hunter 3: x = -17.314, hunter 3: y = 142.162, distance: 37.759050, angle differ: 13.271808
+hunter 4: x = -46.392, hunter 4: y = 158.463, distance: 36.558800, angle differ: 27.171349
+hunter 5: x = -81.673, hunter 5: y = 138.759, distance: 36.490630, angle differ: 0.929243
+hunter 6: x = -85.810, hunter 6: y = 114.406, distance: 37.343582, angle differ: 6.830571
+hunter 7: x = -76.236, hunter 7: y = 95.098, distance: 38.116299, angle differ: 7.143653
+hunter 8: x = -57.480, hunter 8: y = 83.999, distance: 38.898156, angle differ: 0.593019
+target: x = -49.250, target: y = 122.016
+QAQ
+hunter 0: x = -22.621, hunter 0: y = 65.345, distance: 64.110509, angle differ: 34.577129
+hunter 1: x = -29.930, hunter 1: y = 89.518, distance: 39.307136, angle differ: 8.026405
+hunter 2: x = -11.931, hunter 2: y = 115.729, distance: 38.817757, angle differ: 9.609815
+hunter 3: x = -20.546, hunter 3: y = 146.610, distance: 37.552518, angle differ: 14.452329
+hunter 4: x = -51.770, hunter 4: y = 159.606, distance: 36.334107, angle differ: 22.293886
+hunter 5: x = -83.044, hunter 5: y = 138.663, distance: 36.434365, angle differ: 6.178623
+hunter 6: x = -86.829, hunter 6: y = 117.543, distance: 37.278815, angle differ: 6.705796
+hunter 7: x = -78.175, hunter 7: y = 97.766, distance: 38.033820, angle differ: 7.450251
+hunter 8: x = -60.215, hunter 8: y = 85.843, distance: 38.839300, angle differ: 0.529362
+target: x = -50.000, target: y = 123.315
+QAQ
+hunter 0: x = -27.644, hunter 0: y = 67.581, distance: 61.536080, angle differ: 25.474216
+hunter 1: x = -27.345, hunter 1: y = 93.077, distance: 39.273998, angle differ: 7.960489
+hunter 2: x = -12.295, hunter 2: y = 120.939, distance: 38.630138, angle differ: 9.957491
+hunter 3: x = -24.080, hunter 3: y = 150.822, distance: 37.391477, angle differ: 15.749005
+hunter 4: x = -57.214, hunter 4: y = 160.371, distance: 36.336703, angle differ: 11.888324
+hunter 5: x = -83.044, hunter 5: y = 141.687, distance: 36.529133, angle differ: 5.698646
+hunter 6: x = -87.663, hunter 6: y = 120.450, distance: 37.146874, angle differ: 7.381200
+hunter 7: x = -80.275, hunter 7: y = 100.657, distance: 38.022093, angle differ: 3.576661
+hunter 8: x = -60.518, hunter 8: y = 86.900, distance: 38.958454, angle differ: 3.424585
+target: x = -50.750, target: y = 124.614
+QAQ
+hunter 0: x = -32.585, hunter 0: y = 69.991, distance: 59.034436, angle differ: 16.450988
+hunter 1: x = -25.145, hunter 1: y = 96.886, distance: 39.206871, angle differ: 8.464421
+hunter 2: x = -13.060, hunter 2: y = 126.384, distance: 38.442667, angle differ: 10.026562
+hunter 3: x = -27.899, hunter 3: y = 154.777, distance: 37.283893, angle differ: 17.296661
+hunter 4: x = -62.712, hunter 4: y = 160.371, distance: 36.236282, angle differ: 1.480232
+hunter 5: x = -82.948, hunter 5: y = 144.434, distance: 36.496609, angle differ: 6.418229
+hunter 6: x = -88.527, hunter 6: y = 123.917, distance: 37.080974, angle differ: 3.411843
+hunter 7: x = -80.757, hunter 7: y = 101.646, distance: 38.012013, angle differ: 7.555505
+hunter 8: x = -63.409, hunter 8: y = 89.001, distance: 38.786131, angle differ: 3.431310
+target: x = -51.500, target: y = 125.913
+QAQ
+hunter 0: x = -37.346, hunter 0: y = 72.740, distance: 56.474367, angle differ: 7.168152
+hunter 1: x = -23.097, hunter 1: y = 101.086, distance: 39.147280, angle differ: 8.684294
+hunter 2: x = -14.203, hunter 2: y = 131.761, distance: 38.317704, angle differ: 10.254360
+hunter 3: x = -32.110, hunter 3: y = 158.310, distance: 37.049747, angle differ: 9.920682
+hunter 4: x = -62.885, hunter 4: y = 162.012, distance: 36.387972, angle differ: 0.724419
+hunter 5: x = -82.527, hunter 5: y = 147.429, distance: 36.406114, angle differ: 6.578237
+hunter 6: x = -89.270, hunter 6: y = 127.413, distance: 37.020723, angle differ: 3.152503
+hunter 7: x = -82.756, hunter 7: y = 104.608, distance: 37.967628, angle differ: 7.797865
+hunter 8: x = -66.300, hunter 8: y = 91.101, distance: 38.748158, angle differ: 3.438159
+target: x = -52.250, target: y = 127.212
+QAQ
+hunter 0: x = -42.009, hunter 0: y = 75.654, distance: 53.988649, angle differ: 2.140643
+hunter 1: x = -21.346, hunter 1: y = 105.419, distance: 39.182129, angle differ: 9.006853
+hunter 2: x = -15.719, hunter 2: y = 137.046, distance: 38.245766, angle differ: 10.171745
+hunter 3: x = -36.226, hunter 3: y = 161.526, distance: 37.031283, angle differ: 4.734203
+hunter 4: x = -64.110, hunter 4: y = 163.115, distance: 36.343718, angle differ: 5.235955
+hunter 5: x = -81.954, hunter 5: y = 150.677, distance: 36.464754, angle differ: 2.046189
+hunter 6: x = -90.061, hunter 6: y = 128.176, distance: 37.062653, angle differ: 7.528727
+hunter 7: x = -84.795, hunter 7: y = 107.872, distance: 37.906613, angle differ: 7.979900
+hunter 8: x = -69.333, hunter 8: y = 93.471, distance: 38.660292, angle differ: 3.262672
+target: x = -53.000, target: y = 128.512
+QAQ
+hunter 0: x = -42.963, hunter 0: y = 81.068, distance: 49.922008, angle differ: 7.343901
+hunter 1: x = -19.982, hunter 1: y = 110.175, distance: 39.061557, angle differ: 9.102195
+hunter 2: x = -17.778, hunter 2: y = 142.144, distance: 38.027324, angle differ: 4.977641
+hunter 3: x = -37.514, hunter 3: y = 162.956, distance: 36.908455, angle differ: 4.166471
+hunter 4: x = -59.914, hunter 4: y = 165.737, distance: 36.451847, angle differ: 3.711952
+hunter 5: x = -83.037, hunter 5: y = 151.524, distance: 36.458292, angle differ: 6.369601
+hunter 6: x = -90.682, hunter 6: y = 131.696, distance: 36.979760, angle differ: 7.638850
+hunter 7: x = -86.602, hunter 7: y = 111.270, distance: 37.722529, angle differ: 3.634364
+hunter 8: x = -69.599, hunter 8: y = 94.538, distance: 38.669954, angle differ: 3.326403
+target: x = -53.750, target: y = 129.811
+QAQ
+hunter 0: x = -39.889, hunter 0: y = 85.626, distance: 47.773078, angle differ: 7.830936
+hunter 1: x = -18.954, hunter 1: y = 115.015, distance: 39.020268, angle differ: 3.929904
+hunter 2: x = -18.682, hunter 2: y = 143.843, distance: 38.014368, angle differ: 0.190722
+hunter 3: x = -35.868, hunter 3: y = 163.071, distance: 36.995514, angle differ: 0.906881
+hunter 4: x = -61.214, hunter 4: y = 166.753, distance: 36.270075, angle differ: 4.897674
+hunter 5: x = -80.456, hunter 5: y = 156.378, distance: 36.224521, angle differ: 2.648446
+hunter 6: x = -91.084, hunter 6: y = 135.523, distance: 36.849207, angle differ: 3.072825
+hunter 7: x = -87.184, hunter 7: y = 112.202, distance: 37.759109, angle differ: 2.826368
+hunter 8: x = -69.513, hunter 8: y = 95.358, distance: 38.775919, angle differ: 0.586868
+target: x = -54.500, target: y = 131.110
+QAQ
+hunter 0: x = -37.140, hunter 0: y = 90.387, distance: 45.757987, angle differ: 6.733961
+hunter 1: x = -18.666, hunter 1: y = 119.128, distance: 38.919868, angle differ: 0.664662
+hunter 2: x = -19.369, hunter 2: y = 145.033, distance: 38.037299, angle differ: 2.764556
+hunter 3: x = -34.823, hunter 3: y = 163.411, distance: 37.126938, angle differ: 3.844706
+hunter 4: x = -57.014, hunter 4: y = 168.801, distance: 36.435511, angle differ: 2.931250
+hunter 5: x = -81.281, hunter 5: y = 157.806, distance: 36.368259, angle differ: 1.796659
+hunter 6: x = -91.848, hunter 6: y = 136.314, distance: 36.805551, angle differ: 2.418622
+hunter 7: x = -87.492, hunter 7: y = 112.658, distance: 37.810238, angle differ: 1.246827
+hunter 8: x = -66.764, hunter 8: y = 95.358, distance: 38.798620, angle differ: 0.577167
+target: x = -55.250, target: y = 132.409
+QAQ
+hunter 0: x = -35.810, hunter 0: y = 95.721, distance: 43.018494, angle differ: 1.938775
+hunter 1: x = -19.353, hunter 1: y = 120.318, distance: 39.016063, angle differ: 3.509179
+hunter 2: x = -19.426, hunter 2: y = 144.486, distance: 38.128947, angle differ: 3.752360
+hunter 3: x = -33.456, hunter 3: y = 163.267, distance: 37.175316, angle differ: 0.052146
+hunter 4: x = -57.659, hunter 4: y = 170.015, distance: 36.345206, angle differ: 3.968552
+hunter 5: x = -82.364, hunter 5: y = 158.652, distance: 36.294693, angle differ: 5.312791
+hunter 6: x = -92.373, hunter 6: y = 139.292, distance: 36.799004, angle differ: 1.656792
+hunter 7: x = -87.767, hunter 7: y = 113.134, distance: 37.846874, angle differ: 8.482066
+hunter 8: x = -61.819, hunter 8: y = 95.185, distance: 38.959573, angle differ: 3.419709
+target: x = -56.000, target: y = 133.708
+QAQ
+hunter 0: x = -38.262, hunter 0: y = 100.333, distance: 39.294708, angle differ: 1.052628
+hunter 1: x = -20.922, hunter 1: y = 119.809, distance: 38.918253, angle differ: 8.498483
+hunter 2: x = -18.891, hunter 2: y = 140.675, distance: 38.281373, angle differ: 3.944613
+hunter 3: x = -34.101, hunter 3: y = 164.481, distance: 37.171114, angle differ: 1.070997
+hunter 4: x = -58.996, hunter 4: y = 171.399, distance: 36.461677, angle differ: 3.889853
+hunter 5: x = -79.890, hunter 5: y = 162.937, distance: 36.271101, angle differ: 3.112106
+hunter 6: x = -93.406, hunter 6: y = 139.668, distance: 36.951261, angle differ: 9.057901
+hunter 7: x = -85.182, hunter 7: y = 109.576, distance: 38.145321, angle differ: 4.310880
+hunter 8: x = -65.152, hunter 8: y = 97.109, distance: 38.817526, angle differ: 0.566228
+target: x = -56.750, target: y = 135.007
+QAQ
+hunter 0: x = -38.262, hunter 0: y = 100.333, distance: 39.294708, angle differ: 1.052628
+hunter 1: x = -20.922, hunter 1: y = 119.809, distance: 38.918253, angle differ: 8.498483
+hunter 2: x = -18.891, hunter 2: y = 140.675, distance: 38.281373, angle differ: 3.944613
+hunter 3: x = -34.101, hunter 3: y = 164.481, distance: 37.171114, angle differ: 1.070997
+hunter 4: x = -58.996, hunter 4: y = 171.399, distance: 36.461677, angle differ: 3.889853
+hunter 5: x = -79.890, hunter 5: y = 162.937, distance: 36.271101, angle differ: 3.112106
+hunter 6: x = -93.406, hunter 6: y = 139.668, distance: 36.951261, angle differ: 9.057901
+hunter 7: x = -85.182, hunter 7: y = 109.576, distance: 38.145321, angle differ: 4.310880
+hunter 8: x = -65.152, hunter 8: y = 97.109, distance: 38.817526, angle differ: 0.566228
+target: x = -56.750, target: y = 135.007
 QAQ
