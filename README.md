@@ -2,6 +2,8 @@
 2024/12/25 22:31
 
     已经成了，干就完了。
+    只需要修改huntingSimulation.h中的huntersNum宏就可以实现任意船控制。
+    只需要修改main.py中的huntersNum参数就可以实现任意船仿真。
 
 2024/11/4 21:01
 
