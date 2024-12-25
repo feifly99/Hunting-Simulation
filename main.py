@@ -5,19 +5,19 @@ import matplotlib.cm as cm
 if __name__ == "__main__":
 
     # File path
-    file_path = r"E:\VS SOLUTIONS\mathworks\mathworks\output.txt"
+    file_path = r"E:\VS SOLUTIONS\mathworks\mathworks\simulationData.txt"
 
     # Number of hunters
-    huntersNum = 5
-    gap = 1000
-    x_min = -50 * 3
-    y_min = -50 * 3
-    x_max = 50 * 3
-    y_max = 50 * 3
+    huntersNum = 9
+    gap = 150
+    x_min = -50 * 12
+    y_min = -50 * 12
+    x_max = 50 * 12
+    y_max = 50 * 12
     # Function to read data from file
     def read_data(file_path):
         with open(file_path, 'r') as f:
-            data = f.readlines()
+            data = f.readlines()    
 
         hunter_positions = [[] for _ in range(huntersNum)]
         target_positions = []
@@ -65,7 +65,7 @@ if __name__ == "__main__":
 
     # Initialize scatter plots and lines with circles for hunters
     colors = cm.get_cmap('tab10', huntersNum)  # Generates distinct colors for each hunter
-    scatters = [ax.scatter([], [], color=colors(i), marker='o', s=100, label=f'Hunter {i}') for i in range(huntersNum)]
+    scatters = [ax.scatter([], [], color=colors(i), marker='o', s=100, label=f'Hunter {i + 1}') for i in range(huntersNum)]
     scatters.append(ax.scatter([], [], color='red', marker='*', s=120, label='Target'))  # Target point
     lines = [ax.plot([], [], color=colors(i))[0] for i in range(huntersNum)]
     lines.append(ax.plot([], [], color='red', linestyle='--')[0])  # Target path line
