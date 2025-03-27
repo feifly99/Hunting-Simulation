@@ -123,7 +123,7 @@ double sina(IN double x)
 double closeBetter(IN double indicator, IN double numberCloseTo)
 {
 	const double epsilon = 1e-6;
-	return 1.0 / (1.0 + mabs(indicator - numberCloseTo) + epsilon);
+	return 1.0 / (mabs(indicator - numberCloseTo) + epsilon);
 }
 void sortArray(IN double* array, IN size_t size)
 {
@@ -352,7 +352,7 @@ void movingNormalTargetStably(OUT PTUSV* target)
 	double angle2 = 120.0;
 	double angle3 = 240.0;
 	double angle4 = 330.0;
-	double angle = angle2;
+	double angle = angle3;
 	(*target)->pos.x += RtN * cosa((double)angle);
 	(*target)->pos.y += RtN * sina((double)angle);
 	return;
@@ -428,20 +428,19 @@ double _SURROUNDING_getRewardPointsForHunterByHuntersEI(IN PHUSV hunter)
 	double J = 0.0;
 	// 误差线 episilon_angle: 以目标为中心的合围图形中心角越接近【360 / n + episilon_angle】越好
 	double episilon_angle = 2.0;
-	// 误差线 episilon_distance: 捕食者和目标最大安全圈的距离越接近 0.1 越好；
+	// 误差线 episilon_distance: 捕食者和目标最大安全圈的距离越接近 0.8 越好；
 	double episilon_distance = 0.8;
 
-	if (hunter->evaluationIndicator.idealDistanceDiffer <= 0)
+	//为了好证明：
+	if (hunter->evaluationIndicator.idealDistanceDiffer - episilon_distance <= 0)
 	{
-		J = -100000.0; // 如果进入最大安全圈内部，直接给负分
+		J = -100000.0;
+		return J;
 	}
-	else
-	{
-		double cbangle = closeBetter(angleDiff, episilon_angle);
-		double cbdis = closeBetter(disDiff, episilon_distance);
-		double cbsum = cbangle + cbdis;
-		J = (cbdis / cbsum) * cbangle + (cbangle / cbsum) * cbdis;
-	}
+	double cbangle = closeBetter(angleDiff, episilon_angle);
+	double cbdis = closeBetter(disDiff, episilon_distance);
+	double cbsum = cbangle + cbdis;
+	J = (cbdis / cbsum) * cbangle; //+ (cbangle / cbsum) * cbdis;
 	return J;
 }
 void _SURROUNDING_changingHunterInfomationByRewardFunction(IN_OUT PHUSV* hunter, IN PTUSV target)
@@ -468,7 +467,7 @@ void _SURROUNDING_changingHunterInfomationByRewardFunction(IN_OUT PHUSV* hunter,
 	double wanderingFactor = 0.0;
 	if (alpha >= 1.50 * ((360.0) / (double)huntersNum))
 	{
-		wanderingFactor = 10 * exp((double)(alpha / alpha_0));
+		wanderingFactor = 15.0 * exp((double)(alpha / alpha_0));
 	}
 	else
 	{
@@ -519,10 +518,31 @@ void _SURROUNDING_changingHunterInfomationByRewardFunction(IN_OUT PHUSV* hunter,
 			_SURROUNDING_getHuntersTwoEIByHuntersLocAndHeadDirection(&nextHunterIdealInfo, target);
 			if (_SURROUNDING_getRewardPointsForHunterByHuntersEI(nextHunterIdealInfo) > newMaxRewardPoints)
 			{
-				newMaxRewardPoints = _SURROUNDING_getRewardPointsForHunterByHuntersEI(nextHunterIdealInfo);
-				stack->stackTopPointer += sizeof(PGI);
-				((PGI)stack->stackTopPointer)->i = i;
-				((PGI)stack->stackTopPointer)->j = j;
+				if (nextHunterIdealInfo->evaluationIndicator.idealAngleDiffer < 0)
+				{
+					newMaxRewardPoints = _SURROUNDING_getRewardPointsForHunterByHuntersEI(nextHunterIdealInfo);
+					stack->stackTopPointer += sizeof(PGI);
+					((PGI)stack->stackTopPointer)->i = i;
+					((PGI)stack->stackTopPointer)->j = j;
+				}
+				else
+				{
+					if 
+					(
+						calculate_P$P$P_unsignedAngle(nextHunterIdealInfo->pos, target->pos, CONTAINING_RECORD((*hunter)->hunterListEntry.Flink, HUSV, hunterListEntry)->pos)
+						>
+						360.0 / (double)huntersNum
+					)
+					{
+						//如果∠A_T_A.next > phase, 那么此语句保证A船移动的时候不会越过相角
+						//即保证当A船在此轮的移动终点A*满足，∠(A*)_T_A.next > ∠(virtualPoint)_T_A.next，其中∠(virtualPoint)_T_A.next == 360.0 / (double)huntersNum
+						//目的是保证sgn(∠(A*)_T_A.next - phase) == sgn(∠(A_T_A.next) - phase)
+						newMaxRewardPoints = _SURROUNDING_getRewardPointsForHunterByHuntersEI(nextHunterIdealInfo);
+						stack->stackTopPointer += sizeof(PGI);
+						((PGI)stack->stackTopPointer)->i = i;
+						((PGI)stack->stackTopPointer)->j = j;
+					}
+				}
 			}
 		}
 	}
