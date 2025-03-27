@@ -50,19 +50,16 @@ do\
 
 #define bug(num) printf("%ld\n", num)
 
-#define reachIdealPointTime 30
+#define reachIdealPointTime 90
 #define targetNormalVelocity 1.5
 #define targetSafetyRadius 30
 
-#define huntersNum 9
-#define huntersVelocity (0.5 * pi * targetNormalVelocity + (targetSafetyRadius * pi) / reachIdealPointTime)
+#define huntersNum 7
+#define huntersVelocity (0.5 * pi * targetNormalVelocity)
 #define huntersSafetyRadius 8
 
 #define RtN (targetNormalVelocity)
 #define Rh (huntersVelocity)
-
-#define w_idealAngleDiffer 10
-#define w_distanceDiffer 3
 
 #define STACK_MAX_SIZE 300
 
