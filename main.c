@@ -7,14 +7,6 @@ static size_t huntersNumRealTime = (size_t)huntersNum;
 
 SIZE_T huntersNums = 6;
 
-typedef struct _OBSTACLE
-{
-	Point center;
-	double size;
-	double v;
-	V movingDirection;
-}REC_OBSTACLE, *PREC_OBSTACLE;
-
 int main()
 {
 	srand((UINT)time(NULL));
@@ -48,6 +40,37 @@ int main()
 			huntersVelocity,
 			j
 		);
+	);
+	Point obstaclesCenterPos[obstaclesNum] =
+	{
+		{1.0,1.0},
+		{1.0,1.0},
+		{1.0,1.0},
+		{1.0,1.0},
+		{1.0,1.0},
+		{1.0,1.0},
+		{1.0,1.0},
+		{1.0,1.0},
+		{1.0,1.0},
+		{1.0,1.0},
+	};
+	V obstaclesMovingDirection[obstaclesNum] =
+	{
+		{0,0},
+		{0,0},
+		{0,0},
+		{0,0},
+		{0,0},
+		{0,0},
+		{0,0},
+		{0,0},
+		{0,0},
+		{0,0}
+	};
+	POBSTACLE obstacles[obstaclesNum] = { NULL };
+	fors(
+		obstaclesNum,
+		initializeObstacles(&obstacles[j], obstaclesCenterPos[j], 2.0, 0.0, obstaclesMovingDirection[j]);
 	);
 	buildCycleListByHuntersOriginalIndex(hunter); //补全了hunter结构的LIST_ENTRY项
 	fors(
@@ -90,7 +113,7 @@ int main()
 				}
 			);
 #endif
-			makePythonFile(fp, hunter, target);
+			makePythonFile(fp, hunter, target, obstacles);
 			QAQ;
 			surroundingAttempCount++;
 			if (surroundingAttempCount == 1000)
@@ -110,12 +133,17 @@ int main()
 #ifdef _DEBUG
 			printf_yellow("\n最后一次显示的距离信息可能不符合条件<所有捕食者到目标的距离全都大于mostSafetyRadius + 1 * RtN + 1 * Rh>\n\n这是正常的，因为打印此消息时目标已经进行了一次移动！\n");
 #endif
-			makePythonFile(fp, hunter, target);
+			makePythonFile(fp, hunter, target, obstacles);
 			QAQ;
 			break;
 		}
 	}
 	//流程正常结束，释放申请的内存，退出程序
+	fors(
+		obstaclesNum,
+		free(obstacles[j]);
+		obstacles[j] = NULL;
+	);
 	fors(
 		huntersNum,
 		free(hunter[j]);
