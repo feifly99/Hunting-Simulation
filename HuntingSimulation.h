@@ -58,6 +58,8 @@ do\
 #define huntersVelocity (0.5 * pi * targetNormalVelocity)
 #define huntersSafetyRadius 8
 
+#define obstaclesNum 10
+
 #define RtN (targetNormalVelocity)
 #define Rh (huntersVelocity)
 
@@ -92,9 +94,17 @@ typedef struct _huntingUSV
 	EI evaluationIndicator; //后置定义
 	LIST_ENTRY hunterListEntry; //后置定义
 }HUSV, * PHUSV, ** PPHUSV; //后置定义在第一次初始化时没有特定值，需要在后续的功能函数单独赋值。
+typedef struct _OBSTACLE
+{
+	Point center;
+	double size;
+	double v;
+	V movingDirection;
+}OBSTACLE, * POBSTACLE;
 //Initializing Functions:
 void initializeTargetUSV(OUTPTR PTUSV* Tusv, IN Point position, IN double normalVelocity, IN double safetyRadius);
 void initializeHunterUsv(OUTPTR PHUSV* Husv, IN Point position, IN double velocity, IN size_t hunterListIndex);
+void initializeObstacles(OUTPTR POBSTACLE* obstacle, IN Point center, IN double size, IN double velocity, IN V movingDirection);
 void buildCycleListByHuntersOriginalIndex(IN_OUT PHUSV* hunter);
 void showTarget(IN PTUSV target);
 void showHunter(IN PHUSV hunter);
@@ -136,6 +146,7 @@ void updateTargetPosByMovingDistanceAndUnsignedAngle(IN_OUT PTUSV* target, IN do
 void updateHunterPosByMovingDistanceAndUnsignedAngle(IN_OUT PHUSV* hunter, IN double movingDistance, IN double angle);
 void movingNormalTargetRandomly(OUT PTUSV* target);
 void movingNormalTargetStably(OUT PTUSV* target);
+void movingObstaclesRandomly(OUT POBSTACLE(*obstacles)[10]);
 //Geometry Functions:
 void getTwoCuttingPointOnCircle(IN Point center, IN double radius, IN Point externals, OUT Point* res1, OUT Point* res2);
 BOOL checkPointIsSafe(IN Point loc, IN PTUSV target);
@@ -145,5 +156,5 @@ double _SURROUNDING_getRewardPointsForHunterByHuntersEI(IN PHUSV hunter);
 void _SURROUNDING_changingHunterInfomationByRewardFunction(IN_OUT PHUSV* hunter, IN PTUSV target);
 BOOLEAN isSurroundingSuccess(IN PHUSV hunter[huntersNum], IN PTUSV target);
 //C-Python Interaction Functions:
-void makePythonFile(IN FILE* fp, IN PHUSV hunter[huntersNum], IN PTUSV target);
+void makePythonFile(IN FILE* fp, IN PHUSV hunter[huntersNum], IN PTUSV target, IN POBSTACLE obstacles[obstaclesNum]);
 #endif
