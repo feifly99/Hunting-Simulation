@@ -1,9 +1,19 @@
 #include "HuntingSimulation.h"
 
-static size_t huntersNumRealTime = (size_t)huntersNum; 
+static size_t huntersNumRealTime = (size_t)huntersNum;
 
 #define getFlink(j) CONTAINING_RECORD(hunter[j]->hunterListEntry.Flink, HUSV, hunterListEntry)
 #define getBlink(j) CONTAINING_RECORD(hunter[j]->hunterListEntry.Blink, HUSV, hunterListEntry)
+
+SIZE_T huntersNums = 6;
+
+typedef struct _OBSTACLE
+{
+	Point center;
+	double size;
+	double v;
+	V movingDirection;
+}REC_OBSTACLE, *PREC_OBSTACLE;
 
 int main()
 {
@@ -21,8 +31,8 @@ int main()
 	double beginRadius = 15.0 * targetSafetyRadius;
 	for (size_t j = 0; j < huntersNum; j++)
 	{
-		hunterPos[j].x = targetPos.x + beginRadius * cosa(beginAngle + 15.0 * (double)j);
-		hunterPos[j].y = targetPos.y + beginRadius * sina(beginAngle + 12.0 * (double)j);
+		hunterPos[j].x = targetPos.x + beginRadius * cosa(beginAngle + 20.0 * (double)j);
+		hunterPos[j].y = targetPos.y + beginRadius * sina(beginAngle + 20.0 * (double)j);
 	}
 	initializeTargetUSV(
 		&target,
@@ -67,7 +77,7 @@ int main()
 				huntersNum,
 				printf("[当前距离信息] %zu -> %lf\n", j, calculate_P$P_distance(hunter[j]->pos, target->pos));
 			);
-			movingNormalTargetStably(&target);
+			movingNormalTargetRandomly(&target);
 #ifdef _DEBUG
 			double neighborDistance[huntersNum] = { 0.0 };
 			fors(
@@ -83,7 +93,7 @@ int main()
 			makePythonFile(fp, hunter, target);
 			QAQ;
 			surroundingAttempCount++;
-			if (surroundingAttempCount == 500)
+			if (surroundingAttempCount == 1000)
 			{
 				system("pause");
 			}
