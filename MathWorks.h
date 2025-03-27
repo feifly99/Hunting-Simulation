@@ -1,6 +1,6 @@
-#pragma once
 #ifndef __MathwWorks__
 #define __MathwWorks__
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <math.h>
