@@ -26,6 +26,18 @@ void initializeHunterUsv(OUTPTR PHUSV* Husv, IN Point position, IN double veloci
 	(*Husv)->hunterListEntry.Blink = NULL;
 	return;
 }
+void initializeObstacles(OUTPTR POBSTACLE* obstacle, IN Point center, IN double size, IN double velocity, IN V movingDirection)
+{
+	*obstacle = (POBSTACLE)malloc(sizeof(OBSTACLE));
+	RtlZeroMemory(*obstacle, sizeof(OBSTACLE));
+	(*obstacle)->center.x = center.x;
+	(*obstacle)->center.y = center.y;
+	(*obstacle)->size = size;
+	(*obstacle)->v = velocity;
+	(*obstacle)->movingDirection.a = movingDirection.a;
+	(*obstacle)->movingDirection.b = movingDirection.b;
+	return;
+}
 void buildCycleListByHuntersOriginalIndex(IN_OUT PHUSV* hunter)
 {
 	for (size_t j = 0; j < huntersNum - 1; j++)
@@ -355,6 +367,11 @@ void movingNormalTargetStably(OUT PTUSV* target)
 	double angle = angle3;
 	(*target)->pos.x += RtN * cosa((double)angle);
 	(*target)->pos.y += RtN * sina((double)angle);
+	return;
+}
+void movingObstaclesRandomly(OUT POBSTACLE (*obstacles)[obstaclesNum])
+{
+
 	return;
 }
 //Geometry Functions:
@@ -757,7 +774,7 @@ BOOLEAN isSurroundingSuccess(IN PHUSV hunter[huntersNum], IN PTUSV target)
 
 }
 //C-Python Interaction Functions:
-void makePythonFile(IN FILE* fp, IN PHUSV hunter[huntersNum], IN PTUSV target)
+void makePythonFile(IN FILE* fp, IN PHUSV hunter[huntersNum], IN PTUSV target, IN POBSTACLE obstacles[obstaclesNum])
 {
 	Point* h = (Point*)malloc(huntersNum * sizeof(Point));
 
@@ -777,7 +794,6 @@ void makePythonFile(IN FILE* fp, IN PHUSV hunter[huntersNum], IN PTUSV target)
 		fprintf(stderr, "File pointer is NULL.\n");
 		return;
 	}
-
 
 	//fprintf(fp, "hunterNum = %zu\n", huntersNumRealTime);
 	
