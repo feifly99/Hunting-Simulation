@@ -1,5 +1,6 @@
 #ifndef __HuntingSimulation__
 #define __HuntingSimulation__
+
 #include "MathWorks.h"
 #include "colorPrint.h"
 
@@ -28,7 +29,7 @@ do\
 	{\
 		sentence\
 	}\
-}while (0); 
+}while (0)
 
 #define ckFloatValue(sentence) \
 do\
@@ -55,21 +56,21 @@ do\
 #define targetSafetyRadius 30
 
 #define huntersNum 7
-#define huntersVelocity (0.5 * pi * targetNormalVelocity)
+#define huntersVelocity (0.5 * (double)pi * (double)targetNormalVelocity)
 #define huntersSafetyRadius 8
 
 #define obstaclesNum 10
+#define obstacleSafetyFactor 2.0
 
 #define RtN (targetNormalVelocity)
 #define Rh (huntersVelocity)
 
-#define STACK_MAX_SIZE 300
+#define ANGLE_REGION_SIZE 360
+#define DIS_REGION_SIZE 30
+#define OFFSETS_MAX_SIZE (ANGLE_REGION_SIZE * DIS_REGION_SIZE + 1)
 
-typedef struct _evaluationIndicators
-{
-	double idealDistanceDiffer; //当前HUSV和目标安全圈的距离
-	double idealAngleDiffer; //当前HUSV，目标USV和它的nextHUSV的夹角与等分角的差值
-}EI, * PEI, ** PPEI;
+#define PHASE_ANGLE (360.0 / (double)huntersNum)
+
 typedef struct _Point
 {
 	double x;
@@ -91,7 +92,6 @@ typedef struct _huntingUSV
 	Point pos;
 	size_t hunterListIndex;
 	double velocity;
-	EI evaluationIndicator; //后置定义
 	LIST_ENTRY hunterListEntry; //后置定义
 }HUSV, * PHUSV, ** PPHUSV; //后置定义在第一次初始化时没有特定值，需要在后续的功能函数单独赋值。
 typedef struct _OBSTACLE
@@ -99,19 +99,19 @@ typedef struct _OBSTACLE
 	Point center;
 	double size;
 	double v;
-	V movingDirection;
+	double movingDirection;
 }OBSTACLE, * POBSTACLE;
 //Initializing Functions:
 void initializeTargetUSV(OUTPTR PTUSV* Tusv, IN Point position, IN double normalVelocity, IN double safetyRadius);
 void initializeHunterUsv(OUTPTR PHUSV* Husv, IN Point position, IN double velocity, IN size_t hunterListIndex);
-void initializeObstacles(OUTPTR POBSTACLE* obstacle, IN Point center, IN double size, IN double velocity, IN V movingDirection);
+void initializeObstacles(OUTPTR POBSTACLE* obstacle, IN Point center, IN double size, IN double velocity, IN double movingDirection);
 void buildCycleListByHuntersOriginalIndex(IN_OUT PHUSV* hunter);
 void showTarget(IN PTUSV target);
 void showHunter(IN PHUSV hunter);
+void showObstacle(IN POBSTACLE obstacle);
 void checkHuntersCycleListF(IN PPHUSV hunter);
 void checkHuntersCycleListB(IN PPHUSV hunter);
 void checkHuntersCycleList(IN PPHUSV hunter);
-void checkHuntersEI(IN EI evaluationIndicator);
 //Mathematical Functions:
 double mabs(IN double x);
 double msign(IN double x);
@@ -146,15 +146,14 @@ void updateTargetPosByMovingDistanceAndUnsignedAngle(IN_OUT PTUSV* target, IN do
 void updateHunterPosByMovingDistanceAndUnsignedAngle(IN_OUT PHUSV* hunter, IN double movingDistance, IN double angle);
 void movingNormalTargetRandomly(OUT PTUSV* target);
 void movingNormalTargetStably(OUT PTUSV* target);
-void movingObstaclesRandomly(OUT POBSTACLE(*obstacles)[10]);
+void movingObstaclesRandomly(OUT POBSTACLE(*obstacles)[obstaclesNum]);
 //Geometry Functions:
 void getTwoCuttingPointOnCircle(IN Point center, IN double radius, IN Point externals, OUT Point* res1, OUT Point* res2);
 BOOL checkPointIsSafe(IN Point loc, IN PTUSV target);
 //Surroundding Simulation Functions:
-void _SURROUNDING_getHuntersTwoEIByHuntersLocAndHeadDirection(IN_OUT PHUSV* hunter, IN PTUSV target);
-double _SURROUNDING_getRewardPointsForHunterByHuntersEI(IN PHUSV hunter);
-void _SURROUNDING_changingHunterInfomationByRewardFunction(IN_OUT PHUSV* hunter, IN PTUSV target);
-BOOLEAN isSurroundingSuccess(IN PHUSV hunter[huntersNum], IN PTUSV target);
+void _SURROUNDING_changingHunterInfomationByRewardFunctionAndEnvironment(IN_OUT PHUSV* hunter, IN PTUSV target, IN POBSTACLE obstacles[obstaclesNum]);
+BOOLEAN isSurroundingSuccess(IN PHUSV hunter[huntersNum], IN PTUSV target, IN POBSTACLE obstacles[obstaclesNum]);
 //C-Python Interaction Functions:
 void makePythonFile(IN FILE* fp, IN PHUSV hunter[huntersNum], IN PTUSV target, IN POBSTACLE obstacles[obstaclesNum]);
+
 #endif
