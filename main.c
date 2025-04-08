@@ -5,8 +5,6 @@ static size_t huntersNumRealTime = (size_t)huntersNum;
 #define getFlink(j) CONTAINING_RECORD(hunter[j]->hunterListEntry.Flink, HUSV, hunterListEntry)
 #define getBlink(j) CONTAINING_RECORD(hunter[j]->hunterListEntry.Blink, HUSV, hunterListEntry)
 
-SIZE_T huntersNums = 6;
-
 int main()
 {
 	srand((UINT)time(NULL));
@@ -19,8 +17,8 @@ int main()
 	//从目标坐标的右侧射线方向逆时针旋转，第一个碰到的捕食者为链表头，最后一个碰到的为链表尾.
 	//一定一定要保证链表顺序！只要围捕的时候撞上绝对是链表顺序问题！！！
 	Point hunterPos[huntersNum] = { {0, 0} };
-	double beginAngle = 20.0;
-	double beginRadius = 15.0 * targetSafetyRadius;
+	double beginAngle = 30.0;
+	double beginRadius = 4.0 * targetSafetyRadius;
 	for (size_t j = 0; j < huntersNum; j++)
 	{
 		hunterPos[j].x = targetPos.x + beginRadius * cosa(beginAngle + 20.0 * (double)j);
@@ -41,20 +39,38 @@ int main()
 			j
 		);
 	);
+	double obstacleSize = 6.0;
+	double obstacleVelocity = 0.85;
 	Point obstaclesCenterPos[obstaclesNum] =
 	{
-		{1.0,1.0},
-		{1.0,1.0},
-		{1.0,1.0},
-		{1.0,1.0},
-		{1.0,1.0},
-		{1.0,1.0},
-		{1.0,1.0},
-		{1.0,1.0},
-		{1.0,1.0},
-		{1.0,1.0},
+		{18.5, 15.2},
+		{12.3, -8.7},
+		{25.9, 20.1},
+		{9.6, 30.4},
+		{-5.2, 12.8},
+		{30.0, -10.5},
+		{15.8, -25.3},
+		{40.1, 18.7},
+		{8.9, 50.2},
+		{-20.4, -15.6}
 	};
-	V obstaclesMovingDirection[obstaclesNum] =
+	double obstaclesMovingDirection[obstaclesNum] =
+	{
+		11.16,
+		212.16,
+		142.16,
+		122.16,
+		69.16,
+		192.16,
+		251.16,
+		144.16,
+		178.16,
+		288.16,
+	};
+
+	/*double obstacleSize = 0.0;
+	double obstacleVelocity = 0.00;
+	Point obstaclesCenterPos[obstaclesNum] =
 	{
 		{0,0},
 		{0,0},
@@ -67,41 +83,66 @@ int main()
 		{0,0},
 		{0,0}
 	};
+	double obstaclesMovingDirection[obstaclesNum] =
+	{
+		0,
+		0,
+		0,
+		0,
+		0,
+		0,
+		0,
+		0,
+		0,
+		0
+	};*/
+	
 	POBSTACLE obstacles[obstaclesNum] = { NULL };
 	fors(
 		obstaclesNum,
-		initializeObstacles(&obstacles[j], obstaclesCenterPos[j], 2.0, 0.0, obstaclesMovingDirection[j]);
+		initializeObstacles(&obstacles[j], obstaclesCenterPos[j], obstacleSize, obstacleVelocity, obstaclesMovingDirection[j]);
+		showObstacle(obstacles[j]);
 	);
 	buildCycleListByHuntersOriginalIndex(hunter); //补全了hunter结构的LIST_ENTRY项
-	fors(
-		huntersNum,
-		_SURROUNDING_getHuntersTwoEIByHuntersLocAndHeadDirection(&hunter[j], target); //补全了hunter结构的EI项
-		_SURROUNDING_getRewardPointsForHunterByHuntersEI(hunter[j]);
-		QAQ;
-	);
 
 	size_t surroundingAttempCount = 0x0;
-
-	BOOLEAN fullyQueueMark = 1;
+	size_t patience = 800;
 
 	while (1)
 	{
 #ifdef _DEBUG
 		printf_cyan("******************************************************\n");
 #endif
-		if (!isSurroundingSuccess(hunter, target)) //!isSurroundingSuccess(hunter, target)
+		if (!isSurroundingSuccess(hunter, target, obstacles)) // !isSurroundingSuccess(hunter, target, obstacles)
 		{
+			printf("未收敛. surroundingAttempCount: %zu\n", surroundingAttempCount);
+			movingObstaclesRandomly(&obstacles);
 			fors(
 				huntersNum,
-				_SURROUNDING_changingHunterInfomationByRewardFunction(&hunter[j], target);
+				_SURROUNDING_changingHunterInfomationByRewardFunctionAndEnvironment(&hunter[j], target, obstacles);
 			);
-			printf("未收敛. surroundingAttempCount: %zu\n", surroundingAttempCount);
 			fors(
 				huntersNum,
 				printf("[当前距离信息] %zu -> %lf\n", j, calculate_P$P_distance(hunter[j]->pos, target->pos));
 			);
+			for (size_t j = 0; j < huntersNum; j++)
+			{
+				size_t cnt = 0;
+				for (size_t i = 0; i < obstaclesNum; i++)
+				{
+					if (calculate_P$P_distance(hunter[j]->pos, obstacles[i]->center) <= 1.2 * obstacles[i]->size)
+					{
+						cnt++;
+					}
+				}
+				printf("[当前捕食者的视野内障碍数目] %zu -> %zu\n", j, cnt);
+			}
 			movingNormalTargetRandomly(&target);
 #ifdef _DEBUG
+			fors(
+				obstaclesNum,
+				showObstacle(obstacles[j]);
+			);
 			double neighborDistance[huntersNum] = { 0.0 };
 			fors(
 				huntersNum,
@@ -116,7 +157,7 @@ int main()
 			makePythonFile(fp, hunter, target, obstacles);
 			QAQ;
 			surroundingAttempCount++;
-			if (surroundingAttempCount == 1000)
+			if (surroundingAttempCount == patience)
 			{
 				system("pause");
 			}
