@@ -1,82 +1,87 @@
 import matplotlib.pyplot as plt
-import matplotlib.animation as animation
-import matplotlib.cm as cm
+import numpy as np
 
-if __name__ == "__main__":
+def parse_data(file_path):
+    with open(file_path, 'r', encoding='utf-8') as f:
+        steps = f.read().strip().split('QAQ')
 
-    # File path
-    file_path = r"E:\VS SOLUTIONS\mathworks\mathworks\simulationData.txt"
-
-    # Number of hunters
-    huntersNum = 9
-    gap = 150
-    x_min = -50 * 12
-    y_min = -50 * 12
-    x_max = 50 * 12
-    y_max = 50 * 12
-    # Function to read data from file
-    def read_data(file_path):
-        with open(file_path, 'r') as f:
-            data = f.readlines()    
-
-        hunter_positions = [[] for _ in range(huntersNum)]
-        target_positions = []
-
-        # Process data, each cycle consists of huntersNum lines for hunters, 1 line for target, 1 line for QAQ
-        for i in range(0, len(data), huntersNum + 2):
-            # Extract hunter positions
-            for j in range(huntersNum):
-                line = data[i + j]
-                parts = line.split(',')
+    parsed_data = []
+    for step in steps:
+        hunters = []
+        obstacles = []
+        lines = step.strip().split('\n')
+        for line in lines:
+            if line.startswith('hunter'):
+                parts = line.split(', ')
                 x = float(parts[0].split('=')[1].strip())
                 y = float(parts[1].split('=')[1].strip())
-                hunter_positions[j].append((x, y))
+                hunters.append((x, y))
+            elif line.startswith('target'):
+                target = (float(line.split('=')[1].split(',')[0].strip()),
+                          float(line.split('=')[2].strip()))
+            elif line.startswith('obstacle'):
+                parts = line.split(', ')
+                x = float(parts[0].split('=')[1].strip())
+                y = float(parts[1].split('=')[1].strip())
+                obstacles.append((x, y))
+        parsed_data.append((hunters, target, obstacles))
+    return parsed_data
 
-            # Extract target position
-            target_line = data[i + huntersNum]
-            tx = float(target_line.split(',')[0].split('=')[1].strip())
-            ty = float(target_line.split(',')[1].split('=')[1].strip())
-            target_positions.append((tx, ty))
-
-        return hunter_positions, target_positions
-
-    # Update function for animation
-    def update(num, hunter_positions, target_positions, scatters, lines):
-        for i in range(huntersNum):
-            # Update hunter positions and paths
-            scatters[i].set_offsets([hunter_positions[i][num]])
-            lines[i].set_data([p[0] for p in hunter_positions[i][:num + 1]],
-                              [p[1] for p in hunter_positions[i][:num + 1]])
-
-        # Update target position and path
-        scatters[huntersNum].set_offsets([target_positions[num]])
-        lines[huntersNum].set_data([p[0] for p in target_positions[:num + 1]], [p[1] for p in target_positions[:num + 1]])
-
-    # Read data
-    hunter_positions, target_positions = read_data(file_path)
-
-    # Create figure
+def plot_data(data, radius=20, gap=50):
+    plt.ion()
     fig, ax = plt.subplots()
-    ax.set_xlim(x_min, x_max)  # Adjusted as needed
-    ax.set_ylim(y_min, y_max)
 
-    # Ensure equal aspect ratio
-    ax.set_aspect('equal', adjustable='box')
+    # 获取初始坐标范围
+    all_x = []
+    all_y = []
+    for hunters, target, obstacles in data:
+        all_x.extend([x for x, _ in hunters] + [target[0]] + [x for x, _ in obstacles])
+        all_y.extend([y for _, y in hunters] + [target[1]] + [y for _, y in obstacles])
 
-    # Initialize scatter plots and lines with circles for hunters
-    colors = cm.get_cmap('tab10', huntersNum)  # Generates distinct colors for each hunter
-    scatters = [ax.scatter([], [], color=colors(i), marker='o', s=100, label=f'Hunter {i + 1}') for i in range(huntersNum)]
-    scatters.append(ax.scatter([], [], color='red', marker='*', s=120, label='Target'))  # Target point
-    lines = [ax.plot([], [], color=colors(i))[0] for i in range(huntersNum)]
-    lines.append(ax.plot([], [], color='red', linestyle='--')[0])  # Target path line
+    min_x, max_x = min(all_x) - radius, max(all_x) + radius
+    min_y, max_y = min(all_y) - radius, max(all_y) + radius
 
-    # Add legend
-    ax.legend()
+    # 初始设置一次，后续不动
+    ax.set_xlim(min_x, max_x)
+    ax.set_ylim(min_y, max_y)
+    ax.set_title('Hunter Simulation')
+    ax.set_xlabel('X')
+    ax.set_ylabel('Y')
+    ax.grid(True)
+    plt.tight_layout()
+    fig.canvas.manager.set_window_title('Hunting Simulation Viewer')
 
-    # Dynamic update for plotting
-    ani = animation.FuncAnimation(fig, update, frames=len(target_positions),
-                                  fargs=(hunter_positions, target_positions, scatters, lines),
-                                  interval=gap, repeat=False)
+    cmap = plt.get_cmap('tab10')
 
-    # Show animation
+    for step, (hunters, target, obstacles) in enumerate(data):
+        ax.clear()
+        ax.set_title(f'Step {step + 1}')
+        ax.grid(True)
+        ax.set_aspect('equal', adjustable='datalim')  # 保证圆形不被拉伸！
+
+        # 绘制猎人
+        for i, (x, y) in enumerate(hunters):
+            ax.scatter(x, y, c=[cmap(i % 10)], label=f'Hunter {i}', s=50)
+
+        # 绘制目标
+        ax.scatter(*target, c='red', marker='*', s=150, label='Target')
+
+        # 绘制障碍物
+        if obstacles:
+            ox, oy = zip(*obstacles)
+            ax.scatter(ox, oy, c='green', marker='x', s=50, label='Obstacles')
+            for x, y in obstacles:
+                circle = plt.Circle((x, y), radius, color='green', fill=False, linewidth=1.5, linestyle='--')
+                ax.add_patch(circle)
+
+        ax.legend(loc='upper right')
+        plt.pause(gap / 1000.0)
+
+    plt.ioff()
     plt.show()
+
+
+# 示例用法
+file_path = 'D:/VS PROJECTS/HuntingSimulation/HuntingSimulation/simulationData.txt'  # 注意：用正斜杠更稳定
+data = parse_data(file_path)
+plot_data(data, radius=6, gap=20)
