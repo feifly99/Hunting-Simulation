@@ -364,7 +364,7 @@ void movingNormalTargetStably(OUT PTUSV* target)
 	(*target)->pos.y += RtN * sina((double)angle);
 	return;
 }
-void movingObstaclesRandomly(OUT POBSTACLE (*obstacles)[obstaclesNum])
+void movingObstaclesRandomly(OUT POBSTACLE** obstacles)
 {
 	fors(
 		obstaclesNum,
@@ -436,9 +436,18 @@ static double _SURROUNDING_getRewardPointsForHunter(IN PHUSV hunter, IN PTUSV ta
 	);
 	if (insightObstaclesCount != 0)
 	{
-		double distanceNearby = 1.50;
-		double angleNearby = 3.50;
-		double obstacleDistanceNearby = 9999999.0;
+		double distanceNearby = 2.50;
+
+		double angleNearby = 0.0;
+		if (calculate_P$P$P_unsignedAngle(CONTAINING_RECORD(hunter->hunterListEntry.Blink, HUSV, hunterListEntry)->pos, target->pos, CONTAINING_RECORD(hunter->hunterListEntry.Flink, HUSV, hunterListEntry)->pos) >= (double)PHASE_ANGLE + (double)PHASE_ANGLE / 2.50)
+		{
+			angleNearby = (double)PHASE_ANGLE / 3.50;
+		}
+		else
+		{
+			angleNearby = -(double)PHASE_ANGLE / 3.50;
+		}
+		double obstacleDistanceNearby = 999999.0;
 
 		double distanceDiffer = calculate_P$P_distance(hunter->pos, target->pos) - 1.1 * Rh - targetSafetyRadius;
 		double angleDiffer = calculate_P$P$P_unsignedAngle(hunter->pos, target->pos, CONTAINING_RECORD(hunter->hunterListEntry.Flink, HUSV, hunterListEntry)->pos) - PHASE_ANGLE;
@@ -452,27 +461,32 @@ static double _SURROUNDING_getRewardPointsForHunter(IN PHUSV hunter, IN PTUSV ta
 				obstaclesDistanceSum += calculate_P$P_distance(hunter->pos, obstacles[j]->center);
 			}
 		);
-		obstacleAverageDiffer = obstaclesDistanceSum / (double)insightObstaclesCount;
+		obstacleAverageDiffer = obstaclesDistanceSum * (double)insightObstaclesCount;
 
 		if (distanceDiffer <= 0.0)
+		{
 			return -10000.0;
+		}
 
 		double cbDistance = closeBetter(distanceDiffer, distanceNearby);
 		double cbAngle = closeBetter(angleDiffer, angleNearby);
 		double cbObstacleDistance = closeBetter(obstacleAverageDiffer, obstacleDistanceNearby);
+		double cbSum = cbDistance + cbAngle + cbObstacleDistance;
 
-		return (cbDistance * cbAngle * cbObstacleDistance) / (cbDistance + cbAngle + cbObstacleDistance);
+		return (cbDistance * cbAngle + cbAngle * cbObstacleDistance + cbObstacleDistance * cbDistance) / cbSum;
 	}
 	else
 	{
 		double distanceNearby = 1.50;
-		double angleNearby = 3.50;
+		double angleNearby = PHASE_ANGLE / 3.50;
 
 		double distanceDiffer = calculate_P$P_distance(hunter->pos, target->pos) - 1.1 * Rh - targetSafetyRadius;
 		double angleDiffer = calculate_P$P$P_unsignedAngle(hunter->pos, target->pos, CONTAINING_RECORD(hunter->hunterListEntry.Flink, HUSV, hunterListEntry)->pos) - PHASE_ANGLE;
 
 		if (distanceDiffer <= 0.0)
+		{
 			return -10000.0;
+		}
 
 		double cbDistance = closeBetter(distanceDiffer, distanceNearby);
 		double cbAngle = closeBetter(angleDiffer, angleNearby);
@@ -524,7 +538,7 @@ void _SURROUNDING_changingHunterInfomationByRewardFunctionAndEnvironment(IN_OUT 
 	nextHunterAvaliableInfo = (PHUSV)malloc(sizeof(HUSV));
 	memcpy(nextHunterAvaliableInfo, *hunter, sizeof(HUSV));
 	//决策数组：存储所有可移动位置的偏移：
-	struct _offset 
+	struct _offset
 	{
 		int distanceOffset;
 		int angleOffset;
@@ -541,7 +555,7 @@ void _SURROUNDING_changingHunterInfomationByRewardFunctionAndEnvironment(IN_OUT 
 	//计算当前捕食者视野内的障碍物个数计数
 	fors(
 		obstaclesNum,
-		if (calculate_P$P_distance((*hunter)->pos, obstacles[j]->center) <= 30.0)
+		if (calculate_P$P_distance((*hunter)->pos, obstacles[j]->center) <= 6.0 * obstacles[0]->size + 5.0 * Rh)
 		{
 			obstacleInsightOneHotMark[j] = 1;
 			currentHunterInsightObstaclesCount++;
@@ -559,12 +573,12 @@ void _SURROUNDING_changingHunterInfomationByRewardFunctionAndEnvironment(IN_OUT 
 	//只要此位置合法（避碰/链表/不被发现），那么就将此位置入决策数组；否则忽略.
 	for (int j = 0; j < ANGLE_REGION_SIZE; j++)
 	{
-		for (int i = 1; i <= DIS_REGION_SIZE; i++)
+		for (int i = 1; i < DIS_REGION_SIZE; i++)
 		{
 			nextHunterAvaliableInfo->pos.x = (*hunter)->pos.x + (i * ((double)huntersVelocity / (double)DIS_REGION_SIZE)) * cosa((double)j * (360.0) / (double)ANGLE_REGION_SIZE);
 			nextHunterAvaliableInfo->pos.y = (*hunter)->pos.y + (i * ((double)huntersVelocity / (double)DIS_REGION_SIZE)) * sina((double)j * (360.0) / (double)ANGLE_REGION_SIZE);
 			int shouldPush = TRUE;
-			if(
+			if (
 				(
 					calculate_P$P$P_unsignedAngle(CONTAINING_RECORD((*hunter)->hunterListEntry.Blink, HUSV, hunterListEntry)->pos, target->pos, nextHunterAvaliableInfo->pos)
 					>=
@@ -575,15 +589,15 @@ void _SURROUNDING_changingHunterInfomationByRewardFunctionAndEnvironment(IN_OUT 
 					calculate_P$P$P_unsignedAngle(nextHunterAvaliableInfo->pos, target->pos, CONTAINING_RECORD((*hunter)->hunterListEntry.Flink, HUSV, hunterListEntry)->pos)
 					>=
 					currentHunterValidRegionAngle
+					)
 				)
-			)
 			{
 				//∠(A-1)_T_A.want > currentPhaseAngle || ∠A.want_T_(A+1) > currentPhaseAngle，破坏了链表顺序
 				shouldPush = FALSE;
 			}
 			if (
 				calculate_P$P_distance(nextHunterAvaliableInfo->pos, target->pos) <= targetSafetyRadius + 1.1 * Rh
-			)
+				)
 			{
 				//进入了目标的探测半径，破坏了隐蔽性
 				shouldPush = FALSE;
@@ -592,7 +606,7 @@ void _SURROUNDING_changingHunterInfomationByRewardFunctionAndEnvironment(IN_OUT 
 				(calculate_P$P_distance(nextHunterAvaliableInfo->pos, CONTAINING_RECORD((*hunter)->hunterListEntry.Flink, HUSV, hunterListEntry)->pos) <= huntersSafetyRadius)
 				||
 				(calculate_P$P_distance(nextHunterAvaliableInfo->pos, CONTAINING_RECORD((*hunter)->hunterListEntry.Blink, HUSV, hunterListEntry)->pos) <= huntersSafetyRadius)
-			)
+				)
 			{
 				//进入了其他捕食者的安全半径，破坏了船间安全性
 				shouldPush = FALSE;
@@ -609,12 +623,12 @@ void _SURROUNDING_changingHunterInfomationByRewardFunctionAndEnvironment(IN_OUT 
 				}
 				for (size_t jj = 0; jj < currentHunterInsightObstaclesCount; jj++)
 				{
-					if (obstacleDistanceDifferOfNextLoc[jj] <= 1.2 * obstacles[jj]->size) 
+					if (obstacleDistanceDifferOfNextLoc[jj] <= 1.2 * obstacles[jj]->size)
 					{
-						shouldPush = FALSE; 
+						shouldPush = FALSE;
 						break;
 					}
-					else 
+					else
 					{
 						continue;
 					}
@@ -642,7 +656,7 @@ void _SURROUNDING_changingHunterInfomationByRewardFunctionAndEnvironment(IN_OUT 
 		nextHunterAvaliableLoc.y = (*hunter)->pos.y + ((double)(OFFSETS[jt].distanceOffset) * ((double)huntersVelocity / (double)DIS_REGION_SIZE)) * sina((double)(OFFSETS[jt].angleOffset * 360.0 / (double)ANGLE_REGION_SIZE));
 		nextHunterAvaliableInfo->pos.x = nextHunterAvaliableLoc.x;
 		nextHunterAvaliableInfo->pos.y = nextHunterAvaliableLoc.y;
-		//根据评分公式来对栈内的每一个位置打分，最高者出列：
+		//根据评分公式来对决策数组内的每一个位置打分，最高者出列：
 		if (_SURROUNDING_getRewardPointsForHunter(nextHunterAvaliableInfo, target, obstacles, obstacleInsightOneHotMark) >= newMaxRewardScore)
 		{
 			//如果是当前最大值，刷新最大值并赋值maxDisScoreIndex和maxAngleScoreIndex：
@@ -654,6 +668,14 @@ void _SURROUNDING_changingHunterInfomationByRewardFunctionAndEnvironment(IN_OUT 
 	//根据最优偏移来计算理想位置：
 	nextHunterAvaliableLoc.x = (*hunter)->pos.x + (maxDisScoreIndex * ((double)huntersVelocity / (double)DIS_REGION_SIZE)) * cosa((double)maxAngleScoreIndex * (360.0) / (double)ANGLE_REGION_SIZE);
 	nextHunterAvaliableLoc.y = (*hunter)->pos.y + (maxDisScoreIndex * ((double)huntersVelocity / (double)DIS_REGION_SIZE)) * sina((double)maxAngleScoreIndex * (360.0) / (double)ANGLE_REGION_SIZE);
+	if (calculate_P$P_distance(nextHunterAvaliableLoc, (*hunter)->pos) < 4.0 * (double)huntersVelocity / (double)DIS_REGION_SIZE)
+	{
+		(*hunter)->deadCorner++;
+	}
+	else
+	{
+		(*hunter)->deadCorner = 0;
+	}
 	//更新位置：
 	updateHunterPosByNewPoint(hunter, nextHunterAvaliableLoc);
 	//释放内存：
@@ -670,15 +692,15 @@ void _SURROUNDING_changingHunterInfomationByRewardFunctionAndEnvironment(IN_OUT 
 	OFFSETS = NULL;
 	return;
 }
-BOOLEAN isSurroundingSuccess(IN PHUSV hunter[huntersNum], IN PTUSV target, IN POBSTACLE obstacles[obstaclesNum])
+BOOLEAN isSurroundingSuccess(IN PHUSV hunter[huntersNum], IN PTUSV target)
 {
 	//maxTolerance这个值是临界值；
 	//如果有任何一个捕食者到目标的距离大于mostSafetyRadius加上这个maxTolerance值，那么就视为不收敛；
 	//maxTolerance值必须大于_SURROUNDING_getRewardPointsForHunterByHuntersEI中定义的episilon_distance；
 	//否则永不收敛
 
-	double maxDistanceTolerance = 3.00;
-	double maxAngleTolerance = 4.00;
+	double maxDistanceTolerance = 5.50;
+	double maxAngleTolerance = PHASE_ANGLE / 3.20;
 
 	double d[huntersNum] = { 0 };
 	double a[huntersNum] = { 0 };
@@ -701,7 +723,6 @@ BOOLEAN isSurroundingSuccess(IN PHUSV hunter[huntersNum], IN PTUSV target, IN PO
 	}
 
 	return TRUE;
-
 }
 //C-Python Interaction Functions:
 void makePythonFile(IN FILE* fp, IN PHUSV hunter[huntersNum], IN PTUSV target, IN POBSTACLE obstacles[obstaclesNum])
