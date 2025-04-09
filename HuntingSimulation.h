@@ -51,13 +51,12 @@ do\
 
 #define bug(num) printf("%ld\n", num)
 
-#define reachIdealPointTime 90
-#define targetNormalVelocity 1.5
-#define targetSafetyRadius 30
+#define targetNormalVelocity 3.0
+#define targetSafetyRadius 300
 
-#define huntersNum 7
+#define huntersNum 6
 #define huntersVelocity (0.5 * (double)pi * (double)targetNormalVelocity)
-#define huntersSafetyRadius 8
+#define huntersSafetyRadius (huntersVelocity * 1.5)
 
 #define obstaclesNum 10
 #define obstacleSafetyFactor 2.0
@@ -65,8 +64,8 @@ do\
 #define RtN (targetNormalVelocity)
 #define Rh (huntersVelocity)
 
-#define ANGLE_REGION_SIZE 360
-#define DIS_REGION_SIZE 30
+#define ANGLE_REGION_SIZE 120
+#define DIS_REGION_SIZE 15
 #define OFFSETS_MAX_SIZE (ANGLE_REGION_SIZE * DIS_REGION_SIZE + 1)
 
 #define PHASE_ANGLE (360.0 / (double)huntersNum)
@@ -93,6 +92,7 @@ typedef struct _huntingUSV
 	size_t hunterListIndex;
 	double velocity;
 	LIST_ENTRY hunterListEntry; //后置定义
+	size_t deadCorner;
 }HUSV, * PHUSV, ** PPHUSV; //后置定义在第一次初始化时没有特定值，需要在后续的功能函数单独赋值。
 typedef struct _OBSTACLE
 {
@@ -146,13 +146,13 @@ void updateTargetPosByMovingDistanceAndUnsignedAngle(IN_OUT PTUSV* target, IN do
 void updateHunterPosByMovingDistanceAndUnsignedAngle(IN_OUT PHUSV* hunter, IN double movingDistance, IN double angle);
 void movingNormalTargetRandomly(OUT PTUSV* target);
 void movingNormalTargetStably(OUT PTUSV* target);
-void movingObstaclesRandomly(OUT POBSTACLE(*obstacles)[obstaclesNum]);
+void movingObstaclesRandomly(OUT POBSTACLE** obstacles);
 //Geometry Functions:
 void getTwoCuttingPointOnCircle(IN Point center, IN double radius, IN Point externals, OUT Point* res1, OUT Point* res2);
 BOOL checkPointIsSafe(IN Point loc, IN PTUSV target);
 //Surroundding Simulation Functions:
 void _SURROUNDING_changingHunterInfomationByRewardFunctionAndEnvironment(IN_OUT PHUSV* hunter, IN PTUSV target, IN POBSTACLE obstacles[obstaclesNum]);
-BOOLEAN isSurroundingSuccess(IN PHUSV hunter[huntersNum], IN PTUSV target, IN POBSTACLE obstacles[obstaclesNum]);
+BOOLEAN isSurroundingSuccess(IN PHUSV hunter[huntersNum], IN PTUSV target);
 //C-Python Interaction Functions:
 void makePythonFile(IN FILE* fp, IN PHUSV hunter[huntersNum], IN PTUSV target, IN POBSTACLE obstacles[obstaclesNum]);
 
