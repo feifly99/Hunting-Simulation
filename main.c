@@ -20,11 +20,11 @@ int main()
 	//一定一定要保证链表顺序！只要围捕的时候撞上绝对是链表顺序问题！！！
 	Point hunterPos[huntersNum] = { {0, 0} };
 	double beginAngle = 30.0;
-	double beginRadius = 3.5 * targetSafetyRadius;
+	double beginRadius = 1.30 * targetSafetyRadius;
 	for (size_t j = 0; j < huntersNum; j++)
 	{
-		hunterPos[j].x = targetPos.x + beginRadius * cosa(beginAngle + 2.00 * (double)j);
-		hunterPos[j].y = targetPos.y + beginRadius * sina(beginAngle + 2.00 * (double)j);
+		hunterPos[j].x = targetPos.x + beginRadius * cosa(beginAngle + 1.6 * (double)j);
+		hunterPos[j].y = targetPos.y + beginRadius * sina(beginAngle + 1.6 * (double)j);
 	}
 	initializeTargetUSV(
 		&target,
@@ -43,14 +43,14 @@ int main()
 	);
 	buildCycleListByHuntersOriginalIndex(hunter); //补全了hunter结构的LIST_ENTRY项
 
-	double obstacleSize = 9.0;
-	double obstacleVelocity = 1.20;
+	double obstacleSize = 0.65;
+	double obstacleVelocity = 0.85;
 	Point* obstaclesCenterPos = (Point*)malloc(obstaclesNum * sizeof(Point));
 	RtlZeroMemory(obstaclesCenterPos, obstaclesNum * sizeof(Point));
 	for (int i = 0; i < obstaclesNum; i++) 
 	{
 		double angle = cvtAngle2Rad((double)(rand() % 360));
-		double radius = ((double)rand() / RAND_MAX) * 2.0 * targetSafetyRadius;
+		double radius = ((double)rand() / RAND_MAX) * 1.20 * targetSafetyRadius;
 
 		obstaclesCenterPos[i].x = targetPos.x + radius * cos(angle);
 		obstaclesCenterPos[i].y = targetPos.y + radius * sin(angle);
@@ -79,20 +79,20 @@ int main()
 #ifdef _DEBUG
 		printf_cyan("******************************************************\n");
 #endif
-		if (!isSurroundingSuccess(hunter, target)) // !isSurroundingSuccess(hunter, target)
+		if (!isSurroundingSuccess(hunter, target, obstacles)) // !isSurroundingSuccess(hunter, target)
 		{
-			movingObstaclesRandomly((POBSTACLE (*)[obstaclesNum])&obstacles);
+			movingObstaclesRandomly(&obstacles);
 			fors(
 				huntersNum,
 				_SURROUNDING_changingHunterInfomationByRewardFunctionAndEnvironment(&hunter[j], target, obstacles);
 			);
-			if (surroundingAttempCount % 250 == 0)
+			if (surroundingAttempCount % 50 == 0)
 			{
-				printf("未收敛. surroundingAttempCount: %zu\n", surroundingAttempCount);
 				fors(
 					huntersNum,
 					printf("[当前距离/角度信息] %zu -> %lf\t%lf\n", j, calculate_P$P_distance(hunter[j]->pos, target->pos), calculate_P$P$P_unsignedAngle(hunter[j]->pos, target->pos, CONTAINING_RECORD(hunter[j]->hunterListEntry.Flink, HUSV, hunterListEntry)->pos) - PHASE_ANGLE);
 				);
+				printf("未收敛. surroundingAttempCount: %zu\n", surroundingAttempCount);
 			}
 			movingNormalTargetRandomly(&target);
 			makePythonFile(fp, hunter, target, obstacles);
