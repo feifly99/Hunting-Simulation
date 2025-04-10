@@ -52,20 +52,20 @@ do\
 #define bug(num) printf("%ld\n", num)
 
 #define targetNormalVelocity 3.0
-#define targetSafetyRadius 300
+#define targetSafetyRadius 8000
 
-#define huntersNum 6
+#define huntersNum 200
 #define huntersVelocity (0.5 * (double)pi * (double)targetNormalVelocity)
 #define huntersSafetyRadius (huntersVelocity * 1.5)
 
-#define obstaclesNum 10
+#define obstaclesNum 3000
 #define obstacleSafetyFactor 2.0
 
 #define RtN (targetNormalVelocity)
 #define Rh (huntersVelocity)
 
-#define ANGLE_REGION_SIZE 120
-#define DIS_REGION_SIZE 15
+#define ANGLE_REGION_SIZE 360
+#define DIS_REGION_SIZE 20
 #define OFFSETS_MAX_SIZE (ANGLE_REGION_SIZE * DIS_REGION_SIZE + 1)
 
 #define PHASE_ANGLE (360.0 / (double)huntersNum)
@@ -152,7 +152,7 @@ void getTwoCuttingPointOnCircle(IN Point center, IN double radius, IN Point exte
 BOOL checkPointIsSafe(IN Point loc, IN PTUSV target);
 //Surroundding Simulation Functions:
 void _SURROUNDING_changingHunterInfomationByRewardFunctionAndEnvironment(IN_OUT PHUSV* hunter, IN PTUSV target, IN POBSTACLE obstacles[obstaclesNum]);
-BOOLEAN isSurroundingSuccess(IN PHUSV hunter[huntersNum], IN PTUSV target);
+BOOLEAN isSurroundingSuccess(IN PHUSV hunter[huntersNum], IN PTUSV target, IN POBSTACLE* obstacles);
 //C-Python Interaction Functions:
 void makePythonFile(IN FILE* fp, IN PHUSV hunter[huntersNum], IN PTUSV target, IN POBSTACLE obstacles[obstaclesNum]);
 
