@@ -438,15 +438,7 @@ static double _SURROUNDING_getRewardPointsForHunter(IN PHUSV hunter, IN PTUSV ta
 	{
 		double distanceNearby = 2.50;
 
-		double angleNearby = 0.0;
-		if (calculate_P$P$P_unsignedAngle(CONTAINING_RECORD(hunter->hunterListEntry.Blink, HUSV, hunterListEntry)->pos, target->pos, CONTAINING_RECORD(hunter->hunterListEntry.Flink, HUSV, hunterListEntry)->pos) >= (double)PHASE_ANGLE + (double)PHASE_ANGLE / 2.50)
-		{
-			angleNearby = (double)PHASE_ANGLE / 3.50;
-		}
-		else
-		{
-			angleNearby = -(double)PHASE_ANGLE / 3.50;
-		}
+		double angleNearby = 0.75;
 		double obstacleDistanceNearby = 999999.0;
 
 		double distanceDiffer = calculate_P$P_distance(hunter->pos, target->pos) - 1.1 * Rh - targetSafetyRadius;
@@ -461,7 +453,7 @@ static double _SURROUNDING_getRewardPointsForHunter(IN PHUSV hunter, IN PTUSV ta
 				obstaclesDistanceSum += calculate_P$P_distance(hunter->pos, obstacles[j]->center);
 			}
 		);
-		obstacleAverageDiffer = obstaclesDistanceSum * (double)insightObstaclesCount;
+		obstacleAverageDiffer = obstaclesDistanceSum * (double)insightObstaclesCount * (1 + closeBetter(calculate_P$P_distance(hunter->pos, target->pos), 999999.0));
 
 		if (distanceDiffer <= 0.0)
 		{
@@ -478,7 +470,7 @@ static double _SURROUNDING_getRewardPointsForHunter(IN PHUSV hunter, IN PTUSV ta
 	else
 	{
 		double distanceNearby = 1.50;
-		double angleNearby = PHASE_ANGLE / 3.50;
+		double angleNearby = 0.75;
 
 		double distanceDiffer = calculate_P$P_distance(hunter->pos, target->pos) - 1.1 * Rh - targetSafetyRadius;
 		double angleDiffer = calculate_P$P$P_unsignedAngle(hunter->pos, target->pos, CONTAINING_RECORD(hunter->hunterListEntry.Flink, HUSV, hunterListEntry)->pos) - PHASE_ANGLE;
@@ -555,7 +547,7 @@ void _SURROUNDING_changingHunterInfomationByRewardFunctionAndEnvironment(IN_OUT 
 	//计算当前捕食者视野内的障碍物个数计数
 	fors(
 		obstaclesNum,
-		if (calculate_P$P_distance((*hunter)->pos, obstacles[j]->center) <= 6.0 * obstacles[0]->size + 5.0 * Rh)
+		if (calculate_P$P_distance((*hunter)->pos, obstacles[j]->center) <= 6.0 * obstacles[0]->size + 15.0 * Rh)
 		{
 			obstacleInsightOneHotMark[j] = 1;
 			currentHunterInsightObstaclesCount++;
@@ -692,15 +684,15 @@ void _SURROUNDING_changingHunterInfomationByRewardFunctionAndEnvironment(IN_OUT 
 	OFFSETS = NULL;
 	return;
 }
-BOOLEAN isSurroundingSuccess(IN PHUSV hunter[huntersNum], IN PTUSV target)
+BOOLEAN isSurroundingSuccess(IN PHUSV hunter[huntersNum], IN PTUSV target, IN POBSTACLE* obstacles)
 {
 	//maxTolerance这个值是临界值；
 	//如果有任何一个捕食者到目标的距离大于mostSafetyRadius加上这个maxTolerance值，那么就视为不收敛；
 	//maxTolerance值必须大于_SURROUNDING_getRewardPointsForHunterByHuntersEI中定义的episilon_distance；
 	//否则永不收敛
 
-	double maxDistanceTolerance = 5.50;
-	double maxAngleTolerance = PHASE_ANGLE / 3.20;
+	double maxDistanceTolerance = 8.00 + 2.0 * obstacles[0]->size + 0.1;
+	double maxAngleTolerance = 8.00;
 
 	double d[huntersNum] = { 0 };
 	double a[huntersNum] = { 0 };
@@ -716,6 +708,10 @@ BOOLEAN isSurroundingSuccess(IN PHUSV hunter[huntersNum], IN PTUSV target)
 		{
 			return FALSE;
 		}
+	}
+	size_t subQueueNum = (size_t)((double)huntersNum * 0.75);
+	for (size_t j = 0; j < subQueueNum; j++)
+	{
 		if (mabs(a[j]) >= maxAngleTolerance)
 		{
 			return FALSE;
