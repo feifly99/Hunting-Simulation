@@ -54,11 +54,11 @@ do\
 #define targetNormalVelocity 3.0
 #define targetSafetyRadius 8000
 
-#define huntersNum 200
+#define huntersNum 300
 #define huntersVelocity (0.5 * (double)pi * (double)targetNormalVelocity)
 #define huntersSafetyRadius (huntersVelocity * 1.5)
 
-#define obstaclesNum 3000
+#define obstaclesNum 5000
 #define obstacleSafetyFactor 2.0
 
 #define RtN (targetNormalVelocity)
