@@ -709,7 +709,7 @@ BOOLEAN isSurroundingSuccess(IN PHUSV hunter[huntersNum], IN PTUSV target, IN PO
 			return FALSE;
 		}
 	}
-	size_t subQueueNum = (size_t)((double)huntersNum * 0.75);
+	size_t subQueueNum = (size_t)((double)huntersNum * 0.8);
 	for (size_t j = 0; j < subQueueNum; j++)
 	{
 		if (mabs(a[j]) >= maxAngleTolerance)
