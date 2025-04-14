@@ -19,12 +19,12 @@ int main()
 	//从目标坐标的右侧射线方向逆时针旋转，第一个碰到的捕食者为链表头，最后一个碰到的为链表尾.
 	//一定一定要保证链表顺序！只要围捕的时候撞上绝对是链表顺序问题！！！
 	Point hunterPos[huntersNum] = { {0, 0} };
-	double beginAngle = 30.0;
-	double beginRadius = 1.30 * targetSafetyRadius;
+	double beginAngle = 20.0;
+	double beginRadius = 1.350 * targetSafetyRadius;
 	for (size_t j = 0; j < huntersNum; j++)
 	{
-		hunterPos[j].x = targetPos.x + beginRadius * cosa(beginAngle + 1.6 * (double)j);
-		hunterPos[j].y = targetPos.y + beginRadius * sina(beginAngle + 1.6 * (double)j);
+		hunterPos[j].x = targetPos.x + beginRadius * cosa(beginAngle + 1.1 * (double)j);
+		hunterPos[j].y = targetPos.y + beginRadius * sina(beginAngle + 1.1 * (double)j);
 	}
 	initializeTargetUSV(
 		&target,
