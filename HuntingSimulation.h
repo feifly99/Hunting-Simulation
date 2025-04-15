@@ -51,24 +51,33 @@ do\
 
 #define bug(num) printf("%ld\n", num)
 
-#define targetNormalVelocity 3.0
-#define targetSafetyRadius 8000
+double g_targetNormalVelocity;
+double g_targetSafetyRadius;
 
-#define huntersNum 300
-#define huntersVelocity (0.5 * (double)pi * (double)targetNormalVelocity)
-#define huntersSafetyRadius (huntersVelocity * 1.5)
+size_t g_huntersNum;
+double g_huntersVelocity;
+double g_huntersSafetyRadius;
 
-#define obstaclesNum 5000
-#define obstacleSafetyFactor 2.0
+size_t g_obstaclesNum;
 
-#define RtN (targetNormalVelocity)
-#define Rh (huntersVelocity)
+double g_RtN;
+double g_Rh;
 
-#define ANGLE_REGION_SIZE 360
-#define DIS_REGION_SIZE 20
-#define OFFSETS_MAX_SIZE (ANGLE_REGION_SIZE * DIS_REGION_SIZE + 1)
+size_t g_ANGLE_REGION_SIZE;
+size_t g_DIS_REGION_SIZE;
+size_t g_OFFSETS_MAX_SIZE;
 
-#define PHASE_ANGLE (360.0 / (double)huntersNum)
+double g_PHASE_ANGLE;
+
+typedef struct _globalAttributes
+{
+	size_t _huntersNum;
+	size_t _obstaclesNum;
+	double _targetNormalVelocity;
+	double _targetSafetyRadius;
+	size_t _ANGLE_REGION_SIZE;
+	size_t _DIS_REGION_SIZE;
+}GA, *PGA;
 
 typedef struct _Point
 {
@@ -100,7 +109,11 @@ typedef struct _OBSTACLE
 	double size;
 	double v;
 	double movingDirection;
-}OBSTACLE, * POBSTACLE;
+}OBSTACLE, * POBSTACLE, **PPOBSTACLE;
+//Initializing Global Attributes:
+void setGlobalAttributes(
+	IN GA globalAttributes
+);
 //Initializing Functions:
 void initializeTargetUSV(OUTPTR PTUSV* Tusv, IN Point position, IN double normalVelocity, IN double safetyRadius);
 void initializeHunterUsv(OUTPTR PHUSV* Husv, IN Point position, IN double velocity, IN size_t hunterListIndex);
@@ -151,9 +164,9 @@ void movingObstaclesRandomly(OUT POBSTACLE** obstacles);
 void getTwoCuttingPointOnCircle(IN Point center, IN double radius, IN Point externals, OUT Point* res1, OUT Point* res2);
 BOOL checkPointIsSafe(IN Point loc, IN PTUSV target);
 //Surroundding Simulation Functions:
-void _SURROUNDING_changingHunterInfomationByRewardFunctionAndEnvironment(IN_OUT PHUSV* hunter, IN PTUSV target, IN POBSTACLE obstacles[obstaclesNum]);
-BOOLEAN isSurroundingSuccess(IN PHUSV hunter[huntersNum], IN PTUSV target, IN POBSTACLE* obstacles);
+void _SURROUNDING_changingHunterInfomationByRewardFunctionAndEnvironment(IN_OUT PHUSV* hunter, IN PTUSV target, IN PPOBSTACLE obstacles);
+BOOLEAN isSurroundingSuccess(IN PPHUSV hunter, IN PTUSV target, IN PPOBSTACLE obstacles);
 //C-Python Interaction Functions:
-void makePythonFile(IN FILE* fp, IN PHUSV hunter[huntersNum], IN PTUSV target, IN POBSTACLE obstacles[obstaclesNum]);
+void makePythonFile(IN FILE* fp, IN PPHUSV hunter, IN PTUSV target, IN PPOBSTACLE obstacles);
 
 #endif
